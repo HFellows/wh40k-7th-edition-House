@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="21e36b7e-84ee-2ec0-53f2-2c32fd8bd981" name="Space Wolves: Codex (2014)" revision="2037" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="3f64-49b1-f712-8bfe" name="Space Wolves: Codex (2014)" revision="2037" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="21e36b7e--pubN70615" name="Champions of Fenris"/>
     <publication id="21e36b7e--pubN70777" name="Codex: Space Wolves"/>

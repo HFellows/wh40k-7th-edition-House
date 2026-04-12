@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0d2e-42af-929e-7b0e" name="Adeptus Mechanicus" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" revision="3" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="4" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
     <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
@@ -139,9 +139,6 @@
       <categoryLinks>
         <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="60d6-c097-dbcf-9e65" primary="true" name="Fast Attack"/>
       </categoryLinks>
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8c2-d4ee-cef9-261f" includeChildSelections="false"/>
-      </constraints>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>

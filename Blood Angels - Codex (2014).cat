@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6cacb5fc-d6bf-078d-307e-6f16c72d5f2a" name="Blood Angels: Codex (2014)" revision="2025" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="23ce-d743-d911-b582" name="Blood Angels: Codex (2014)" revision="2025" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="6cacb5fc--pubN65537" name="Codex: Blood Angels"/>
     <publication id="6cacb5fc--pubN65850" name="Angel&apos;s Blade"/>

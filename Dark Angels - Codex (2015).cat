@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="578f-d512-a02e-7d0b" name="Dark Angels: Codex (2015)" revision="2018" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="937a-0870-d5b7-ab7d" name="Dark Angels: Codex (2015)" revision="2018" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="578f-d512-pubN65537" name="Dark Angels Codex 2015, 7th Edition"/>
     <publication id="578f-d512-pubN72421" name="lancer.pdf"/>

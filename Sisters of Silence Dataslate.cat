@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="34df-c088-3dc3-fe46" name="Sisters of Silence: Codex (2017)" revision="2013" battleScribeVersion="2.03" authorName="BSData Developers" authorContact="" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="6655-04c2-41b0-35ee" name="Sisters of Silence: Codex (2017)" revision="2013" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="34df-c088-pubN65797" name="Burning of Prospero: Datasheet"/>
     <publication id="34df-c088-pubN67565" name="Codex: Space Marines"/>
@@ -20,32 +20,32 @@
       <categoryLinks>
         <categoryLink id="1ad6-48dc-344b-7512-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" name="Elites" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="false">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa1c-9254-8037-dee5" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc1-66d1-1455-5872" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa1c-9254-8037-dee5" type="min"/>
+            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc1-66d1-1455-5872" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="b419-1c3f-0f83-6b62" name="" hidden="false" collective="false" import="true" targetId="a4db-5e7c-91bf-3232" type="selectionEntry">
+    <entryLink id="b419-1c3f-0f83-6b62" hidden="false" collective="false" import="true" targetId="a4db-5e7c-91bf-3232" type="selectionEntry" name="Procecutor Squad">
       <categoryLinks>
-        <categoryLink id="b419-1c3f-0f83-6b62-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+        <categoryLink id="b419-1c3f-0f83-6b62-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="52cc-58c5-d85d-6f8d" name="New EntryLink" hidden="false" collective="false" import="true" targetId="4e40-4bc6-5bbb-7b98" type="selectionEntry">
+    <entryLink id="52cc-58c5-d85d-6f8d" name="Witchseeker Squad" hidden="false" collective="false" import="true" targetId="4e40-4bc6-5bbb-7b98" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="52cc-58c5-d85d-6f8d-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+        <categoryLink id="52cc-58c5-d85d-6f8d-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="912d-9b06-ca60-b4ef" name="New EntryLink" hidden="false" collective="false" import="true" targetId="8f4f-5900-16d3-9925" type="selectionEntry">
+    <entryLink id="912d-9b06-ca60-b4ef" name="Vigilator Squad" hidden="false" collective="false" import="true" targetId="8f4f-5900-16d3-9925" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="912d-9b06-ca60-b4ef-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+        <categoryLink id="912d-9b06-ca60-b4ef-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="5994-9445-8e5b-b14c" name="New EntryLink" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
+    <entryLink id="5994-9445-8e5b-b14c" name="Null-Maiden Rhino" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
       <categoryLinks>
-        <categoryLink id="5994-9445-8e5b-b14c-c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+        <categoryLink id="5994-9445-8e5b-b14c-c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -64,74 +64,74 @@ The Psychic Abomination special rule does not apply whilst the unit with this sp
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="e2d7-408a-8558-264a" name="New InfoLink" hidden="false" targetId="280d-1a0c-5916-3012" type="rule"/>
-        <infoLink id="3f5e-92d0-213f-e34c" name="New InfoLink" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
-        <infoLink id="1800-f391-5aa5-a5bc" name="ban" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
-        <infoLink id="ab62-fed2-b4e4-93bc" name="New InfoLink" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
+        <infoLink id="e2d7-408a-8558-264a" name="Fear" hidden="false" targetId="280d-1a0c-5916-3012" type="rule"/>
+        <infoLink id="3f5e-92d0-213f-e34c" name="Fearless" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
+        <infoLink id="1800-f391-5aa5-a5bc" name="Bane of Psykers" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
+        <infoLink id="ab62-fed2-b4e4-93bc" name="Psychic Abomination" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="c34c-6b06-6ea6-42c4" name="Sister of Silence" hidden="false" collective="false" import="true" type="unit">
           <modifiers>
             <modifier type="decrement" field="12b5-575c-2763-53f4" value="1">
               <conditions>
-                <condition field="selections" scope="a4db-5e7c-91bf-3232" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="afcb-30dd-58d1-3c32" type="equalTo"/>
+                <condition field="selections" scope="a4db-5e7c-91bf-3232" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="afcb-30dd-58d1-3c32" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="decrement" field="adc7-645e-3db6-b855" value="1">
               <conditions>
-                <condition field="selections" scope="a4db-5e7c-91bf-3232" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="afcb-30dd-58d1-3c32" type="equalTo"/>
+                <condition field="selections" scope="a4db-5e7c-91bf-3232" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="afcb-30dd-58d1-3c32" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12b5-575c-2763-53f4" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adc7-645e-3db6-b855" type="max"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="12b5-575c-2763-53f4" type="min"/>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adc7-645e-3db6-b855" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="ba74-4447-d902-7233" name="New InfoLink" hidden="false" targetId="51d5-499d-ed37-9100" type="profile"/>
+            <infoLink id="ba74-4447-d902-7233" name="Sister of Silence" hidden="false" targetId="51d5-499d-ed37-9100" type="profile"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="931a-7f89-8c3b-6490" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
-            <entryLink id="5608-deb1-ffb7-a0ba" name="New EntryLink" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
-            <entryLink id="dc71-e4f8-8748-bc21" name="New EntryLink" hidden="false" collective="false" import="true" targetId="493b-0de1-42b5-0944" type="selectionEntry"/>
+            <entryLink id="931a-7f89-8c3b-6490" name="Psyk-out Grenades" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
+            <entryLink id="5608-deb1-ffb7-a0ba" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
+            <entryLink id="dc71-e4f8-8748-bc21" name="Boltgun" hidden="false" collective="false" import="true" targetId="493b-0de1-42b5-0944" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="15"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="afcb-30dd-58d1-3c32" name="Sister Superior" hidden="false" collective="false" import="true" type="unit">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40b3-e1d0-4ccc-ade0" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="40b3-e1d0-4ccc-ade0" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="ca36-cb0a-b047-4ea4" name="New InfoLink" hidden="false" targetId="a3b5-26be-117c-5dfa" type="profile"/>
+            <infoLink id="ca36-cb0a-b047-4ea4" name="Sister Superior" hidden="false" targetId="a3b5-26be-117c-5dfa" type="profile"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="28cd-ad3f-7942-ce6d" name="New EntryLink" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
-            <entryLink id="05ce-6482-4f02-0429" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
-            <entryLink id="8df5-25d2-4870-6f22" name="New EntryLink" hidden="false" collective="false" import="true" targetId="493b-0de1-42b5-0944" type="selectionEntry"/>
+            <entryLink id="28cd-ad3f-7942-ce6d" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
+            <entryLink id="05ce-6482-4f02-0429" name="Psyk-out Grenades" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
+            <entryLink id="8df5-25d2-4870-6f22" name="Boltgun" hidden="false" collective="false" import="true" targetId="493b-0de1-42b5-0944" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="25"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="09e3-7750-4584-823b" name="New EntryLink" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
-        <entryLink id="01b8-2907-6e8f-0ff8" name="New EntryLink" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
+        <entryLink id="09e3-7750-4584-823b" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
+        <entryLink id="01b8-2907-6e8f-0ff8" name="Null-Maiden Rhino" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5a9-4150-cd1f-7d6b" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5a9-4150-cd1f-7d6b" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1621-8135-eb9c-f1e2" name="Psyk-out Grenades" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0e2-6e19-0acd-e23d" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae8d-fd03-00bc-dc3c" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0e2-6e19-0acd-e23d" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ae8d-fd03-00bc-dc3c" type="min"/>
       </constraints>
       <rules>
         <rule id="906d-93b3-106f-1006" name="Psi-shock" publicationId="34df-c088-pubN65797" hidden="false">
@@ -139,7 +139,7 @@ The Psychic Abomination special rule does not apply whilst the unit with this sp
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="3096-4ad2-9646-2162" name="New InfoLink" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile">
+        <infoLink id="3096-4ad2-9646-2162" name="Assault Grenades" hidden="false" targetId="fdd8-1a5f-5722-d6ee" type="profile">
           <modifiers>
             <modifier type="set" field="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="2"/>
             <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Psi-shock"/>
@@ -147,27 +147,27 @@ The Psychic Abomination special rule does not apply whilst the unit with this sp
         </infoLink>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f5b0-70d0-a921-c89d" name="Close Combat Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c17e-eda2-e5f5-fc4c" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7f7-02d5-c0d6-0772" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c17e-eda2-e5f5-fc4c" type="max"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d7f7-02d5-c0d6-0772" type="min"/>
       </constraints>
       <infoLinks>
-        <infoLink id="9195-2462-1eac-373e" name="New InfoLink" hidden="false" targetId="e294-a5c7-e01e-0a82" type="profile"/>
+        <infoLink id="9195-2462-1eac-373e" name="Close Combat Weapon" hidden="false" targetId="e294-a5c7-e01e-0a82" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="493b-0de1-42b5-0944" name="Boltgun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="da34-f9f9-b624-aec1" name="New InfoLink" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile"/>
+        <infoLink id="da34-f9f9-b624-aec1" name="Boltgun" hidden="false" targetId="3d4b-95ea-f860-dd22" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d297-d8ab-8da4-acf1" name="Executioner Greatblade" hidden="false" collective="false" import="true" type="upgrade">
@@ -182,18 +182,18 @@ The Psychic Abomination special rule does not apply whilst the unit with this sp
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="32d2-2e6a-dc97-135e" name="New InfoLink" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
+        <infoLink id="32d2-2e6a-dc97-135e" name="Two-Handed" hidden="false" targetId="b11c-0ef4-af6b-d96f" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dc56-41da-1c2b-cfd6" name="Flamer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="d6da-5588-919c-cac9" name="New InfoLink" hidden="false" targetId="cdc3-3459-a28c-a9cf" type="profile"/>
+        <infoLink id="d6da-5588-919c-cac9" name="Flamer" hidden="false" targetId="cdc3-3459-a28c-a9cf" type="profile"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f4f-5900-16d3-9925" name="Vigilator Squad" hidden="false" collective="false" import="true" type="unit">
@@ -210,66 +210,66 @@ The Psychic Abomination special rule does not apply whilst the unit with this sp
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="5d06-5a1b-eea0-9196" name="New InfoLink" hidden="false" targetId="280d-1a0c-5916-3012" type="rule"/>
-        <infoLink id="a0d4-b315-89d1-451d" name="New InfoLink" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
-        <infoLink id="9a73-970b-6bfd-1f98" name="ban" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
-        <infoLink id="f352-c7e5-647f-6869" name="New InfoLink" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
+        <infoLink id="5d06-5a1b-eea0-9196" name="Fear" hidden="false" targetId="280d-1a0c-5916-3012" type="rule"/>
+        <infoLink id="a0d4-b315-89d1-451d" name="Fearless" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
+        <infoLink id="9a73-970b-6bfd-1f98" name="Bane of Psykers" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
+        <infoLink id="f352-c7e5-647f-6869" name="Psychic Abomination" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="b9b9-dd26-492b-c886" name="Sister of Silence" hidden="false" collective="false" import="true" type="unit">
           <modifiers>
             <modifier type="decrement" field="1bba-a157-35e6-1693" value="1">
               <conditions>
-                <condition field="selections" scope="8f4f-5900-16d3-9925" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b074-1843-5cd2-ffcd" type="equalTo"/>
+                <condition field="selections" scope="8f4f-5900-16d3-9925" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b074-1843-5cd2-ffcd" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="decrement" field="a5c6-986a-692a-9e9f" value="1">
               <conditions>
-                <condition field="selections" scope="8f4f-5900-16d3-9925" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b074-1843-5cd2-ffcd" type="equalTo"/>
+                <condition field="selections" scope="8f4f-5900-16d3-9925" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="b074-1843-5cd2-ffcd" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5c6-986a-692a-9e9f" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bba-a157-35e6-1693" type="max"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a5c6-986a-692a-9e9f" type="min"/>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1bba-a157-35e6-1693" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="f83d-51d6-7952-a7cd" name="New InfoLink" hidden="false" targetId="51d5-499d-ed37-9100" type="profile"/>
+            <infoLink id="f83d-51d6-7952-a7cd" name="Sister of Silence" hidden="false" targetId="51d5-499d-ed37-9100" type="profile"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="3f29-a5d4-e2c9-49d4" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
-            <entryLink id="1689-b17c-9c2c-c26f" name="New EntryLink" hidden="false" collective="false" import="true" targetId="d297-d8ab-8da4-acf1" type="selectionEntry"/>
+            <entryLink id="3f29-a5d4-e2c9-49d4" name="Psyk-out Grenades" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
+            <entryLink id="1689-b17c-9c2c-c26f" name="Executioner Greatblade" hidden="false" collective="false" import="true" targetId="d297-d8ab-8da4-acf1" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="13.0"/>
+            <cost name="pts" typeId="points" value="13"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b074-1843-5cd2-ffcd" name="Sister Superior" hidden="false" collective="false" import="true" type="unit">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e479-7c1d-95c2-0f2e" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e479-7c1d-95c2-0f2e" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="518f-fb20-c034-32c2" name="New InfoLink" hidden="false" targetId="a3b5-26be-117c-5dfa" type="profile"/>
+            <infoLink id="518f-fb20-c034-32c2" name="Sister Superior" hidden="false" targetId="a3b5-26be-117c-5dfa" type="profile"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="4696-72a3-8626-5629" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
-            <entryLink id="4751-6cd5-e1f1-4014" name="New EntryLink" hidden="false" collective="false" import="true" targetId="d297-d8ab-8da4-acf1" type="selectionEntry"/>
+            <entryLink id="4696-72a3-8626-5629" name="Psyk-out Grenades" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
+            <entryLink id="4751-6cd5-e1f1-4014" name="Executioner Greatblade" hidden="false" collective="false" import="true" targetId="d297-d8ab-8da4-acf1" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="23.0"/>
+            <cost name="pts" typeId="points" value="23"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="7cfc-1c00-23db-24a3" name="New EntryLink" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
-        <entryLink id="d3d8-6573-5b38-1dde" name="New EntryLink" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
+        <entryLink id="7cfc-1c00-23db-24a3" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
+        <entryLink id="d3d8-6573-5b38-1dde" name="Null-Maiden Rhino" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91a9-89f1-6c36-4f3d" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91a9-89f1-6c36-4f3d" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4e40-4bc6-5bbb-7b98" name="Witchseeker Squad" hidden="false" collective="false" import="true" type="unit">
@@ -286,68 +286,68 @@ The Psychic Abomination special rule does not apply whilst the unit with this sp
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="e692-32a1-a742-425a" name="New InfoLink" hidden="false" targetId="280d-1a0c-5916-3012" type="rule"/>
-        <infoLink id="2971-1d44-fc4b-f0dd" name="New InfoLink" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
-        <infoLink id="477a-f0a1-11e6-8f0d" name="ban" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
-        <infoLink id="8231-f4e8-3a05-3261" name="New InfoLink" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
+        <infoLink id="e692-32a1-a742-425a" name="Fear" hidden="false" targetId="280d-1a0c-5916-3012" type="rule"/>
+        <infoLink id="2971-1d44-fc4b-f0dd" name="Fearless" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
+        <infoLink id="477a-f0a1-11e6-8f0d" name="Bane of Psykers" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
+        <infoLink id="8231-f4e8-3a05-3261" name="Psychic Abomination" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="1065-a44d-41ef-61bd" name="Sister of Silence" hidden="false" collective="false" import="true" type="unit">
           <modifiers>
             <modifier type="decrement" field="18d6-1300-536e-feca" value="1">
               <conditions>
-                <condition field="selections" scope="4e40-4bc6-5bbb-7b98" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e04-24a0-dada-2b39" type="equalTo"/>
+                <condition field="selections" scope="4e40-4bc6-5bbb-7b98" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e04-24a0-dada-2b39" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="decrement" field="b217-50d6-a479-cd02" value="1">
               <conditions>
-                <condition field="selections" scope="4e40-4bc6-5bbb-7b98" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e04-24a0-dada-2b39" type="equalTo"/>
+                <condition field="selections" scope="4e40-4bc6-5bbb-7b98" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e04-24a0-dada-2b39" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18d6-1300-536e-feca" type="min"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b217-50d6-a479-cd02" type="max"/>
+            <constraint field="selections" scope="parent" value="5" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18d6-1300-536e-feca" type="min"/>
+            <constraint field="selections" scope="parent" value="10" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b217-50d6-a479-cd02" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="fa48-82b7-dd6e-11f0" name="New InfoLink" hidden="false" targetId="51d5-499d-ed37-9100" type="profile"/>
+            <infoLink id="fa48-82b7-dd6e-11f0" name="Sister of Silence" hidden="false" targetId="51d5-499d-ed37-9100" type="profile"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="f8c9-5fed-9221-63ad" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
-            <entryLink id="10c4-361d-b63b-1ffa" name="New EntryLink" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
-            <entryLink id="7264-d994-5cc6-6c90" name="New EntryLink" hidden="false" collective="false" import="true" targetId="dc56-41da-1c2b-cfd6" type="selectionEntry"/>
+            <entryLink id="f8c9-5fed-9221-63ad" name="Psyk-out Grenades" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
+            <entryLink id="10c4-361d-b63b-1ffa" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
+            <entryLink id="7264-d994-5cc6-6c90" name="Flamer" hidden="false" collective="false" import="true" targetId="dc56-41da-1c2b-cfd6" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="17.0"/>
+            <cost name="pts" typeId="points" value="17"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="3e04-24a0-dada-2b39" name="Sister Superior" hidden="false" collective="false" import="true" type="unit">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f834-4bda-247d-068f" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f834-4bda-247d-068f" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="21dc-f003-bbdc-4a1b" name="New InfoLink" hidden="false" targetId="a3b5-26be-117c-5dfa" type="profile"/>
+            <infoLink id="21dc-f003-bbdc-4a1b" name="Sister Superior" hidden="false" targetId="a3b5-26be-117c-5dfa" type="profile"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="e851-8c6b-03e4-dfe6" name="New EntryLink" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
-            <entryLink id="1b93-ce0f-6a90-bd06" name="New EntryLink" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
-            <entryLink id="6322-61f7-4937-82c1" name="New EntryLink" hidden="false" collective="false" import="true" targetId="dc56-41da-1c2b-cfd6" type="selectionEntry"/>
+            <entryLink id="e851-8c6b-03e4-dfe6" name="Close Combat Weapon" hidden="false" collective="false" import="true" targetId="f5b0-70d0-a921-c89d" type="selectionEntry"/>
+            <entryLink id="1b93-ce0f-6a90-bd06" name="Psyk-out Grenades" hidden="false" collective="false" import="true" targetId="1621-8135-eb9c-f1e2" type="selectionEntry"/>
+            <entryLink id="6322-61f7-4937-82c1" name="Flamer" hidden="false" collective="false" import="true" targetId="dc56-41da-1c2b-cfd6" type="selectionEntry"/>
           </entryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="27.0"/>
+            <cost name="pts" typeId="points" value="27"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="74f3-6d59-01c3-668e" name="New EntryLink" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
-        <entryLink id="cbf7-1191-25fc-91db" name="New EntryLink" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
+        <entryLink id="74f3-6d59-01c3-668e" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
+        <entryLink id="cbf7-1191-25fc-91db" name="Null-Maiden Rhino" hidden="false" collective="false" import="true" targetId="d233-0d52-7b70-1fdd" type="selectionEntry">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2735-70bb-f549-3723" type="max"/>
+            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2735-70bb-f549-3723" type="max"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
+        <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d233-0d52-7b70-1fdd" name="Null-Maiden Rhino" page="0" hidden="false" collective="false" import="true" type="upgrade">
@@ -376,61 +376,61 @@ The Psychic Abomination special rule does not apply whilst the unit with this sp
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="15f1-1028-6119-231a" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile"/>
-        <infoLink id="b4c1-5f80-df9f-0fbd" name="New InfoLink" hidden="false" targetId="4b04-2a83-8ae7-d134" type="profile"/>
-        <infoLink id="bf81-be82-621d-6b5e" name="New InfoLink" hidden="false" targetId="c883-3078-1367-cc2c" type="profile"/>
-        <infoLink id="3322-568f-35dc-1d89" name="New InfoLink" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
-        <infoLink id="4930-17a1-a1ca-a724" name="ban" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
+        <infoLink id="15f1-1028-6119-231a" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile" name="Storm Bolter"/>
+        <infoLink id="b4c1-5f80-df9f-0fbd" name="Searchlight" hidden="false" targetId="4b04-2a83-8ae7-d134" type="profile"/>
+        <infoLink id="bf81-be82-621d-6b5e" name="Smoke Launchers" hidden="false" targetId="c883-3078-1367-cc2c" type="profile"/>
+        <infoLink id="3322-568f-35dc-1d89" name="Psychic Abomination" hidden="false" targetId="68d7-b6a1-b037-6183" type="rule"/>
+        <infoLink id="4930-17a1-a1ca-a724" name="Bane of Psykers" hidden="false" targetId="bbdc-1bda-2f32-9369" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="5286-6e4c-ee73-366d" name="May take any:" hidden="false" collective="false" import="true">
           <selectionEntries>
             <selectionEntry id="9816-5989-e692-3f38" name="Dozer Blade" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9601-f637-54a6-8410" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9601-f637-54a6-8410" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="68b0-e07d-a150-9c2d" name="New InfoLink" hidden="false" targetId="fbed-42ff-591d-13f3" type="profile"/>
+                <infoLink id="68b0-e07d-a150-9c2d" name="Dozer Blade" hidden="false" targetId="fbed-42ff-591d-13f3" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="5"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c570-ca34-6236-1a54" name="Storm Bolter" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35a7-ae5c-9f22-359e" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35a7-ae5c-9f22-359e" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="e19b-d775-f5c2-f96f" name="New InfoLink" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile"/>
+                <infoLink id="e19b-d775-f5c2-f96f" name="Storm Bolter" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5.0"/>
+                <cost name="pts" typeId="points" value="5"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4fe1-2358-b9d8-211f" name="Extra Armour" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb74-7ad4-2405-4fea" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb74-7ad4-2405-4fea" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5dbc-8be8-4ff3-af42" name="New InfoLink" hidden="false" targetId="cdda-8935-b495-3a35" type="profile"/>
+                <infoLink id="5dbc-8be8-4ff3-af42" name="Extra Armour" hidden="false" targetId="cdda-8935-b495-3a35" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="10"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0e58-5a29-42ce-d147" name="Hunter-Killer Missile" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eda-d533-2e59-0784" type="max"/>
+                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9eda-d533-2e59-0784" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="10"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="45.0"/>
+        <cost name="pts" typeId="points" value="45"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>

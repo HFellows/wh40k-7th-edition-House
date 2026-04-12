@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b5703e9d-17ab-dbe1-9510-f71774d7886c" name="Astra Militarum: IA01.2 - Armoured Battle Group (2012)" revision="2008" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="009d-680a-8610-9388" name="Astra Militarum: IA01.2 - Armoured Battle Group (2012)" revision="2008" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="b5703e9d--pubN65858" name="IA1 2nd Ed"/>
     <publication id="b5703e9d--pubN68300" name="Codex: Imperial Guard"/>

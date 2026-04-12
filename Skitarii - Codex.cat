@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2301-1cab-6d58-f23b" name="Skitarii: Codex (2015)" revision="2014" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true" type="catalogue">
+<catalogue id="d2b5-4d19-d6fe-67b3" name="Skitarii: Codex (2015)" revision="2014" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true" type="catalogue">
   <publications>
     <publication id="2301-1cab-pubN65537" name="Codex: Skitarii"/>
     <publication id="2301-1cab-pubN66152" name="Fall of Cadia"/>
