@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="4" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="5" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
     <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
@@ -135,7 +135,7 @@
         <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="ce0e-e954-bb15-ded0" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="3a3e-d064-25ca-62cc" type="selectionEntry" targetId="5927-106a-67b0-bb14">
+    <entryLink import="true" name="Vorax Battle-automata Maniple" hidden="false" id="3a3e-d064-25ca-62cc" type="selectionEntry" targetId="f144-1079-11ff-019d">
       <categoryLinks>
         <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="60d6-c097-dbcf-9e65" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -1748,7 +1748,11 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Onager Dunecrawlers" hidden="false" id="6dbd-abf2-ed7f-5e28" publicationId="2301-1cab-pubN65537" page="63" collective="false">
       <entryLinks>
-        <entryLink import="true" name="Onager Dunecrawler" hidden="false" id="0f7b-0e4f-5606-99d3" collective="false" targetId="ba7e-6ad9-c97f-52e8" type="selectionEntry"/>
+        <entryLink import="true" name="Onager Dunecrawler" hidden="false" id="0f7b-0e4f-5606-99d3" collective="false" targetId="ba7e-6ad9-c97f-52e8" type="selectionEntry">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a65b-4431-afb8-7213"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -2590,7 +2594,11 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skorpius Disintegrators" hidden="false" id="4f92-cdc6-d247-7684">
       <entryLinks>
-        <entryLink import="true" name="Skorpius Disintegrator" hidden="false" id="a6b1-f159-38bb-2c9d" type="selectionEntry" targetId="9f64-ae6f-febf-6a68"/>
+        <entryLink import="true" name="Skorpius Disintegrator" hidden="false" id="a6b1-f159-38bb-2c9d" type="selectionEntry" targetId="9f64-ae6f-febf-6a68">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="72f8-b4f0-a349-134a" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Tech-Priest Manipulus" hidden="false" id="3ef8-eae6-883c-7015" publicationId="4fe1-8588-pubN65537" page="59" collective="false">
@@ -2646,78 +2654,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <cost name="pts" typeId="points" value="65"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="5927-106a-67b0-bb14">
-      <costs>
-        <cost name="pts" typeId="points" value="65"/>
-      </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Vorax Battle-Automata" id="7f51-9ce9-ca80-fb57" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Vorax Battle-Automaton w/Irad-Cleanser" hidden="false" id="4f7f-f9df-d361-1756" type="selectionEntry" targetId="6f33-c0dd-2f46-0dc7"/>
-            <entryLink import="true" name="Vorax Battle-Automaton w/Lightning Gun" hidden="false" id="8028-e5cd-0cb4-a12b" type="selectionEntry" targetId="51dc-4bc1-673b-c431"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b8c-d670-644c-258c" includeChildSelections="false"/>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c376-870a-01b6-ae6e" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Vorax Battle-Automaton w/Irad-Cleanser" hidden="false" id="6f33-c0dd-2f46-0dc7">
-      <infoLinks>
-        <infoLink name="Vorax Battle-Automata" id="e4a2-0230-dd8e-6640" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Irad-Cleanser" hidden="false" id="34cc-c997-fde7-14ef">
-          <infoLinks>
-            <infoLink name="Irad-cleanser" id="5977-c10d-0626-9e14" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
-            <infoLink name="Fleshbane" id="6f9f-0ea4-6b4c-9677" hidden="false" type="rule" targetId="3897-5e71-1b57-57ba"/>
-            <infoLink name="Rad-phage" id="b474-dd6f-070c-3eae" hidden="false" type="rule" targetId="8bfd-42ae-5a40-a914"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4732-f498-3795-506a-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4732-f498-3795-506a-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4b16-c377-8469-63f3" includeChildSelections="false"/>
-      </constraints>
-      <entryLinks>
-        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="6d68-9ee9-3a70-eae9" type="selectionEntry" targetId="3840-c678-634f-5428"/>
-        <entryLink import="true" name="Two power blade arrays with in-built rotor cannon" hidden="false" id="11f3-bc75-d5b0-e5e6" type="selectionEntry" targetId="9e6b-0ebd-4efb-79f8"/>
-      </entryLinks>
-      <modifiers>
-        <modifier type="set" value="1" field="4b16-c377-8469-63f3">
-          <conditions>
-            <condition type="atLeast" value="2" field="selections" scope="3a3e-d064-25ca-62cc" childId="51dc-4bc1-673b-c431" shared="true" includeChildSelections="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry type="model" import="true" name="Vorax Battle-Automaton w/Lightning Gun" hidden="false" id="51dc-4bc1-673b-c431">
-      <infoLinks>
-        <infoLink name="Vorax Battle-Automata" id="0378-bb39-aab4-3a3b" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="d600-4ec7-b73d-18c8">
-          <infoLinks>
-            <infoLink name="Lightning Gun (Arc)" id="1850-2f2c-ac72-59f9" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
-            <infoLink name="Lightning Gun (Strike)" id="94b0-dbc2-e9a0-18e1" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
-            <infoLink name="Shred" id="7221-fa13-3553-c9a7" hidden="false" type="rule" targetId="5770-35c6-7341-5527"/>
-            <infoLink name="Rending" id="5050-3bc0-67e7-cb8f" hidden="false" type="rule" targetId="6a76-59d1-822c-59c9"/>
-          </infoLinks>
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4546-d926-3cbe-2c96-min" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4546-d926-3cbe-2c96-max" includeChildSelections="false"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <entryLinks>
-        <entryLink import="true" name="Two power blade arrays with in-built rotor cannon" hidden="false" id="d427-5ee9-70ad-5ea4" type="selectionEntry" targetId="9e6b-0ebd-4efb-79f8"/>
-        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="e98b-cf71-8342-0d29" type="selectionEntry" targetId="3840-c678-634f-5428"/>
-      </entryLinks>
-    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="ccee-98c8-7843-3588" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6ef-6ce8-92cf-e416" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2765,6 +2701,102 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <infoLinks>
         <infoLink name="Atomantic Deflector" id="7d8e-a84a-e3c2-4eb2" hidden="false" type="profile" targetId="907a-072e-ad1d-a928"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="f144-1079-11ff-019d" publicationId="bde1-6db1-163b-3b76" page="42" collective="false">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="e834-5c00-79d7-8adc" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Vorax Battle-Automata" hidden="false" id="6711-d580-b463-bc7e" publicationId="bde1-6db1-163b-3b76" page="42" collective="false">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5505-f1cf-a3e4-60d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a2a-94fd-740e-3d27" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fleet" id="963f-8d5b-228b-aee8" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
+              <modifiers>
+                <modifier type="set" value="Fleet (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Scout" id="05fa-5f99-01fa-8186" hidden="false" targetId="1794-e0e0-bedf-e46b" type="rule"/>
+            <infoLink name="Hammer of Wrath" id="bac5-1453-370b-d20f" hidden="false" targetId="4628-0ada-2997-8568" type="rule">
+              <modifiers>
+                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="It Will Not Die" id="fe55-672c-e459-017b" hidden="false" targetId="8de3-9e93-da02-b9dd" type="rule">
+              <modifiers>
+                <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Vorax Battle-Automata" id="fb37-f8aa-601e-0e21" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Atomantic Deflector" hidden="false" id="6ec3-a358-9bb3-c95" type="selectionEntry" targetId="3840-c678-634f-5428">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b93-2d67-30c5-50cb"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb9-cab7-18d2-427d"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="4f60-1e42-3652-4e9e" hidden="false" collective="false" import="true" defaultSelectionEntryId="4f2a-53f2-7067-b3ce">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eef-9e33-8006-1688" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="559a-d072-252b-cc6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Irad-Cleanser" hidden="false" id="b3c5-237f-e1d2-d9f8" collective="true" defaultAmount="0" sortIndex="2">
+                  <infoLinks>
+                    <infoLink name="Fleshbane" id="356e-6348-0213-3dff" hidden="false" targetId="3897-5e71-1b57-57ba" type="rule"/>
+                    <infoLink name="Rad-Phage" id="f1bf-681e-abf4-bb79" hidden="false" targetId="8bfd-42ae-5a40-a914" type="rule"/>
+                    <infoLink name="Irad-cleanser" id="7867-c15a-f791-19e9" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="80be-28b5-97f0-9437">
+                      <repeats>
+                        <repeat value="3" repeats="1" field="selections" scope="f144-1079-11ff-019d" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="f144-1079-11ff-019d" shared="true" id="80be-28b5-97f0-9437" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2907-5fe0-673a-adfb"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="ebea-d754-7cfa-914b" page="" collective="true" sortIndex="1">
+                  <infoLinks>
+                    <infoLink name="Rending" id="ffdb-4f3b-428c-30a5" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule">
+                      <modifiers>
+                        <modifier type="set" value="Rending (4+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Shred" id="258e-543d-666c-718c" hidden="false" targetId="5770-35c6-7341-5527" type="rule"/>
+                    <infoLink name="Lightning Gun (Arc)" id="c366-76e5-4db1-2ad0" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
+                    <infoLink name="Lightning Gun (Strike)" id="9174-bbde-eb9e-1e72" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7754-8f99-fd1c-ff94" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -3991,7 +4023,7 @@ Also units may re-roll charge range until end of turn.</description>
       <description>All Secutarii units have the Adeptus Titanicus Faction. The Adeptus Titanicus are part of the Armies of the Imperium and ally as such
 as described in the Allies section of Warhammer 40,000: The Rules.</description>
     </rule>
-    <rule name="Rad-phage" id="8bfd-42ae-5a40-a914" hidden="false">
+    <rule name="Rad-Phage" id="8bfd-42ae-5a40-a914" hidden="false">
       <description>A model which loses one or more Wounds to an attack with this special rule and survives has its Toughness value reduced by -1 for the rest of the battle. This effect is not cumulative with other attacks using the Rad-phage special rule, but can be stacked with other special rules that also reduce the Toughness Characteristic of the target. Note that this special rule can never reduce a model to a Toughness value of less than 1.</description>
     </rule>
   </sharedRules>
