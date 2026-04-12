@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0d2e-42af-929e-7b0e" name="Adeptus Mechanicus" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" revision="2" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0d2e-42af-929e-7b0e" name="Adeptus Mechanicus" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" revision="3" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
     <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
@@ -115,12 +115,12 @@
         <categoryLink name="Heavy Support" hidden="false" id="5a50-6675-c407-2b09" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="* Secutarii Peltasts" hidden="false" id="1354-da11-11bc-fc7d" collective="false" targetId="46c4-7681-31a0-1ae1" type="selectionEntry">
+    <entryLink import="true" name="Secutarii Peltasts" hidden="false" id="1354-da11-11bc-fc7d" collective="false" targetId="46c4-7681-31a0-1ae1" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="065d-d938-140c-02eb" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="* Secutarii Hoplites" hidden="false" id="9b5c-078f-62ee-f8b8" collective="false" targetId="b5a4-27ad-27cf-fcd4" type="selectionEntry">
+    <entryLink import="true" name="Secutarii Hoplites" hidden="false" id="9b5c-078f-62ee-f8b8" collective="false" targetId="b5a4-27ad-27cf-fcd4" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="Elites" hidden="false" id="db69-33fa-27db-0b6b-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
       </categoryLinks>
@@ -134,6 +134,14 @@
       <categoryLinks>
         <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="ce0e-e954-bb15-ded0" primary="true" name="HQ"/>
       </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="3a3e-d064-25ca-62cc" type="selectionEntry" targetId="5927-106a-67b0-bb14">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="60d6-c097-dbcf-9e65" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f8c2-d4ee-cef9-261f" includeChildSelections="false"/>
+      </constraints>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
@@ -1234,15 +1242,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <infoLink name="Voltagheist Field" id="621c-82e8-d526-891f" hidden="false" targetId="80ab-6b01-ecd1-f65c" type="profile"/>
         <infoLink name="Hammer of Wrath" id="c241-5b27-49a6-de1b" hidden="false" targetId="4628-0ada-2997-8568" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="ccee-98c8-7843-3588" collective="false">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b04-a875-3d80-ddb1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="10db-57ce-5186-c532" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
@@ -2654,110 +2653,121 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <costs>
         <cost name="pts" typeId="points" value="65"/>
       </costs>
-      <entryLinks>
-        <entryLink import="true" name="Vorax Battle-Automata" hidden="false" id="5a79-7de2-3581-c694" type="selectionEntry" targetId="6f33-c0dd-2f46-0dc7"/>
-      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Vorax Battle-Automata" id="7f51-9ce9-ca80-fb57" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Vorax Battle-Automaton w/Irad-Cleanser" hidden="false" id="4f7f-f9df-d361-1756" type="selectionEntry" targetId="6f33-c0dd-2f46-0dc7"/>
+            <entryLink import="true" name="Vorax Battle-Automaton w/Lightning Gun" hidden="false" id="8028-e5cd-0cb4-a12b" type="selectionEntry" targetId="51dc-4bc1-673b-c431"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8b8c-d670-644c-258c" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="c376-870a-01b6-ae6e" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Vorax Battle-Automata" hidden="false" id="6f33-c0dd-2f46-0dc7">
+    <selectionEntry type="model" import="true" name="Vorax Battle-Automaton w/Irad-Cleanser" hidden="false" id="6f33-c0dd-2f46-0dc7">
       <infoLinks>
         <infoLink name="Vorax Battle-Automata" id="e4a2-0230-dd8e-6640" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Atomantic Deflector" hidden="false" id="034d-daae-41cc-6d03">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7bce-e7e5-7cb0-974f" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a761-c3fe-a7eb-2eb0" includeChildSelections="false"/>
-          </constraints>
+        <selectionEntry type="upgrade" import="true" name="Irad-Cleanser" hidden="false" id="34cc-c997-fde7-14ef">
           <infoLinks>
-            <infoLink name="Atomantic Deflector" id="3a41-0dca-36ed-7cb4" hidden="false" type="profile" targetId="907a-072e-ad1d-a928"/>
+            <infoLink name="Irad-cleanser" id="5977-c10d-0626-9e14" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
+            <infoLink name="Fleshbane" id="6f9f-0ea4-6b4c-9677" hidden="false" type="rule" targetId="3897-5e71-1b57-57ba"/>
+            <infoLink name="Rad-phage" id="b474-dd6f-070c-3eae" hidden="false" type="rule" targetId="8bfd-42ae-5a40-a914"/>
           </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4732-f498-3795-506a-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4732-f498-3795-506a-max" includeChildSelections="false"/>
+          </constraints>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Vorax Battle Automata" id="c0e7-2ab5-9f42-9aae" hidden="false">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Vorax w/ Lightning Gun" hidden="false" id="7d11-a25a-5c5f-b633" sortIndex="1">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two power blade arrays with in-built rotor cannon" hidden="false" id="6e52-45ed-4908-b954">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="920e-e8e6-ecf6-f7c2">
-                      <infoLinks>
-                        <infoLink name="Power Blade Arrays" id="20dc-687c-406f-516e" hidden="false" type="profile" targetId="89fc-aef5-5dfb-e51d"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="169d-4456-a4e2-a698" includeChildSelections="false"/>
-                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="dd1a-071f-d0ea-a671" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Rotor Cannon" hidden="false" id="6be7-37fb-1f79-da80">
-                      <infoLinks>
-                        <infoLink name="Rotor cannon" id="d738-2d7e-3d90-c4af" hidden="false" type="profile" targetId="be52-e55a-4c53-c938"/>
-                        <infoLink name="Pinning" id="0860-5c12-cf96-d867" hidden="false" type="rule" targetId="8918-d7ce-5edb-3b70"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="56cb-f456-3059-bc42" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e616-6a31-7321-b1a7" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="dbe8-9be9-1388-cbab">
-                  <infoLinks>
-                    <infoLink name="Lightning Gun (Arc)" id="5ef6-25fc-2506-32f7" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
-                    <infoLink name="Lightning Gun (Strike)" id="1fb0-1766-04a7-8468" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
-                    <infoLink name="Shred" id="3071-c104-865d-870b" hidden="false" type="rule" targetId="5770-35c6-7341-5527"/>
-                    <infoLink name="Rending" id="bb77-5336-fc58-d5b2" hidden="false" type="rule" targetId="6a76-59d1-822c-59c9"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Vorax w/ Irad-cleanser" hidden="false" id="b814-c8cd-43ca-c6ac">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Two power blade arrays with in-built rotor cannon" hidden="false" id="3d2c-a6d0-7367-e4d2">
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="7b03-a928-0cfc-c17f">
-                      <infoLinks>
-                        <infoLink name="Power Blade Arrays" id="228a-0539-6d32-b8bf" hidden="false" type="profile" targetId="89fc-aef5-5dfb-e51d"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f9f4-616a-f335-6b51" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7a45-7f41-0d83-a867" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Rotor Cannon" hidden="false" id="4358-820c-5a8a-535e">
-                      <infoLinks>
-                        <infoLink name="Rotor cannon" id="2930-9907-236f-9b28" hidden="false" type="profile" targetId="be52-e55a-4c53-c938"/>
-                        <infoLink name="Pinning" id="6b91-3b98-84c8-8fb6" hidden="false" type="rule" targetId="8918-d7ce-5edb-3b70"/>
-                      </infoLinks>
-                      <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b65b-02af-8369-18d1" includeChildSelections="false"/>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9174-6e56-665a-0813" includeChildSelections="false"/>
-                      </constraints>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Irad-cleanser" hidden="false" id="d185-8d94-76e4-5bb4">
-                  <infoLinks>
-                    <infoLink name="Irad-cleanser" id="df10-69f7-88ed-d690" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
-                    <infoLink name="Fleshbane" id="8cab-761b-27c5-34df" hidden="false" type="rule" targetId="3897-5e71-1b57-57ba"/>
-                    <infoLink name="Rad-phage" id="c387-a025-d6b7-67ae" hidden="false" type="rule" targetId="8bfd-42ae-5a40-a914"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c06a-452c-2d31-7219" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4fcd-7a43-c908-3635"/>
-        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="fdc0-cf2a-b63a-89dd" includeChildSelections="false"/>
+        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4b16-c377-8469-63f3" includeChildSelections="false"/>
       </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="6d68-9ee9-3a70-eae9" type="selectionEntry" targetId="3840-c678-634f-5428"/>
+        <entryLink import="true" name="Two power blade arrays with in-built rotor cannon" hidden="false" id="11f3-bc75-d5b0-e5e6" type="selectionEntry" targetId="9e6b-0ebd-4efb-79f8"/>
+      </entryLinks>
+      <modifiers>
+        <modifier type="set" value="1" field="4b16-c377-8469-63f3">
+          <conditions>
+            <condition type="atLeast" value="2" field="selections" scope="3a3e-d064-25ca-62cc" childId="51dc-4bc1-673b-c431" shared="true" includeChildSelections="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vorax Battle-Automaton w/Lightning Gun" hidden="false" id="51dc-4bc1-673b-c431">
+      <infoLinks>
+        <infoLink name="Vorax Battle-Automata" id="0378-bb39-aab4-3a3b" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="d600-4ec7-b73d-18c8">
+          <infoLinks>
+            <infoLink name="Lightning Gun (Arc)" id="1850-2f2c-ac72-59f9" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
+            <infoLink name="Lightning Gun (Strike)" id="94b0-dbc2-e9a0-18e1" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
+            <infoLink name="Shred" id="7221-fa13-3553-c9a7" hidden="false" type="rule" targetId="5770-35c6-7341-5527"/>
+            <infoLink name="Rending" id="5050-3bc0-67e7-cb8f" hidden="false" type="rule" targetId="6a76-59d1-822c-59c9"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4546-d926-3cbe-2c96-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4546-d926-3cbe-2c96-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Two power blade arrays with in-built rotor cannon" hidden="false" id="d427-5ee9-70ad-5ea4" type="selectionEntry" targetId="9e6b-0ebd-4efb-79f8"/>
+        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="e98b-cf71-8342-0d29" type="selectionEntry" targetId="3840-c678-634f-5428"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="ccee-98c8-7843-3588" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f6ef-6ce8-92cf-e416" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="force" shared="true" id="09a3-9158-29ca-50c2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Preferred Enemy" id="5189-1fef-2115-297b" hidden="false" targetId="f217-b311-e5b1-c8c7" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Two power blade arrays with in-built rotor cannon" hidden="false" id="9e6b-0ebd-4efb-79f8">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Two Power Blade Arrays" hidden="false" id="4242-1353-d1e9-2fe0">
+          <infoLinks>
+            <infoLink name="Power Blade Arrays" id="13dc-46bf-1e08-796b" hidden="false" type="profile" targetId="89fc-aef5-5dfb-e51d"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1012-2808-635e-28e8-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1012-2808-635e-28e8-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rotor Cannon" hidden="false" id="1177-e649-d308-4839">
+          <infoLinks>
+            <infoLink name="Rotor cannon" id="3529-3d57-5b4d-bf53" hidden="false" type="profile" targetId="be52-e55a-4c53-c938"/>
+            <infoLink name="Pinning" id="697f-313e-a407-7db6" hidden="false" type="rule" targetId="8918-d7ce-5edb-3b70"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a251-c161-5c28-3045-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a251-c161-5c28-3045-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ffda-b7eb-1324-f50c-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffda-b7eb-1324-f50c-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Atomantic Deflector" hidden="false" id="3840-c678-634f-5428">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="50e3-d703-dce0-1817-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="50e3-d703-dce0-1817-max" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Atomantic Deflector" id="7d8e-a84a-e3c2-4eb2" hidden="false" type="profile" targetId="907a-072e-ad1d-a928"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
