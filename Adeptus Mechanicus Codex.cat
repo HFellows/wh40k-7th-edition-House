@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="5" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="6" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
     <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
@@ -135,7 +135,7 @@
         <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="ce0e-e954-bb15-ded0" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Vorax Battle-automata Maniple" hidden="false" id="3a3e-d064-25ca-62cc" type="selectionEntry" targetId="f144-1079-11ff-019d">
+    <entryLink import="true" name="Vorax Battle-Automata Maniple" hidden="false" id="3a3e-d064-25ca-62cc" type="selectionEntry" targetId="f144-1079-11ff-019d">
       <categoryLinks>
         <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="60d6-c097-dbcf-9e65" primary="true" name="Fast Attack"/>
       </categoryLinks>
@@ -463,13 +463,6 @@
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Infoslave Skull" hidden="false" id="bbc2-ec98-f5e6-fc42" publicationId="4fe1-8588-pubN65537" page="77" collective="false">
-      <modifiers>
-        <modifier type="set" value="0" field="points">
-          <conditions>
-            <condition type="instanceOf" value="0" field="selections" scope="force" childId="2d00-59e5-8d39-b7dc" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="69cb-6b74-549f-9798" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
@@ -2631,7 +2624,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
               </constraints>
               <comment>8th: Heavy 1 s7 ap-3 d(d3) if stationary last turn d3</comment>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="New Entry" hidden="false" id="1779-a916-5468-e78b">
+            <selectionEntry type="upgrade" import="true" name="Transonic cannon" hidden="false" id="1779-a916-5468-e78b">
               <infoLinks>
                 <infoLink name="Transonic cannon" id="d4ea-7633-2770-78ba" hidden="false" type="profile" targetId="9116-6d88-e3ed-1edc"/>
               </infoLinks>
@@ -2774,7 +2767,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2907-5fe0-673a-adfb"/>
                   </constraints>
                 </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="ebea-d754-7cfa-914b" page="" collective="true" sortIndex="1">
+                <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="ebea-d754-7cfa-914b" collective="true" sortIndex="1">
                   <infoLinks>
                     <infoLink name="Rending" id="ffdb-4f3b-428c-30a5" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule">
                       <modifiers>
