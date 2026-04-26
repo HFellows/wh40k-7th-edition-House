@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0356-0150-1bee-07c2" name="Astra Militarum: Codex (2014)" revision="2039" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="2be8d152-3ba0-47c1-9a34-96f5f76bc49c" name="Astra Militarum: Codex (2014)" revision="2039" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="e1ebd931-a209-3ce4-87b4-d9918d25530b" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="2be8d152--pubN71923" name="IA Aeronautica"/>
     <publication id="2be8d152--pubN72426" name="Codex: Astra Militarum"/>

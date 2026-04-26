@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c8fb-5daf-434f-433b" name="Astra Militarum: IA12 - Death Korps of Krieg Assault Brigade (2014)" revision="2016" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="c8fb-5daf-434f-433b" name="Astra Militarum: IA12 - Death Korps of Krieg Assault Brigade (2014)" revision="2019" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="a03f3b3e--pubN65859" name="Acheron.pdf"/>
     <publication id="a03f3b3e--pubN66250" name="40k Castigator.pdf"/>
@@ -1748,7 +1748,6 @@
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Armoured Track Guards" hidden="false" id="7cde-30cd-bde1-9226" page="0" collective="false">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="d483-8e98-779a-0e0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fc0e-3aa9-f9d1-e214" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <infoLinks>
@@ -1828,7 +1827,6 @@
                     <cost name="pts" typeId="points" value="5"/>
                   </costs>
                   <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e501-b97f-f99e-f22d"/>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="323d-f3d9-d9d3-b32d"/>
                   </constraints>
                 </selectionEntry>
@@ -2144,7 +2142,7 @@
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="878e10f6-3eb8-42d7-0ebd-b069ad7e6549" name="Death Korps Grenadier Storm Squad" publicationId="a03f3b3e--pubN67511" page="192" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="878e10f6-3eb8-42d7-0ebd-b069ad7e6549" name="Death Korps Grenadier Squad" publicationId="a03f3b3e--pubN67511" page="192" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="8a695348-a185-463a-1017-b1af7d0e1ef9" hidden="false" targetId="8e542ad0-1a9a-b811-077f-eca8bd8fbabc" type="rule" name="Iron Discipline"/>
         <infoLink id="d86b20f4-a106-7657-5e26-5e078d5b6e47" hidden="false" targetId="f7d4be0a-aeb8-6c14-3f2f-d67fc903a2c4" type="rule" name="Death Korps"/>
@@ -2457,6 +2455,35 @@
                 <cost name="pts" typeId="points" value="10"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Grenadier w/ Vox Caster" hidden="false" id="62e1-b42f-77c4-5af7" publicationId="a03f3b3e--pubN67511" page="184" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8aa0-69b8-0fd0-8537" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Krieg Grenadier" id="224c-7250-5c4b-ae40" hidden="false" targetId="107358e2-357f-f3f5-0e06-1ce9b53eea1d" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Vox Caster" hidden="false" id="14eb-9f8f-3155-5ba2" collective="false" targetId="7a92df87-45d3-df85-751a-5af138476a79" type="selectionEntry"/>
+                <entryLink import="true" name="Frag &amp; Krak Grenades, Close Combat Weapon" hidden="false" id="4327-5505-886c-587d" collective="false" targetId="ec164e60-adbd-c744-cb18-4d0c16b72e79" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hotshot Lasgun" hidden="false" id="461b-e435-d242-2f61" page="0" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1924-1621-79a1-a698" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="93eb-f72d-d51d-0a7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Hotshot Lasgun" id="d24a-bb46-818b-28f5" hidden="false" targetId="1047694d-1dfe-809c-9f46-346339a94227" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="ff9e93da-f025-9da1-a1b2-70cc7ac78060" name="Special Weapons" hidden="false" collective="false" import="true">
@@ -2613,7 +2640,6 @@
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Armoured Track Guards" hidden="false" id="73d9-27a7-20a0-0ce2" page="0" collective="false">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="36bb-a147-9715-2530" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6e95-085d-9156-17ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <infoLinks>
@@ -3174,10 +3200,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="87e2-0529-ed06-cab2" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="7770-6c9a-b153-111f" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="e398-1659-29a9-2689" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="54b7-239d-aff3-62ef" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="39ad-4078-d038-f08b" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="af8e-0e38-de46-1251" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f07b-4d92-1c63-a4b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5d6b-0d08-21b8-ad74" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="236c-d329-a00f-f157" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="af20-45f6-dcee-aa5c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="0cbd-00c8-7490-ec2b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8b2f-a232-262f-ffcd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="3f29-97db-284b-47aa" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="eb80-dcb3-e6f0-0109" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="f24e-a84d-49b6-7fb8" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e820-09e3-56c7-b9b2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="a3b7-618c-feba-7895" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="95ec-1a5d-2c6a-b8b9" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d0ca-f2ee-6cd2-4e20" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="975d-ed4d-ff11-66e6" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="4268-5c30-6dc1-193f">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="6d66-cd87-280a-8310" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="62dc-b1cd-0e8e-69f9"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="7eb7-97f4-493e-c34b" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="02f8-5369-e0bb-5ac0" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="1893-0651-78c0-c8dd" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1c12-4ead-f643-73af" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="efdf-96ee-66c0-e5cf" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="3fad-68b6-aae7-b593" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6c84-90e3-661f-79fc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="b3ab-f15f-2a76-1a7b" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="21b3-2f0a-f757-3cc4" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="397c-8a49-5b99-4823" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="7d80-5b3e-47eb-4403" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="150"/>
@@ -3205,10 +3320,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="0c8a-7f69-4cce-a79a" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="cfc3-4c02-0e01-a605" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="8963-524b-3a60-1dd8" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="03c2-c898-9fbf-3e9f" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="87e2-0529-ed06-cab2" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="37c0-8a5b-0ad0-a1a0" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6bca-b458-3310-6648" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f407-90bc-90f3-2df2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="3860-d8ca-ac82-5a6a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="899b-cbc0-7359-ad08" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="e4a1-58fd-a915-c1ee" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="7510-ad5d-f800-e154" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="e5a3-4379-b0c1-f42a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="883c-f5bd-c308-1e92" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="6aef-e211-1826-629b" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8b09-5bf9-cd97-1694" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="08d0-25c8-49bd-0244" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="d5f2-96c6-3128-5407" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0986-9b37-df74-0e8a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="937c-59aa-f09a-4551" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="b486-1e2e-7544-c3fa">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="7b02-d44e-9f3c-9466" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad66-38d9-cfb5-6f9e"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="de8d-6b74-c2ce-2baa" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="7f21-1c0a-bd49-2c4e" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="e905-bba6-b7bb-e399" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="79d6-3950-7853-2d01" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="f915-b4a4-3ace-956d" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="94ad-d84c-1368-a23f" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="99f5-47a0-847b-2256" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="3465-3a46-c7d3-a043" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="9f0c-d823-5cd2-5b76" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ff34-be51-8fc2-7bc8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="a135-cf68-1e39-b46f" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="150"/>
@@ -3250,10 +3454,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="a527-ba81-b8b0-5ec4" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="9c25-8520-39dc-444c" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="bd71-bc38-3439-6cec" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="7cda-8e0a-ba37-354c" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="2cd1-d2f5-f024-e7d5" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="cc65-55a1-7af6-b7f9" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a3fb-0422-0e7b-d599" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5c30-5ff3-dd5f-422e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="f702-aeda-da83-33b5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="07de-7d54-9f2f-7acd" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="b9a0-c46c-adc8-3e7f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4ba8-ffd6-2906-aafb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="e04d-7b92-f020-5055" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="25f7-3195-4296-97b1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="6cb9-2593-def3-03a2" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f061-7665-a798-ac73" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="4964-e0e7-884f-0146" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="4d7a-cfa0-6545-0b84" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="be93-2a09-5987-5373" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="566a-38f5-20a0-fec1" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="2ce5-9c4a-5d7c-02b8">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="c43b-d169-1579-1ce6" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2f2d-22a5-04f1-2956"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="0207-dd0b-a6e5-fbb6" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="ac96-508a-0920-b924" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="c81f-20f4-ab16-b808" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4187-5259-882e-5ebb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="3a81-49a8-fc04-c6b7" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="8b44-e955-418e-6937" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d18d-9b82-6485-36f4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="fa9c-9512-41fe-eeab" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="2859-964d-0ef9-3a8d" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4b4b-bc59-5d9d-c33f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="8e1f-7762-1b57-9c5b" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="150"/>
@@ -3281,10 +3574,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="6d95-d771-fb2f-2f92" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="bdfd-694c-d708-b4b7" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="727d-2658-b2df-61af" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="31e8-4db5-122a-b2d1" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="f457-cd8e-23af-20ec" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="d688-6949-e9e0-008b" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7480-2cfc-84e5-c8a9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3880-f6ed-f78a-e6e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="5d65-6533-8c92-215b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="e009-c168-c209-ab95" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9c4d-4188-b27e-4289" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6d8b-23b3-ff69-282e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="fb94-40cb-811d-d0c0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="aa6a-885c-3f5d-c53e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="a348-bd41-a206-f42e" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d423-0929-bd60-97de" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="1808-9a33-75f7-e8e3" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="0f66-eab1-5abf-25c0" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4f8f-e2c4-4e25-90b4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="9f82-12d8-8c4a-1554" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="ef6a-a408-9cd4-24e0">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="0311-c5cc-c003-043a" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5bab-fe83-925a-b133"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="eb92-4499-5323-79a8" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="f17c-beeb-923c-f364" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="3901-5519-ea8f-3808" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="30de-9931-055f-aff0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="4122-5aaf-6b97-0ff2" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="f12e-91e2-04cd-2798" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f019-583d-b86e-b547" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="b8c6-d57e-4b22-90fb" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="8d02-77d0-30a6-4d8e" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="688f-5486-4169-aad1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="09f4-c8dd-76b6-1367" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="165"/>
@@ -3312,10 +3694,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="a56a-9db5-6868-8167" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="39e8-efe7-112f-5e51" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="3266-54ae-feb1-cd4f" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="caf7-b01e-d550-95e2" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="7393-5bc1-8a55-70fe" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="12fc-01eb-ecaf-707e" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c2f8-aed5-6c02-134f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e35c-9f25-38b9-84ce" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="75e4-5cd1-3c9f-c1ec" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="acd9-0914-3b2f-5c2f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="29bc-4bc1-135d-1593" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="d71c-e483-816d-1c92" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="e82b-9ecd-dd2d-55b4" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="9b40-c99d-4941-8f5d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="a5c1-091b-ce38-327f" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4302-79b5-eb3b-25da" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="72e3-76a4-949e-8caf" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="d0cc-2374-1f76-1a2a" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9f75-feff-7544-5175" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="4a3a-6cba-5f9d-ca0c" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="9dff-167b-76bf-33a5">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="8c1e-5d75-9f6f-11a9" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4e24-0443-f376-c84a"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="7e3c-fb55-48d7-2886" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="af21-01e1-f2cd-6e02" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="fdeb-a80f-6f59-2b56" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5a91-8a72-c0be-0ce1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="a75b-c6c1-f98b-6ef9" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="736c-6b60-0841-f2fa" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9e05-36d5-0d1b-559f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="351a-7093-3de8-559b" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="0075-b4c0-9eb8-72b0" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d630-c695-3331-1a09" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="6588-3f76-1673-0cca" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="160"/>
@@ -3343,10 +3814,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="8509-6d03-b410-7351" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="3800-cc20-a475-cc53" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="ebf9-0758-3623-6574" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="7f29-3e52-4608-f61f" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="fcd6-9be8-c4bd-d072" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="c218-dc75-d33e-aeb1" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="20c8-693d-ace3-9841" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a772-5133-c5cb-aae1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="6dd5-2a67-4031-9ccf" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="039c-50b1-2711-4335" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9fed-9afb-9d5f-0388" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8d26-9be1-0925-902e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="c8df-585d-7648-a55e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="52b4-b6ee-0141-d951" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="6893-66a7-caac-f461" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d958-8002-5af2-1c81" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="f115-20cd-9da3-fcb4" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="c6e6-1333-d373-9f05" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f16e-1dc9-a7f2-10ec" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="ddc1-7007-1722-adbf" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="cfc8-fd09-b899-91c3">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="d8e1-8164-8822-29c1" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6872-b41b-a805-0ef1"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="dea8-0d7c-ae9e-9f0b" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="e07e-9daf-3ddf-5396" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="cda2-14b8-63ea-54df" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7a92-647d-c61e-1e44" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="6f05-4c6a-06ba-f3b0" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="00fc-7a0a-1271-3231" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b77d-e9d0-ebf4-8137" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="de02-57b7-5bde-0196" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="447d-2227-b943-249a" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c1bc-1636-a27b-7a25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="e572-b33f-55d1-4775" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="190"/>
@@ -3374,10 +3934,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="9c32-54e2-7c60-b4bf" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="06ca-c007-10ae-9442" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="e71e-74b4-c727-b154" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="f6da-e424-d9d2-ca44" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="51a1-2745-8672-2731" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="35db-bb48-3df4-96bc" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ff2b-8c54-72c4-2f54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2a34-d370-d717-19e4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="55af-38b6-ee1c-1784" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="ed71-6163-c163-d347" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="8ba6-1d3a-d3aa-39d9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4ea3-8844-f741-ca07" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="b303-9684-2686-7dd0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="da5f-5c6e-3643-3090" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="49c4-08e6-2054-cf5c" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d009-939f-359d-b5b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="4312-742d-7c91-472f" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="d7f7-7d06-14e5-3979" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a60f-7c0b-454c-6340" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="e8e2-45e1-93cd-04eb" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="84ae-9cd2-bf00-f73d">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="8637-6f34-01b9-e7d7" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ebb6-7584-5e77-425f"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="318b-a831-4a26-4ab2" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="9934-fce1-8bcb-bbb7" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="0da8-941b-6d2d-a10c" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7ee0-2e7a-b41a-47aa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="d848-9c51-93f7-a376" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="64c5-49e2-1626-dec4" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="01ef-2d73-fa3f-46f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="35e0-d48c-42d2-16f8" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="d086-ca15-2f93-25d9" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d54c-2ea1-ff05-b8cf" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="200a-24b3-11a4-f192" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="150"/>
@@ -3405,10 +4054,99 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="144b-5bda-ba67-0465" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="3821-7286-f307-ca45" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="781e-a894-469f-8cd2" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="879a-a8cb-bcaf-4480" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="20ef-a884-7fc1-13a5" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="1e7a-26cb-fb12-431f" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a2a0-d991-525a-d95b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9467-0f02-019b-a624" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="fb04-4f52-791b-e78c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="22af-de33-fc39-16de" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="17e9-53a8-f2f5-9543" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="47c8-afc5-67c4-1730" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="06e2-68bf-3682-5f67" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="da1f-fedd-7e51-b04d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="fb82-265b-5cf2-c86c" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1df9-270c-e96d-5cf8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="47f8-abeb-7dd6-8fd8" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="76ef-6a25-aec6-e853" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c2b8-4c84-282a-d7a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="bdf2-5758-51a5-bc50" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="2802-727e-8de6-6871">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="d368-2c4b-b2aa-fff0" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="98c6-9d2e-8b5f-59f8"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="d9b1-5452-c224-ad90" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="0c5e-2cb5-de93-bac6" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="4487-5b60-28a2-b397" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2983-45e5-23f6-af3b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="5140-b908-8567-d707" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="07c9-15a6-64f8-76a6" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5120-5374-27b8-b9fa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="3645-6ada-ab24-280f" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="cc52-10f3-1495-801c" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c6c7-37be-e900-9fed" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="745c-fdca-af5d-c694" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="180"/>
@@ -3467,10 +4205,99 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="76f3-56da-77a5-38b6" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
                 <entryLink id="6a81-67ee-0877-787d" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
                 <entryLink id="ba0d-88b4-5730-2f20" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
                 <entryLink id="b466-605f-1ca3-f499" hidden="false" collective="false" import="true" targetId="392ca3d5-430d-bb98-f63b-e4e43cbcbc4c" type="selectionEntry" name="Forward Command Tank"/>
+                <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="a17a-741b-d862-20d7" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Hull-mounted Weapon" id="6822-02ec-4c9d-9278" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="73dd-8910-6d2c-21f0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="93d0-5113-9138-583c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="0e19-3759-d119-0462" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="29af-bcb0-ffd4-82f9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7e4e-8b22-9846-3f43" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="0e13-76e2-0361-e97c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="1044-1609-7c66-4c16" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="cc5a-1c32-a90d-ab4b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="f752-7f98-35b8-e419" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="47f6-3034-af81-195f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Bolter" id="415b-2829-d8f2-8b61" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="1e21-fb0e-c82a-382b" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1f14-7906-dff0-f0e0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="bedf-e249-6606-a884" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="d9e3-2279-892c-fe95">
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="1b0d-1dd0-065e-e895" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                          </infoLinks>
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="22db-ae4b-0fe7-d5e9"/>
+                          </constraints>
+                        </selectionEntry>
+                      </selectionEntries>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="945a-758a-99be-ea9c" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+                    <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="cf41-9255-e5a9-e259" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="1807-2974-4c4c-89ff" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1774-a382-d274-5e3b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Camo Netting" id="8424-e0da-71c3-65f0" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="15"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="1adc-b39b-c553-8766" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="35f4-9dfa-878f-2b3f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Dozer Blade" id="b678-5dbe-d36d-d2d5" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="5"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="ae2e-b373-2e69-c42a" page="0" collective="false">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9e30-6846-88ff-29b5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink name="Extra Armour" id="dcfa-59b5-4065-41f7" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="155"/>
@@ -4336,6 +5163,35 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <cost name="pts" typeId="points" value="0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="model" import="true" name="Grenadier w/ Vox Caster" hidden="false" id="7602-a622-488c-d364" publicationId="a03f3b3e--pubN67511" page="184" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0e53-8236-7a62-ec0d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Krieg Grenadier" id="a71b-555b-27e2-11f2" hidden="false" targetId="107358e2-357f-f3f5-0e06-1ce9b53eea1d" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink import="true" name="Vox Caster" hidden="false" id="b1cd-318a-a71e-2f00" collective="false" targetId="7a92df87-45d3-df85-751a-5af138476a79" type="selectionEntry"/>
+                <entryLink import="true" name="Frag &amp; Krak Grenades, Close Combat Weapon" hidden="false" id="7bd6-0a47-4fcd-a894" collective="false" targetId="ec164e60-adbd-c744-cb18-4d0c16b72e79" type="selectionEntry"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hotshot Lasgun" hidden="false" id="5f38-852c-347f-dedc" page="0" collective="true">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6c7d-effe-763e-806a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0d91-ffc6-2f2e-9600" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Hotshot Lasgun" id="0b5a-301d-e658-4ac2" hidden="false" targetId="1047694d-1dfe-809c-9f46-346339a94227" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="8e00-fa83-f4a7-a6e9" name="Special Weapons" hidden="false" collective="false" import="true">
@@ -4411,7 +5267,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                   <selectionEntries>
                     <selectionEntry type="upgrade" import="true" name="Armoured Track Guards" hidden="false" id="2b31-94f2-a7e4-2416" page="0" collective="false">
                       <constraints>
-                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7d75-086d-83a3-9fc6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9d0f-a415-2cf0-fa0c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <infoLinks>
@@ -4522,7 +5377,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <infoLink name="Laser Destroyer Array" id="53ea-11fe-a391-5588" hidden="false" targetId="2907b3ee-065f-0498-ef8d-68290f517602" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="130"/>
+                    <cost name="pts" typeId="points" value="120"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="Vigilator Cannon" hidden="false" id="b15f-262d-4444-e8b7" page="0" collective="false">
@@ -4566,7 +5421,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Rogal Dorn" hidden="false" id="b083-280c-0b81-7677">
       <costs>
-        <cost name="pts" typeId="points" value="200"/>
+        <cost name="pts" typeId="points" value="180"/>
       </costs>
       <categoryLinks>
         <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="93bb-5a30-33b8-d9a2" primary="true" name="Heavy Support"/>
@@ -4587,7 +5442,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <infoLink name="Heavy Stubber" id="0d5f-3b32-2836-50fa" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry type="upgrade" import="true" name="2x Meltagun" hidden="false" id="c6fb-58a3-3c17-f9ce">
@@ -4634,14 +5489,13 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                     <infoLink name="Heavy Stubber" id="6eb3-d3d4-d96b-a8ec" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="pts" typeId="points" value="10"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d4f-15d5-481a-cea9-min"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d4f-15d5-481a-cea9-max"/>
           </constraints>
         </selectionEntry>
@@ -4669,7 +5523,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f46b-5d41-e341-ed08"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="25"/>
+                <cost name="pts" typeId="points" value="15"/>
               </costs>
               <profiles>
                 <profile name="Oppressor Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="708b-7050-2245-ad42">
@@ -4725,9 +5579,9 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <profile name="Castigator gatling cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9557-dd3b-98c3-fe7c">
                   <characteristics>
                     <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
-                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
                     <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4781,6 +5635,188 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <entryLink import="true" name="Pintle-mounted Weapon" hidden="false" id="ef92-cc35-8a8a-27cc" collective="false" targetId="411c083c-4d9e-7d72-069f-4b897655e970" type="selectionEntryGroup"/>
             <entryLink import="true" name="Plough" hidden="false" id="4343-b2a7-5f15-fa79" collective="false" targetId="a191ea88-dbf1-f24a-aa6b-09377efabced" type="selectionEntryGroup"/>
           </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hermes Light Sentinel" hidden="false" id="a68d-7674-ccfa-2e1b">
+      <categoryLinks>
+        <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="4935-efde-14d4-ae27" primary="true" name="Elites"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hermes Light Sentinel" hidden="false" id="0243-6254-7def-cb84">
+          <profiles>
+            <profile name="Hermes Light Sentinel" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="297d-2f5f-5b32-16ed">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Cavalry</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="eb0b-1341-a691-a00a"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1d95-4027-aa0e-ba84"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="20"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hull-mounted Weapon" id="75a4-6587-3fc5-dfc4" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd2bc2a7-c5af-90af-25e8-d38c591f6ba2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="7913-768b-487e-4cb9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cd9d-9768-2a4a-a8a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Hermes grenade launcher" hidden="false" id="0d2d-f485-75a4-5d22">
+              <profiles>
+                <profile name="Hermes grenade launcher - Krak" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="80db-8cdc-cf19-04b0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Hermes grenade launcher - Frag" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="7867-0c2a-1a24-9a48">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, 3&quot; Blast</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="18dd-bbcb-b106-81d3"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Acid Gas Grenades" hidden="false" id="6c70-b614-a383-8e66">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3946-e51d-7198-9660"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Acid Gas Grenades" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6e8d-ea6f-85ab-05cd">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">9</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">x</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1, Blast (3&quot;), Poison (4+), Ignores Cover, Gets-Hot</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Multi Laser" hidden="false" id="6299-c9ee-f14d-66ba">
+              <profiles>
+                <profile name="Multi Laser" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="dc07-ace3-fee0-176e">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">heavy 3</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1107-53e5-6bb0-fc27"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <rules>
+        <rule name="Move through Cover" id="b32b-c51c-a494-3001" hidden="false">
+          <description>Roll a 3D6 for difficult terrain tests (instead of 2D6) and choose the highest.</description>
+        </rule>
+        <rule name="Swift" id="d369-e966-8701-c25c" hidden="false">
+          <description>Gain Shrouded when running</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Incursus Light Sentinel" hidden="false" id="ad0d-70ba-a188-0e91">
+      <categoryLinks>
+        <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="8299-f7fc-ef4e-b98f" primary="true" name="Elites"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Incursus Light Sentinel" hidden="false" id="3fb1-bfaa-2f74-343e">
+          <profiles>
+            <profile name="Incursus Light Sentinel" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="87ad-ea4f-180a-878e">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Cavalry</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="0591-33b7-2d8c-c702"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="405a-7dde-ea2b-8403"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hull-mounted Weapon" id="e16d-f271-f504-5c5d" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd2bc2a7-c5af-90af-25e8-d38c591f6ba2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="1a0b-6d86-ec0b-c1f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Incursus Volkite Caliver" hidden="false" id="9115-5251-1f2c-caa7">
+              <profiles>
+                <profile name="Incursus Volkite Caliver" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a109-8185-2b3e-cc85">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2, Deflagrate (6)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="34c2-483f-d916-affc"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="aa91-6b7f-fe9d-00da">
+              <profiles>
+                <profile name="Heavy Flamer" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="b8bd-8d4a-6f4f-13f1">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Template</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ad49-1916-6afa-fbbf"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -5060,9 +6096,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="65f6ef7a-3f12-70af-95b7-26d8db2b30ae" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="49c40fd5-d585-3163-6e3f-3e7d66ca4296" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
         <entryLink id="1f199c91-076c-2f1e-3bd8-29ad3098f7ab" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="3b95-7be4-dca4-f01f" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="fcbd-af0c-becb-2215" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="5ac2-3941-f73c-3ae2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5cbb-a17e-54ac-1f71" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="b1a3-bf11-ee97-36d5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="ed7c-c2cf-32cd-a4a8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="d3b5-2c87-3848-f50f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="2f68-b3d3-f6c5-84be" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="77c9-d2c4-f3ef-cf0e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="c5db-f6e8-701f-7939" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="c141-1c8b-cae6-5d74" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2281-aeb3-d5da-4d6c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="c415-09a4-9ba7-5533" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="5d40-0491-1d59-dcf8" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="600c-e962-f79d-1f5a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="344d-6899-ed60-b879" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="07b0-f178-818e-aca0">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="e7aa-e645-1c9c-9ff5" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1e69-ac53-859d-d487"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="f000-b637-4dc2-c1d9" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="7201-1b8a-7216-092c" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="5e85-6f47-8e16-3ebc" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2848-7f1e-0e16-406e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="cc6d-e73c-194d-0422" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="9db9-3df9-a4d6-f6c1" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dac6-ed4b-a79e-3a8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="2d46-3887-a805-62b7" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="0b53-c6ea-688a-ddf8" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ad2b-48b2-59b4-1d84" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="2b9e-7117-9cea-ec2a" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="150"/>
@@ -5300,9 +6425,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="3ff9759d-0abc-fb6a-4b83-b1612dc3e52a" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="09b286ce-d2a0-2f09-1e50-acf608e8682e" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="f4522e86-3821-1c40-ed72-8f5c2df5b972" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="6aa2-fb4c-dcf0-7877" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="014b-64da-e283-021f" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="18ef-fef7-2a33-7bba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6a19-8396-6b4a-ea94" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="5949-6cfe-66f5-cf0e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="d7bd-cef7-f86d-1d5f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="cca0-00f5-25f0-d4a8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="72f6-62ce-d6b9-3eee" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="555a-8b3d-d7d8-98cb" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="2d8c-50cd-21fc-2820" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="f092-bb5b-2719-47e6" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="56c3-7aa1-7da2-0011" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="1447-6f8c-e247-c727" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="22c2-b06a-454e-6f08" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a767-d7b1-7acf-6c54" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="b8a3-d1ee-9f6c-fa7b" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="db0a-02e2-996e-c86a">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="a134-9b0e-ab81-9c63" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9b37-960c-c893-3a1b"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="80d5-08dd-5dc2-d21a" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="2165-7da6-35c9-d7ad" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="4fd0-38b7-2dd5-88b0" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e24b-4a48-999a-c6ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="1cab-4bca-0cda-a13c" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="5b2c-33a5-9e96-88de" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bdfd-c465-678f-3180" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="ee22-f2df-7a2d-862a" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="c3bf-fc06-25bb-c195" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3ff5-3269-8383-7abc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="a96c-df73-6aa6-c2c7" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="150"/>
@@ -5488,9 +6702,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="fee419a6-8722-0cdf-65fc-a700d6f633b3" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="002e3d64-06ac-d3d1-a7ae-eefb3a607326" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="5880c44c-74b5-fa70-3510-d80815e8aefd" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="e060-4af9-7124-0aee" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="1a46-962c-d4fc-91aa" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a45c-e322-c6c6-7eb4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b238-7ffe-46ee-e001" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="96d6-fdc9-46b9-1215" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="25e3-7810-4cf3-ddb7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="7e51-4f0b-1106-bce0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="a64e-7dff-75b7-c114" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="d597-8c54-2cc0-e837" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="b1b1-4eef-dce8-8344" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="63e4-5f5f-2b4d-e5c5" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6335-ce55-e326-8c92" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="4006-5bc4-eb59-b482" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="a927-3613-ae80-8ac3" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1b5c-c9a5-9af1-3156" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="007d-c912-21b8-2f4f" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="8945-9f7c-43b6-97d2">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="0468-1886-fb32-6680" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d94-0f0d-be0a-95fb"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="482b-b84c-cbd5-14db" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="8fd4-6da6-e379-4c00" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="91f4-c0a1-62fa-1f84" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fb2e-dbe0-ac72-9c2c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="725b-eeaa-394b-3ece" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="82a9-0542-e2a4-c267" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1ce9-9c50-e74f-894c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="51c0-9bcf-26a3-8c70" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="0d97-f4f9-07f6-d9ce" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d635-8ce9-d1b4-0da7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="3e08-bbe2-1773-42cb" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="150"/>
@@ -6170,9 +7473,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="8139da5f-8531-c14f-5344-9b9c075a6670" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="f5dbee54-0fe8-735c-f7ef-ebe9c5359b61" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="1c5a5673-d91d-7cb7-bb4f-0c70f9ab9eab" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="4804-519f-9ee2-46f4" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="929d-b2f1-382c-724d" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="ef64-2e82-eb89-e566" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1678-221b-223b-e18d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="fa71-f7a6-cec0-e393" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="bbab-1035-440c-3dfe" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="c7fc-b991-c118-36c3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="8d81-c121-c7b3-114e" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="1b1e-f174-71d9-0840" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="df0f-4a9d-c73b-6ddc" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="f247-3245-c063-c511" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5b45-a1fd-87bc-1e7c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="0dd3-5312-95c5-fa57" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="770d-031d-91bd-d432" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8f30-bb8c-6b28-90ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="4fc2-e53e-cf6e-dda9" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="ffd0-6fb9-f97d-48ff">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="7a9a-ab83-e108-b113" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b5ff-2d34-8a31-6aee"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="bfbe-20fa-5706-66e8" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="8981-65ea-27eb-bebd" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="6cf4-061d-f919-a70f" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d960-7cc0-14d3-30d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="71ad-a89d-bcfe-b22a" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="a7f8-4512-d7c3-dad6" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a6d4-38fd-3ad8-7ef6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="d843-0a1b-1651-df11" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="d37b-f1cb-e6e6-e3ab" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4f45-9b60-2986-6387" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="9a8c-5516-0aaa-feca" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="165"/>
@@ -6264,9 +7656,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="da84609f-7f35-5bc6-1a01-c0f43f148dc0" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="b0b55a36-4a94-e4a1-bed8-e174e8c92830" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="710af5f5-7bde-2d77-0057-bbdfac038ece" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="5b4f-ea0d-3989-6bb0" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="e871-fddc-d68e-7daa" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="f1d5-0d42-7623-47d4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bb8c-a69c-58b1-0e19" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="13ce-0289-5c08-6e57" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="84c0-b64d-c92c-4082" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="ee1f-6adc-dbb9-eae0" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="24d5-b940-b8bf-f494" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="eb35-fee2-98fe-b0e1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="7eec-abcc-c4e0-75a2" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="c717-155e-fd78-c44a" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="024b-753a-ec82-9459" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="171f-cd87-e4a2-9612" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="c161-93a2-06a1-99e9" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="73d9-32d8-dc4c-c507" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="65e5-96be-ce20-d756" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="1917-ff81-dc0b-5127">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="b891-6308-04a1-e82a" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c4c7-31c6-0e95-85b9"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="2307-5f2f-d2c9-6846" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="5e6b-1d47-4d84-3634" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="c187-603a-79aa-bfbd" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c722-3ddd-3983-824b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="f77c-6c69-8c2c-6efa" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="caa3-485a-20a1-2007" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="65ac-a21c-39b3-bdfa" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="c195-6d68-c0b2-5843" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="09ce-8085-ad04-ff06" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="87dc-089c-f00b-bb49" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="824e-11be-b4b0-ce95" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="160"/>
@@ -6294,9 +7775,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="1496ec78-1d12-d3ba-0869-b6b2535b57d1" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="bba789e3-943c-9927-79dd-9071a3b6a55b" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="6aad231e-d6a7-f631-de33-e63c92c4ca95" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="4d37-25e3-01c8-a865" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="942a-926f-6141-0594" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a0a9-3cbe-278a-35bc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1e65-0d80-cfb0-f84f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="4fe2-5dfe-9c9e-e9aa" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="66ba-f33f-c523-ac2d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="0b36-80a2-2272-c5b7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="819f-6898-d02c-0ea5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="9ee4-1777-0392-e415" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="f368-55b4-9112-90f1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="38d2-ea7b-1cd2-212e" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="150f-1ea5-98e4-f3d7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="4fd9-ea94-4378-df23" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="46a9-5d93-c09c-9cb3" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5931-7a45-5486-2aae" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="226f-d2e7-1c1d-8136" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="aca8-f603-ddf2-153c">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="4177-07a9-cd0f-3689" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="da07-ad5b-67a5-3720"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="4930-0053-becf-1919" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="b834-9352-a2a8-90d5" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="686f-e8b0-5652-1386" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bd95-4c9f-306f-2e62" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="5492-dd6c-15cb-a1aa" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="e933-e891-37e1-a8f8" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4f19-9f96-2a13-f69b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="7e6f-720a-ea67-4975" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="0715-9ffe-a4f9-106c" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ac19-b872-7ace-6005" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="dd82-b3f0-d9f6-857b" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="190"/>
@@ -6324,9 +7894,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="bc31a1ed-5ad7-1c8c-f7de-1a8703d9785c" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="7732e1a6-dff7-e74a-bac6-ef9a2e2f08c9" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="d90be430-7de9-5a16-f984-febb30756824" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="a360-fa7c-978c-d6f5" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="23f4-dcc7-e41c-0177" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="2421-06de-dbed-98a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="df8f-db05-336c-a0a2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="4f56-702f-e2d2-f3be" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="4659-f4ed-875a-5bb8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="9ba1-5a5a-6c8e-1a74" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="e86c-47c7-5109-5aa3" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="f966-3853-89f1-3886" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="0e49-6ec5-1e90-d092" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="0487-be78-bf33-25fe" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="53e5-f7d4-0e24-4efb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="064d-1861-3171-ac22" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="9d63-0194-ff46-c0e5" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d1db-a0ad-1dc5-0234" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="d20b-f1f1-eee5-f813" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="1660-b46f-872e-e5f0">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="cc88-4c66-aabc-3e02" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f87-f3bb-2a47-34b6"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="7423-ebb0-0793-3a87" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="9c54-dad4-48a3-b005" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="2a24-9127-9329-0a1e" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="784c-a792-ae94-2c8d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="7e6b-b612-f505-fb56" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="64db-c7d8-038e-db50" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ef7a-8b11-5fd6-b0f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="15b2-a530-c8ec-8639" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="0d77-448e-b604-d685" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d355-0ada-ad30-b802" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="97a3-3d68-b1f2-5670" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="150"/>
@@ -8335,9 +9994,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="07c40966-b8d4-696e-94e7-bd30389c178c" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="6c6f2f91-fe69-77d8-f94a-5b0b45bb2252" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="a283fee7-7d1b-eb06-1c7a-afb6ef33b4fe" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="2152-16a6-ee8d-9d4e" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="6dc0-0741-bbb1-8c5c" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="41fa-cfae-0715-afbe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b62b-c893-67d9-cda8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="6e1a-633a-6410-e88b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="ca62-9293-922f-b4d1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="6e6f-6c5e-0e64-b19a" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="098d-9a1b-4417-5eaf" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="a1ad-f1ff-541e-0228" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="5dd9-2f09-4537-b399" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="c841-d3d9-97f2-64d8" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a6b3-14d4-9e8c-95dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="5218-31d6-e19e-ca52" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="d8ba-493c-21bc-feec" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b5d8-6aac-2df4-d524" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="e0c9-b5ee-4e50-4db5" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="c056-bbf0-e810-8cdc">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="3d5a-1ba3-3d0b-d8a8" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6466-0ce2-38fd-1d01"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="b61b-a11f-2e06-210d" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="5483-9efe-5426-967d" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="7e36-1e0e-1258-7102" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="12e8-9131-b16b-d175" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="7a48-a85b-f5fa-13b5" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="bd5a-689d-ad6e-e274" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2f57-2a6d-e1f7-c040" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="fb1c-f8cd-dd47-2506" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="9726-e0d0-9ef3-e3d1" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fa23-8c8e-34a4-b0ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="617a-e194-96b4-6432" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="180"/>
@@ -9464,9 +11212,98 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ac31d662-bcb5-64e5-b74e-c5819643a62c" hidden="false" collective="false" import="true" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup" name="Leman Russ Upgrades"/>
         <entryLink id="3e77be18-73cf-eb80-494d-1c8da2b799e0" hidden="false" collective="false" import="true" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry" name="Smoke Launchers"/>
         <entryLink id="f043d622-cc59-e8f1-0572-6f80f1629ae5" hidden="false" collective="false" import="true" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry" name="Searchlight"/>
+        <entryLink import="true" name="Leman Russ Upgrades" hidden="false" id="ffb8-ba45-2070-7a0e" collective="false" targetId="dc612ace-919e-c7ac-d71f-6c8bf810d682" type="selectionEntryGroup">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Hull-mounted Weapon" id="eb91-4fcb-8ee7-b791" hidden="false" collective="false" import="true" defaultSelectionEntryId="b90d4fef-72cb-1182-526c-fda18c532d87">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="92f4-4295-daa9-7aeb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="06c6-4eaf-a2a9-4ad8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="force" shared="true" id="8dc3-f83e-6238-a3d8" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="2c00-48f5-4fb7-6427" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="30ec-b2c2-7e3e-cf17" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="4ba3-09ee-56bd-2032" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="min" value="0" field="points" scope="parent" shared="false" id="0bd4-1088-f444-5c8c" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="0876-5bea-1180-2389" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Heavy Bolter" hidden="false" id="b375-9fd3-81e8-bff8" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d6a6-7a50-75d7-fc96" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Bolter" id="5935-6e3c-f56b-f7ca" hidden="false" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="67fa-a4b0-dfc4-bf30" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0043-6729-f9f8-168e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Flamer" id="356e-0e07-b21d-8a2c" hidden="false" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="f7c7-55ee-63f5-dd75">
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                  <infoLinks>
+                    <infoLink name="Lascannon" id="ab3e-0f8d-2fce-bdc5" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aef9-2083-612b-412f"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Hunter-killer Missile" hidden="false" id="e255-6c4c-cc33-7ef0" collective="false" targetId="f2d93014-59c8-c214-d4c4-02bf2f7a7961" type="selectionEntry"/>
+            <entryLink import="true" name="Pintle-mounted Weapon SH" hidden="false" id="af93-2317-4eaa-2e74" collective="false" targetId="3758c859-3d36-3c69-0f07-13aa7f9ed95f" type="selectionEntryGroup"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Camo Netting" hidden="false" id="0dfe-f85a-02b3-ba25" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="83e1-4fd3-bef9-6213" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Camo Netting" id="9873-15b1-ea14-477e" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Dozer Blade" hidden="false" id="42f4-636a-491a-3f9b" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cab3-92c9-6f97-19a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Dozer Blade" id="c23b-abdf-b57f-ca27" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Extra Armour" hidden="false" id="8f0e-53fd-8dcc-dcc8" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2a90-500e-b180-0f9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Armour" id="ecaa-489b-77e8-37bb" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="155"/>
@@ -10593,6 +12430,17 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             <cost name="pts" typeId="points" value="0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="5187-3b5e-3b15-8c65">
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Lascannon" id="6b46-bcdd-e5ed-e3d9" hidden="false" type="profile" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31c2-b90b-7955-9449"/>
+          </constraints>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="b15a4883-c9e0-2f3b-2d08-54558c4bd4e8" name="Laspistol" hidden="false" collective="false" import="true" defaultSelectionEntryId="fdf4e27e-1b8a-69fb-97ed-94e24de8175e">
@@ -10692,16 +12540,38 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
                 <cost name="pts" typeId="points" value="30"/>
               </costs>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="2x Heavy Stubber" hidden="false" id="ac04-3c5a-e686-3b29" page="0" collective="false">
+            <selectionEntry type="upgrade" import="true" name="2x Heavy Bolter" hidden="false" id="ac04-3c5a-e686-3b29" page="0" collective="false">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="97ab-6111-7947-d82f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Heavy Stubber" id="41ce-3ed6-db9d-c97d" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
+                <infoLink name="Heavy Bolter" id="7c58-39a2-54b5-c613" hidden="false" type="profile" targetId="86ab4a73-4680-4c6a-007d-3c6823bd2599"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0"/>
+                <cost name="pts" typeId="points" value="20"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Heavy Flamers" hidden="false" id="61cc-3ed4-024c-0cbc">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Heavy Flamer" id="7f7b-eedc-da90-e327" hidden="false" type="profile" targetId="b61412a1-43a8-3adf-9bbd-61f4555f5c0a"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e89c-023e-bfec-871c"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Plasma Cannons" hidden="false" id="4849-b9c0-8c28-a071">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Plasma Cannon" id="9187-b27f-6444-d251" hidden="false" type="profile" targetId="32438a33-c61d-3fa6-ee32-a4f311b62f0e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d8e2-b41e-c29c-78e8"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -11283,12 +13153,24 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     <rule id="10cc798c-0cef-41d4-dd97-37a0fbac9fae" name="Night Vision" publicationId="a03f3b3e--pubN128133" page="40" hidden="false"/>
     <rule id="906a5f96-4c50-0fd6-c525-cd611e4ee811" name="Objective Secured" publicationId="a03f3b3e--pubN128133" hidden="true"/>
     <rule id="dfa2c1f9-0c3c-c276-6fd3-abdc60fc2657" name="Offensive Strategy" publicationId="a03f3b3e--pubN128260" hidden="true"/>
-    <rule id="ae625cd8-6bd0-4c34-d935-d5cfdcdb05e6" name="Orders: Bring it Down!" publicationId="a03f3b3e--pubN67511" page="175" hidden="false"/>
-    <rule id="485dd570-e38c-23c3-4aac-98dffebdc64f" name="Orders: Dispersed Advance" publicationId="a03f3b3e--pubN67511" page="175" hidden="false"/>
-    <rule id="9eec436b-915f-336b-b938-8b2614642c49" name="Orders: Duty unto Death" publicationId="a03f3b3e--pubN67511" page="175" hidden="false"/>
-    <rule id="d8fecad7-7b67-3d10-fc25-4ef58be26ae2" name="Orders: First Rank, FIRE! Second Rank, FIRE!" publicationId="a03f3b3e--pubN67511" page="175" hidden="false"/>
-    <rule id="6be995b3-2399-e320-4e91-7223188f4e8f" name="Orders: Get Back in the Fight!" publicationId="a03f3b3e--pubN67511" page="175" hidden="false"/>
-    <rule id="ed5acdbc-5eae-4317-2b87-e8410228e67f" name="Orders: Without Mercy" publicationId="a03f3b3e--pubN67511" page="175" hidden="false"/>
+    <rule id="ae625cd8-6bd0-4c34-d935-d5cfdcdb05e6" name="Orders: Bring it Down!" publicationId="a03f3b3e--pubN67511" page="175" hidden="false">
+      <description> Choose one enemy vehicle(or squadron of), Monstrous Creature(or unit of) or Flying Monstrous Creature(or unit of) visible to the issuing Officer. The unit immediately shoots at the target, counting as twin-linked.</description>
+    </rule>
+    <rule id="485dd570-e38c-23c3-4aac-98dffebdc64f" name="Orders: Dispersed Advance" publicationId="a03f3b3e--pubN67511" page="175" hidden="false">
+      <description>The targeted squad must Run, and chooses the highest result of three dice when doing so in addition the targeted unit gains Move Trough Cover until your next shooting phase</description>
+    </rule>
+    <rule id="9eec436b-915f-336b-b938-8b2614642c49" name="Orders: Duty unto Death" publicationId="a03f3b3e--pubN67511" page="175" hidden="false">
+      <description>The ordered unit may reroll ANY failed Leadership tests until the controlling Players NEXT Shooting Phase of the next turn. If you roll a double 1, the unit becomes Fearless</description>
+    </rule>
+    <rule id="d8fecad7-7b67-3d10-fc25-4ef58be26ae2" name="Orders: First Rank, FIRE! Second Rank, FIRE!" publicationId="a03f3b3e--pubN67511" page="175" hidden="false">
+      <description>lasguns gain an additional shot</description>
+    </rule>
+    <rule id="6be995b3-2399-e320-4e91-7223188f4e8f" name="Orders: Get Back in the Fight!" publicationId="a03f3b3e--pubN67511" page="175" hidden="false">
+      <description>Let&apos;s you get a squad that&apos;s falling back or gone to ground to instantly regroup. If the unit was falling back, it does not make a 3&quot; move like it normally would. The squad may shoot and move as normal this turn.</description>
+    </rule>
+    <rule id="ed5acdbc-5eae-4317-2b87-e8410228e67f" name="Orders: Without Mercy" publicationId="a03f3b3e--pubN67511" page="175" hidden="false">
+      <description>Rapid fire guns become pistol 2, assualt guns become pistol 1, Range 12&quot; in addition the squad gains Furious charge for the remainder of the turn</description>
+    </rule>
     <rule id="2cb30dbc-2cd4-5b08-1b7b-ec5c5b798f82" name="Overdrive" publicationId="a03f3b3e--pubN92710" page="6" hidden="false"/>
     <rule id="3ab64f78-328c-8bf3-af80-4698c944d46f" name="Overtaxed Reactor" publicationId="a03f3b3e--pubN86292" hidden="false"/>
     <rule id="fa7385f3-0ad8-76b7-3b40-b25dcebd4066" name="Primary Target" publicationId="a03f3b3e--pubN128212" page="0" hidden="false"/>
@@ -11975,7 +13857,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4, Twin-linked</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire 4, Twin-linked</characteristic>
       </characteristics>
     </profile>
     <profile id="f8b7d6ab-57de-4759-01b3-d37c7a935c83" name="Extra Armour" publicationId="a03f3b3e--pubN128164" page="70" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item">
@@ -12234,7 +14116,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
     </profile>
     <profile id="1047694d-1dfe-809c-9f46-346339a94227" name="Hotshot Lasgun" publicationId="a03f3b3e--pubN128164" page="104" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Rapid Fire</characteristic>
@@ -12458,7 +14340,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Twin-linked</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1</characteristic>
       </characteristics>
     </profile>
     <profile id="96c16e5c-9c96-c572-55b7-bb1737883ba7" name="Lasgun" publicationId="a03f3b3e--pubN128164" page="104" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
