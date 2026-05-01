@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Hellhound Squadron" hidden="false" id="03d7-be62-f48a-bcf1" publicationId="2be8d152--pubN72426" page="54" collective="false">
       <categoryLinks>
@@ -648,7 +648,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1877-c1dd-2187-946c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Multi-laser" id="3ea4-c753-b3fa-2c50" hidden="false" targetId="f8a78f8e-00e5-69d0-a33e-a4e530daaa3e" type="profile"/>
+                    <infoLink name="Multi-laser" id="3ea4-c753-b3fa-2c50" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -866,7 +866,7 @@
         <cost name="pts" typeId="points" value="160"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Command Tank" hidden="false" id="18dd-c4d8-ba92-fe9d" page="0" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Command Tank (RR)" hidden="false" id="18dd-c4d8-ba92-fe9d" page="0" collective="false">
       <modifiers>
         <modifier type="set" value="1" field="1b24-e3d4-56f1-f4ab">
           <conditions>
@@ -878,7 +878,7 @@
         <constraint type="max" value="0" field="selections" scope="parent" shared="false" id="4e4b-be94-c237-1f75" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Command Tank" id="e9bb-2751-6926-997a" hidden="false" targetId="e53371b7-8995-9e57-6b79-6f46c13125cc" type="rule"/>
+        <infoLink name="Command Tank" id="e9bb-2751-6926-997a" hidden="false" targetId="a371-32f0-a357-c0c9" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="200"/>
@@ -923,8 +923,8 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="47fb-c2da-4e9b-c4f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Quake Cannon" id="1a89400f-9be2-1ee0-5aab-1fffa34cf0ff" hidden="false" targetId="1cc8b91c-2699-a5d3-5fda-deefab69fc2a" type="profile"/>
-            <infoLink name="Earthshock" id="006d8349-bca3-ccb9-f070-74b6779c49fb" hidden="false" targetId="7296e297-c708-e05d-45d1-f9a9c98cc4d3" type="rule"/>
+            <infoLink name="Quake Cannon" id="1a89400f-9be2-1ee0-5aab-1fffa34cf0ff" hidden="false" targetId="2e54-394a-0911-2135" type="profile"/>
+            <infoLink name="Earthshock" id="006d8349-bca3-ccb9-f070-74b6779c49fb" hidden="false" targetId="f27d-f7f3-4ae4-8434" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -961,8 +961,8 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9afe-10a4-8a8e-e206" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Tremor Cannon" id="5ea6d32c-c178-95c9-9c1c-c1049d75180e" hidden="false" targetId="5cfad7ad-56e0-466f-ab61-803fe16b8f50" type="profile"/>
-            <infoLink name="Earthshock" id="02258779-3d08-8bed-df1e-edb1b500cea3" hidden="false" targetId="7296e297-c708-e05d-45d1-f9a9c98cc4d3" type="rule"/>
+            <infoLink name="Tremor Cannon" id="5ea6d32c-c178-95c9-9c1c-c1049d75180e" hidden="false" targetId="32af-edba-153f-276d" type="profile"/>
+            <infoLink name="Earthshock" id="02258779-3d08-8bed-df1e-edb1b500cea3" hidden="false" targetId="f27d-f7f3-4ae4-8434" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1041,7 +1041,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="dee6-5196-9708-9563" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Dozer Blade" id="1679a3c5-b97e-7ff9-629b-ff40b15aba2e" hidden="false" targetId="e77378bf-b3c2-98a1-a696-c7f2af2ea660" type="profile"/>
+                <infoLink name="Dozer Blade" id="1679a3c5-b97e-7ff9-629b-ff40b15aba2e" hidden="false" targetId="1ff8-2f21-7c69-9a0f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
@@ -1049,7 +1049,7 @@
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Imperial Mine Plough (FW)" hidden="false" id="da80-206a-7969-9a56" type="selectionEntry" targetId="7dc0-3f9c-bd4a-2cbf"/>
+            <entryLink import="true" name="Imperial Mine Plough" hidden="false" id="da80-206a-7969-9a56" type="selectionEntry" targetId="7dc0-3f9c-bd4a-2cbf"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1138,7 +1138,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0507-f056-5917-222a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Macharius Battle Cannon" id="eef4-5373-7aac-bd9b" hidden="false" targetId="fefab273-43ba-9e27-ff9b-46b76f085d26" type="profile"/>
+            <infoLink name="Macharius Battle Cannon" id="eef4-5373-7aac-bd9b" hidden="false" targetId="898e-131f-edc8-f26d" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1260,7 +1260,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="01f6-ff23-0bbe-048c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Battle Cannon" id="d57d-477d-a57b-169b" hidden="false" targetId="a6a12d7a-553f-d7ad-5079-588e238ed512" type="profile"/>
+            <infoLink name="Battle Cannon" id="d57d-477d-a57b-169b" hidden="false" targetId="a212-f01e-8557-e64b" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1342,8 +1342,8 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="13bf-b4cd-7851-b379" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Vulcan Mega-bolter" id="69bd-a254-6926-ef03" hidden="false" targetId="70a5c886-af31-2c6f-7ccc-d52e572030dd" type="profile"/>
-            <infoLink name="Vulcan - Fire twice at same target if stationary" id="f111-0680-5fe1-b823" hidden="false" targetId="27cbbc05-d77c-f536-d21d-8fce6e701e32" type="rule"/>
+            <infoLink name="Vulcan Mega-bolter" id="69bd-a254-6926-ef03" hidden="false" targetId="cc0f-446b-679b-77b3" type="profile"/>
+            <infoLink name="Vulcan - Fire twice at same target if stationary" id="f111-0680-5fe1-b823" hidden="false" targetId="9542-a644-e593-efb2" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1483,7 +1483,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9f07-2c2c-9aec-ed57" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Inferno Gun" id="54df-94ab-a12c-cc4a" hidden="false" targetId="94f5508a-1be5-1015-c5f3-04dcebd00388" type="profile"/>
+                <infoLink name="Inferno Gun" id="54df-94ab-a12c-cc4a" hidden="false" targetId="0cb5-8614-4f39-314e" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -1519,7 +1519,7 @@
           </modifiers>
         </infoLink>
         <infoLink name="Indirect Fire" id="f82c-b4ab-c14f-581a" hidden="false" targetId="7cbe-b012-ba37-a464" type="rule"/>
-        <infoLink name="Thunderblitzing &amp; Assaulting the Minotaur" id="9420-5168-96d9-9149" hidden="false" targetId="1ef344a1-ca37-b686-ae9e-adf41f84f136" type="rule"/>
+        <infoLink name="Thunderblitzing &amp; Assaulting the Minotaur" id="9420-5168-96d9-9149" hidden="false" targetId="d126-10bd-98e8-3487" type="rule"/>
         <infoLink name="Engine Damage" id="f646-a7f9-4bb5-ddf6" hidden="false" targetId="a918-d1d6-f9a8-12c8" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -1532,7 +1532,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="19cf-671d-38ae-bff5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Double Earthshaker Cannon" id="42ab-39f2-b83a-dec8" hidden="false" targetId="e7de0464-854e-a4c0-8927-f2698c9dc28c" type="profile"/>
+            <infoLink name="Double Earthshaker Cannon" id="42ab-39f2-b83a-dec8" hidden="false" targetId="301c-0977-715d-9495" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1657,7 +1657,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7a0b-d7a8-07e9-6827" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Vulcan Mega-bolter" id="6c3134a8-68d5-e4a7-9c91-10d2de1b18b3" hidden="false" targetId="70a5c886-af31-2c6f-7ccc-d52e572030dd" type="profile"/>
+            <infoLink name="Vulcan Mega-bolter" id="6c3134a8-68d5-e4a7-9c91-10d2de1b18b3" hidden="false" targetId="cc0f-446b-679b-77b3" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1742,7 +1742,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="752e-6859-f246-98f2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Stormsword Siege Cannon" id="c036-e044-8367-3bf5" hidden="false" targetId="0c9f3f3d-5d0b-755b-d128-6d51f2de749d" type="profile"/>
+            <infoLink name="Stormsword Siege Cannon" id="c036-e044-8367-3bf5" hidden="false" targetId="819f-5615-55d3-f8ae" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -1811,7 +1811,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7455-d541-cc7e-6f03" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Imperial Mine Plough (FW)" hidden="false" id="e9f2-13dd-2bcd-63d1" type="selectionEntry" targetId="7dc0-3f9c-bd4a-2cbf"/>
+            <entryLink import="true" name="Imperial Mine Plough" hidden="false" id="e9f2-13dd-2bcd-63d1" type="selectionEntry" targetId="7dc0-3f9c-bd4a-2cbf"/>
             <entryLink import="true" name="Dozer Blade" hidden="false" id="0138-b654-3ba6-6935" type="selectionEntry" targetId="3704b3ee-04c3-ffef-e395-bfbaac734eca"/>
           </entryLinks>
         </selectionEntryGroup>
@@ -1854,7 +1854,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0677-90d1-855b-52f8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Demolisher Siege Cannon" id="1ce9-7fb4-d46a-8461" hidden="false" targetId="a8fd8438-d21d-20c8-c27a-fcdc94aaa811" type="profile"/>
+        <infoLink name="Demolisher Siege Cannon" id="1ce9-7fb4-d46a-8461" hidden="false" targetId="a658-22ab-e9b5-bfee" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -1905,7 +1905,7 @@
         <cost name="pts" typeId="points" value="170"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Manticore Platform Battery" hidden="false" id="08ad-85be-8ca7-da42" publicationId="2be8d152--pubN100633" page="0" collective="false">
+    <selectionEntry type="model" import="true" name="Manticore Platform Battery (RR)" hidden="false" id="08ad-85be-8ca7-da42" publicationId="2be8d152--pubN100633" page="0" collective="false">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="80a0-c32b-c65f-fd3d" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
@@ -1943,8 +1943,8 @@
                     <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="86eb-3be8-673e-aa41" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Sky Eagle Rocket" id="375e-3a88-fe47-2b91" hidden="false" targetId="bc1de5ba-5738-3376-de5f-7593e667f90b" type="profile"/>
-                    <infoLink name="Heat Seeker" id="343d-b3d9-72ea-2376" hidden="false" targetId="89e6cbe2-8b68-b1cf-c1cf-1b6741bf8309" type="rule"/>
+                    <infoLink name="Sky Eagle Rocket" id="375e-3a88-fe47-2b91" hidden="false" targetId="71eb-5d2c-249f-148c" type="profile"/>
+                    <infoLink name="Heat Seeker" id="343d-b3d9-72ea-2376" hidden="false" targetId="0f14-5bd3-e836-0b08" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -2032,7 +2032,7 @@
             <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="5135-0f17-9738-64cc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Heavy Stubber" id="77ae-df2d-666e-d944" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
+            <infoLink name="Heavy Stubber" id="77ae-df2d-666e-d944" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2044,7 +2044,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7fdb-be18-6e29-5e7e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Heavy Armoured Prow" id="3ae9-55dc-b5fa-15da" hidden="false" targetId="f31f6289-8a65-6258-7f6d-ba5b1a688bbb" type="profile"/>
+            <infoLink name="Heavy Armoured Prow" id="3ae9-55dc-b5fa-15da" hidden="false" targetId="81fe-1f39-6d1e-c9db" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2120,7 +2120,7 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9d5a-9f9a-0109-06c4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Heavy Stubber" id="05e3-ecac-e509-885b" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
+                        <infoLink name="Heavy Stubber" id="05e3-ecac-e509-885b" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -2160,7 +2160,7 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7cd8-6a6a-114e-b6df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Heavy Stubber" id="fa3a-7c32-04d8-e5f6" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
+                        <infoLink name="Heavy Stubber" id="fa3a-7c32-04d8-e5f6" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -2193,7 +2193,7 @@
             <constraint type="max" value="4" field="selections" scope="parent" shared="false" id="2026-95eb-ef06-c800" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Heavy Quad Launcher / Heavy Mortar" id="0964-63a8-7386-ff81" hidden="false" targetId="8b276677-1c0a-c7fd-fc0b-50657de9a590" type="profile"/>
+            <infoLink name="Heavy Quad Launcher / Heavy Mortar" id="0964-63a8-7386-ff81" hidden="false" targetId="b213-608b-49df-5260" type="profile"/>
             <infoLink name="Immobile" id="dd15-0044-19b4-de9e" hidden="false" targetId="2d7a-1a12-e44c-032b" type="rule"/>
           </infoLinks>
           <selectionEntries>
@@ -2222,8 +2222,8 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b91c-fa12-25d5-d03b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Heavy Quad Launcher" id="c93c-5add-087a-b14f" hidden="false" targetId="c4b0fccb-d4d8-ec0a-92ae-280cfb2dd429" type="profile"/>
-                    <infoLink name="Shell Shock" id="9981-51c8-f8be-c24e" hidden="false" targetId="3d8293cf-eed3-a505-8edd-aeb9c6fbce92" type="rule"/>
+                    <infoLink name="Heavy Quad Launcher" id="c93c-5add-087a-b14f" hidden="false" targetId="6264-f105-f208-8195" type="profile"/>
+                    <infoLink name="Shell Shock" id="9981-51c8-f8be-c24e" hidden="false" targetId="fddf-c823-6846-cc52" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -2234,7 +2234,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cd2b-912c-ea67-df4b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Heavy Mortar" id="058a-011e-43fa-eded" hidden="false" targetId="96549f0d-9a2f-995e-0a7e-99d0cfdb48db" type="profile"/>
+                    <infoLink name="Heavy Mortar" id="058a-011e-43fa-eded" hidden="false" targetId="6d79-f39f-cfb9-a232" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -2275,7 +2275,7 @@
                 <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="92d6-067b-79b1-2f26" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Trojan Towing Vehicle (FW)" hidden="false" id="2d04-d6cc-323b-bc54" type="selectionEntry" targetId="c43e370a-b6f5-22c0-ee59-8a95aa305f1b"/>
+            <entryLink import="true" name="Trojan Towing Vehicle (RR)" hidden="false" id="2d04-d6cc-323b-bc54" type="selectionEntry" targetId="c43e370a-b6f5-22c0-ee59-8a95aa305f1b"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2288,7 +2288,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="70af-3f4d-172d-653e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Doomhammer" id="fd7c-6e8a-3aae-0367" hidden="false" targetId="4183d4ce-c594-ba3a-0f0d-50ec3cf86f90" type="profile"/>
+        <infoLink name="Doomhammer" id="fd7c-6e8a-3aae-0367" hidden="false" targetId="63c0-c972-e607-94d4" type="profile"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Lord of War" hidden="false" id="54b5-16e6-645f-b0a4" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
@@ -2300,7 +2300,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2f05-52aa-824f-07d0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Magma Cannon" id="6216-b6bf-f183-999f" hidden="false" targetId="591cb72a-beb9-01f7-7017-98d1cc06faf4" type="profile"/>
+            <infoLink name="Magma Cannon" id="6216-b6bf-f183-999f" hidden="false" targetId="5c4c-ade1-0d9f-6ec4" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -2438,10 +2438,10 @@
             <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="386e-170e-6a25-77cd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Operator" id="e13f-efcd-c452-63cd" hidden="false" targetId="a5163c32-635c-876a-415e-7022353a78a7" type="rule"/>
-            <infoLink name="Cyclops" id="f8c2-7eae-da8d-3783" hidden="false" targetId="e372f192-39d4-f4e6-8797-9f389ae11a01" type="profile"/>
-            <infoLink name="Remote Control" id="ee42-1bbb-dac5-d2fa" hidden="false" targetId="c8cc1fb5-b56e-bb27-f093-2d08006c2dce" type="rule"/>
-            <infoLink name="Fearless (Cyclops)" id="c530-659e-19ce-9cc3" hidden="false" targetId="f7db5947-1984-071a-df32-d0b0ff31c747" type="rule"/>
+            <infoLink name="Operator" id="e13f-efcd-c452-63cd" hidden="false" targetId="cf8c-ac37-37df-5993" type="rule"/>
+            <infoLink name="Cyclops" id="f8c2-7eae-da8d-3783" hidden="false" targetId="7943-623e-464d-f320" type="profile"/>
+            <infoLink name="Remote Control" id="ee42-1bbb-dac5-d2fa" hidden="false" targetId="cdda-b5fd-dd84-5a53" type="rule"/>
+            <infoLink name="Fearless (Cyclops)" id="c530-659e-19ce-9cc3" hidden="false" targetId="da33-0880-0257-7941" type="rule"/>
             <infoLink name="Extremely Bulky" id="bf32-cc41-f62f-69ab" hidden="false" targetId="6428-979b-5904-7475" type="rule"/>
             <infoLink name="Accidental Detonation" id="792b-b119-a602-c085" hidden="false" targetId="d67348b1-da45-e710-d628-5c4eb3dcce53" type="rule"/>
           </infoLinks>
@@ -2455,7 +2455,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5b13-8a61-8a4d-5440" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Cyclops Demolition Charge" id="eb42-1dc8-63a7-468c" hidden="false" targetId="c3d81cd2-caa5-ae7d-ef61-5c6332ffbc69" type="profile"/>
+                <infoLink name="Cyclops Demolition Charge" id="eb42-1dc8-63a7-468c" hidden="false" targetId="0c69-02fb-5348-0ecc" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -2536,7 +2536,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="e546-6c7f-816c-afd5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Lascannon" id="a264-7b03-28f8-c2b5" hidden="false" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1" type="profile"/>
+                <infoLink name="Lascannon" id="a264-7b03-28f8-c2b5" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="10"/>
@@ -2558,7 +2558,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8eac-b3e9-8d6b-b9b0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Side Armour Plates" id="26d5-dd1a-9058-d98a" hidden="false" targetId="fcaa5d81-75ed-fd5a-6532-c060c36819c8" type="profile"/>
+                <infoLink name="Side Armour Plates" id="26d5-dd1a-9058-d98a" hidden="false" targetId="a997-a61d-6ea1-9b1d" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -3179,7 +3179,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3892-29d6-b1f3-7632" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Extra Armour" id="e389-1d55-c810-fa71" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                    <infoLink name="Extra Armour" id="e389-1d55-c810-fa71" hidden="false" targetId="9db0-149f-81a7-9e02" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="15"/>
@@ -3227,7 +3227,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5375-2513-6fc7-a036" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Taurox Prime" id="3b67-4789-5145-0a20" hidden="false" targetId="d26a3606-589d-344b-7606-dc4fd8342edc" type="profile"/>
+        <infoLink name="Taurox Prime" id="3b67-4789-5145-0a20" hidden="false" targetId="420f-92c3-2cfb-f1d9" type="profile"/>
         <infoLink name="All-terrain APC" id="741f-5e4c-37d2-9340" hidden="false" targetId="6b435d5f-37f3-15e8-5128-736b7f5683a6" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -3284,7 +3284,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d716-8129-ffec-c437" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Hot-shot Volley Gun" id="ea30-cebd-752c-3d8b" hidden="false" targetId="4bcc00e8-8f75-5b3b-c44e-7077e8c893c6" type="profile"/>
+                <infoLink name="Hot-shot Volley Gun" id="ea30-cebd-752c-3d8b" hidden="false" targetId="48ea-1678-443f-665a" type="profile"/>
                 <infoLink name="Twin-Linked" id="8209-0bc4-d496-8707" hidden="false" type="rule" targetId="3002-de38-7230-fbc6"/>
               </infoLinks>
               <costs>
@@ -3304,7 +3304,7 @@
         <cost name="pts" typeId="points" value="80"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Valdor Tank Hunter" hidden="false" id="80a1-ce1a-00d7-9bac" publicationId="2be8d152--pubN99523" page="40" collective="false">
+    <selectionEntry type="model" import="true" name="Valdor Tank Hunter (RR)" hidden="false" id="80a1-ce1a-00d7-9bac" publicationId="2be8d152--pubN99523" page="40" collective="false">
       <infoLinks>
         <infoLink name="Engine Damage" id="372a-360c-669c-718d" hidden="false" targetId="a918-d1d6-f9a8-12c8" type="rule"/>
         <infoLink name="Unstable Reactor" id="5cd9-8fcc-2df1-4c1c" hidden="false" targetId="466c-eb79-cad8-7af1" type="rule"/>
@@ -3320,9 +3320,9 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c51c-3e1d-449a-c694" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Neutron Laser Projector" id="f23a-6ed4-2157-98d7" hidden="false" targetId="e5f397c3-e658-041e-a416-5fe48dfba6e4" type="profile"/>
-            <infoLink name="Feedback" id="6136-a8a5-dbe4-7ca6" hidden="false" targetId="1179ef63-efd4-051e-89a3-3e8dee31b019" type="rule"/>
-            <infoLink name="Shock Pulse" id="8cdb-e053-6e8c-e956" hidden="false" targetId="cb1b68cf-76f7-6387-1488-8687567ea98c" type="rule"/>
+            <infoLink name="Neutron Laser Projector" id="f23a-6ed4-2157-98d7" hidden="false" targetId="021f-69be-0c27-8f92" type="profile"/>
+            <infoLink name="Feedback" id="6136-a8a5-dbe4-7ca6" hidden="false" targetId="cb18-f3bf-5406-46c4" type="rule"/>
+            <infoLink name="Shock Pulse" id="8cdb-e053-6e8c-e956" hidden="false" targetId="4bb5-fd01-76eb-5bc5" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3363,7 +3363,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e86e-8f8b-4253-73b6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Heavy Stubber" id="40b6-3924-da14-4801" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
+                <infoLink name="Heavy Stubber" id="40b6-3924-da14-4801" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -3494,7 +3494,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="edb3-6992-f984-60ab" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Bolt Pistol" id="c6df6e8b-3394-1454-cfc0-32749c3225e3" hidden="false" targetId="82de7a82-9e87-8dc1-6d88-fbe1ee0c024c" type="profile"/>
+                <infoLink name="Bolt Pistol" id="c6df6e8b-3394-1454-cfc0-32749c3225e3" hidden="false" targetId="e6d5-677a-d8ed-f6a5" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -3593,7 +3593,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="23be-29ab-6dc2-5160" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Earthshaker Cannon" id="8d1e-e4bc-0391-d021" hidden="false" targetId="a7f3ab1d-2bde-9130-1c04-7b684a087c51" type="profile"/>
+                <infoLink name="Earthshaker Cannon" id="8d1e-e4bc-0391-d021" hidden="false" targetId="f519-2e0a-04de-1b2e" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -3624,7 +3624,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Immobile" id="2ab1-bfd1-5c71-bd28" hidden="false" targetId="2d7a-1a12-e44c-032b" type="rule"/>
-            <infoLink name="Heavy Artillery Carriage" id="035f-bd04-9d79-d08a" hidden="false" targetId="1aa36a47-c0b4-0210-8d67-e9a402412df7" type="profile"/>
+            <infoLink name="Heavy Artillery Carriage" id="035f-bd04-9d79-d08a" hidden="false" targetId="f32a-bcc3-64e5-62fe" type="profile"/>
             <infoLink name="Gun Carriage" id="d99e-a407-5c79-8ba3" hidden="false" targetId="5408-1bbf-2649-ece4" type="rule"/>
           </infoLinks>
           <categoryLinks>
@@ -3667,7 +3667,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e2ec-817f-695d-c387" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Medusa Siege Cannon" id="4eed-4cf6-a57e-9345" hidden="false" targetId="445d24a2-ad3f-2e22-9435-3dd496a60823" type="profile"/>
+                    <infoLink name="Medusa Siege Cannon" id="4eed-4cf6-a57e-9345" hidden="false" targetId="2d5f-97c7-6613-c26f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="25"/>
@@ -3678,7 +3678,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="692e-37ac-9a83-c180" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Earthshaker Cannon" id="6761-91ba-2e67-e765" hidden="false" targetId="a7f3ab1d-2bde-9130-1c04-7b684a087c51" type="profile"/>
+                    <infoLink name="Earthshaker Cannon" id="6761-91ba-2e67-e765" hidden="false" targetId="f519-2e0a-04de-1b2e" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -3720,7 +3720,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="d85d-d569-9648-9488" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Hydra Autocannon" id="9ce5-50de-8c8a-c0e8" hidden="false" targetId="69033ae8-f460-4b0b-0c93-716c326347a7" type="profile"/>
+                <infoLink name="Hydra Autocannon" id="9ce5-50de-8c8a-c0e8" hidden="false" targetId="3703-6c1f-dc73-f00d" type="profile"/>
                 <infoLink name="Twin-Linked" id="1acf-704a-e344-9f04" hidden="false" type="rule" targetId="3002-de38-7230-fbc6"/>
               </infoLinks>
               <selectionEntries>
@@ -3730,7 +3730,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d601-756f-a8d9-576d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Hydra Auto-targeting System" id="60e1-c4db-b15c-9432" hidden="false" targetId="97ba7f40-8a96-602d-93cb-43fec8459b2b" type="profile"/>
+                    <infoLink name="Hydra Auto-targeting System" id="60e1-c4db-b15c-9432" hidden="false" targetId="42c2-9b3b-03e5-f674" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -3775,7 +3775,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="79a9-538c-ea0b-27a0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Camo Netting" id="3158-f116-7974-0fb1" hidden="false" targetId="3404475d-279a-ae86-19e8-2147831e7a7d" type="profile"/>
+            <infoLink name="Camo Gear" id="3158-f116-7974-0fb1" hidden="false" targetId="cd63-e81b-b6e7-5004" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -3815,7 +3815,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aa27-f068-ad59-1cf0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Heavy Mortar" id="af20-73c8-74d4-e21a" hidden="false" targetId="96549f0d-9a2f-995e-0a7e-99d0cfdb48db" type="profile"/>
+                    <infoLink name="Heavy Mortar" id="af20-73c8-74d4-e21a" hidden="false" targetId="6d79-f39f-cfb9-a232" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -3823,7 +3823,7 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Pintle-mounted Weapon X" hidden="false" id="d2c2-8df2-0565-4c5f" collective="false" targetId="411c083c-4d9e-7d72-069f-4b897655e970" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Pintle-mounted Weapon" hidden="false" id="d2c2-8df2-0565-4c5f" collective="false" targetId="d765-1f79-6c82-0e0c" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Artillery Vehicle Equipment List" hidden="false" id="1fa5-34b6-447b-df1d" collective="false" targetId="ae35b106-b28b-342b-974a-6a29eaa05bbb" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Smoke Launchers" hidden="false" id="abf3-2dae-a433-e85d" collective="false" targetId="c5066441-7f6f-5497-5df6-4462463a5807" type="selectionEntry"/>
                 <entryLink import="true" name="Searchlight" hidden="false" id="b8ca-e44e-55bb-58db" collective="false" targetId="d26eb534-d6b2-ac11-a207-627c7497e876" type="selectionEntry"/>
@@ -3837,7 +3837,7 @@
                 <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="bd6d-e36c-775d-8522" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Medusa Siege Gun" id="42d9-42c4-63fd-4dad" hidden="false" targetId="b51817b2-a542-7a2d-2196-a9a89f95e701" type="profile">
+                <infoLink name="Medusa Siege Gun" id="42d9-42c4-63fd-4dad" hidden="false" targetId="26d8-caa3-3aba-7565" type="profile">
                   <modifiers>
                     <modifier type="set" value="Tank" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2">
                       <conditions>
@@ -3857,7 +3857,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aa97-bded-a295-8748" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Medusa Siege Cannon" id="144f-3047-62f1-0035" hidden="false" targetId="445d24a2-ad3f-2e22-9435-3dd496a60823" type="profile"/>
+                    <infoLink name="Medusa Siege Cannon" id="144f-3047-62f1-0035" hidden="false" targetId="2d5f-97c7-6613-c26f" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -3868,7 +3868,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ce2c-d980-182f-fba7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Bastion-breacher Shell" id="75f2-357c-68f4-8394" hidden="false" targetId="b68dc361-12b9-499a-fa86-a0131c4a68c0" type="profile"/>
+                    <infoLink name="Bastion-breacher Shell" id="75f2-357c-68f4-8394" hidden="false" targetId="426c-40d2-a85b-b2bc" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="5"/>
@@ -3876,10 +3876,9 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Pintle-mounted Weapon X" hidden="false" id="dec4-582c-84f6-7ec9" collective="false" targetId="411c083c-4d9e-7d72-069f-4b897655e970" type="selectionEntryGroup"/>
-                <entryLink import="true" name="FW Artillery Tank Upgrades" hidden="false" id="8223-fbd8-c1ba-f4d8" collective="false" targetId="a2f700f4-5e78-8185-25f5-a21ee55aa14e" type="selectionEntryGroup"/>
-                <entryLink import="true" name="Smoke Launchers" hidden="false" id="1072-f00f-1b8e-81f6" collective="false" targetId="c23dbe20-6e87-1b1e-462e-4bd050161057" type="selectionEntry"/>
-                <entryLink import="true" name="Searchlight" hidden="false" id="368c-86da-d13d-08c3" collective="false" targetId="7aeea2dc-d28f-94d7-deea-ba921a968e2a" type="selectionEntry"/>
+                <entryLink import="true" name="Smoke Launchers" hidden="false" id="1072-f00f-1b8e-81f6" collective="false" targetId="c5066441-7f6f-5497-5df6-4462463a5807" type="selectionEntry"/>
+                <entryLink import="true" name="Searchlight" hidden="false" id="368c-86da-d13d-08c3" collective="false" targetId="d26eb534-d6b2-ac11-a207-627c7497e876" type="selectionEntry"/>
+                <entryLink import="true" name="Artillery Vehicle Equipment List" hidden="false" id="9f49-eb5e-4d14-1dfa" type="selectionEntryGroup" targetId="ae35b106-b28b-342b-974a-6a29eaa05bbb"/>
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="135"/>
@@ -3890,7 +3889,7 @@
                 <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="9776-1567-c4b8-ab89" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Colossus Bombard" id="989e-fcc7-7819-f4a4" hidden="false" targetId="e9524332-62bd-35a5-378a-41e0dd21b479" type="profile">
+                <infoLink name="Colossus Bombard" id="989e-fcc7-7819-f4a4" hidden="false" targetId="d9ca-5d30-0956-4878" type="profile">
                   <modifiers>
                     <modifier type="set" value="Tank" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2">
                       <conditions>
@@ -3910,7 +3909,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e30a-5d82-82ae-fe62" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Colossus Siege Mortar" id="d1e8-5fa5-2999-e46f" hidden="false" targetId="07939d5d-d9c2-3598-8689-9837084ef95b" type="profile"/>
+                    <infoLink name="Colossus Siege Mortar" id="d1e8-5fa5-2999-e46f" hidden="false" targetId="29a7-e34d-81ec-9d67" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -3939,7 +3938,7 @@
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Rapier Battery (FW)" hidden="false" id="bc4d-faa0-fd15-51c5" publicationId="2be8d152--pubN100633" page="206" collective="false">
+    <selectionEntry type="unit" import="true" name="Rapier Battery (RR)" hidden="false" id="bc4d-faa0-fd15-51c5" publicationId="2be8d152--pubN100633" page="206" collective="false">
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="9121-e1e6-ae9e-b7f2" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
       </categoryLinks>
@@ -3951,8 +3950,8 @@
           </constraints>
           <infoLinks>
             <infoLink name="Extremely Bulky" id="7cef-4b92-19db-73cb" hidden="false" targetId="6428-979b-5904-7475" type="rule"/>
-            <infoLink name="Explosive Demise" id="9ddb-f231-15a0-947a" hidden="false" targetId="3d07f624-4f87-3389-b892-f6fd53515138" type="rule"/>
-            <infoLink name="Rapier Armoured Carrier" id="9ad8-02d5-77fe-6dda" hidden="false" targetId="d5235618-2699-cad3-7045-76009f394cde" type="profile"/>
+            <infoLink name="Explosive Demise" id="9ddb-f231-15a0-947a" hidden="false" targetId="5df9-f1e9-97d0-c532" type="rule"/>
+            <infoLink name="Rapier Armoured Carrier" id="9ad8-02d5-77fe-6dda" hidden="false" targetId="741f-db0c-bcd4-cfc8" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Laser Destroyer Array" hidden="false" id="7800-e6d3-fe53-944f" page="0" collective="true">
@@ -4025,7 +4024,8 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="20c5-e1cd-ab79-8133" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Heavy Stubber" id="8e59-ec00-1e82-36a3" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
+        <infoLink name="Heavy Stubber" id="8e59-ec00-1e82-36a3" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
+        <infoLink name="Twin-Linked" id="2d00-611a-d393-b0fa" hidden="false" type="rule" targetId="3002-de38-7230-fbc6"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -4100,7 +4100,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="81b6-48cb-e103-dcdc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Heavy Stubber" id="9f95-f693-dff3-35c4" hidden="false" targetId="9abb0348-67fc-4a0f-8dc8-1ee53fcc83e4" type="profile"/>
+            <infoLink name="Heavy Stubber" id="9f95-f693-dff3-35c4" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -4115,7 +4115,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7d61-98d0-ae46-3e67" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Extra Armour" id="464f-5b85-1aae-2fc6" hidden="false" targetId="f8b7d6ab-57de-4759-01b3-d37c7a935c83" type="profile"/>
+                <infoLink name="Extra Armour" id="464f-5b85-1aae-2fc6" hidden="false" targetId="9db0-149f-81a7-9e02" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
@@ -4182,7 +4182,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="606d-54e4-63dd-de10" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Krak Grenades" id="c308-2af5-6365-fa6c" hidden="false" targetId="2a70b795-1b42-0d58-a800-7f7061405f23" type="profile"/>
+            <infoLink name="Krak Grenades" id="c308-2af5-6365-fa6c" hidden="false" targetId="3bf6-b4f7-6b2f-bb7b" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="6"/>
@@ -4210,7 +4210,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="72ad-7e68-4ff3-08d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Demolition Charge" id="d7dd-f4c6-83a9-8c7d" hidden="false" targetId="14967f52-d203-8f7d-ce79-5ceed07560df" type="profile"/>
+                    <infoLink name="Demolition Charge" id="d7dd-f4c6-83a9-8c7d" hidden="false" targetId="e69f-d125-a227-7438" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -4489,8 +4489,8 @@
                 <infoLink name="Guardsman" id="0cb2-9a59-330b-229b" hidden="false" targetId="06e7cc4c-1485-7abd-b377-2f455aef823a" type="profile"/>
               </infoLinks>
               <entryLinks>
-                <entryLink import="true" name="Medi-pack" hidden="false" id="ca00-71f8-2902-da0a" collective="false" targetId="45479669-c720-a99b-c0f7-b11c39b56e03" type="selectionEntry"/>
-                <entryLink import="true" name="Lasgun" hidden="false" id="4d38-70cf-80ba-561b" collective="false" targetId="d7715b00-8fa1-3d1f-0353-0d5d3620249f" type="selectionEntryGroup"/>
+                <entryLink import="true" name="Medi-pack" hidden="false" id="ca00-71f8-2902-da0a" collective="false" targetId="edf6-a84d-383b-4f06" type="selectionEntry"/>
+                <entryLink import="true" name="Lasgun" hidden="false" id="4d38-70cf-80ba-561b" collective="false" targetId="312a-410b-33cb-9e36" type="selectionEntryGroup"/>
                 <entryLink import="true" name="Frag Grenades" hidden="false" id="b999-2cca-4a8d-792c" collective="false" targetId="7c55-4b0e-ca04-d5a4" type="selectionEntry"/>
               </entryLinks>
               <costs>
@@ -4670,9 +4670,9 @@
                   </constraints>
                   <infoLinks>
                     <infoLink name="Guardsman" id="e215-aea4-1084-ae37" hidden="false" targetId="06e7cc4c-1485-7abd-b377-2f455aef823a" type="profile"/>
+                    <infoLink name="Sniper Rifle" id="5f69-c08f-dde8-f26f" hidden="false" type="profile" targetId="45a4-5982-7f8b-fb33"/>
                   </infoLinks>
                   <entryLinks>
-                    <entryLink import="true" name="Sniper Rifle" hidden="false" id="fea2-fa2d-1ca8-f173" collective="false" targetId="7c669b3a-4156-b011-5c46-9408acfe2217" type="selectionEntry"/>
                     <entryLink import="true" name="Frag Grenades" hidden="false" id="e340-6dbd-c246-188f" collective="false" targetId="7c55-4b0e-ca04-d5a4" type="selectionEntry"/>
                   </entryLinks>
                   <costs>
@@ -4731,7 +4731,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cc35-0c3c-4105-cb30" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Krak Grenades" id="0c4c-2bbb-a9ab-a32f" hidden="false" targetId="2a70b795-1b42-0d58-a800-7f7061405f23" type="profile"/>
+            <infoLink name="Krak Grenades" id="0c4c-2bbb-a9ab-a32f" hidden="false" targetId="3bf6-b4f7-6b2f-bb7b" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="1"/>
@@ -4743,7 +4743,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4454-4690-ebcd-af1f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Sergeant" id="dbe9-b1f0-5867-98c1" hidden="false" targetId="99ca09cf-4009-04d7-b31a-6d4c1423d803" type="profile"/>
+            <infoLink name="Sergeant" id="dbe9-b1f0-5867-98c1" hidden="false" targetId="7832-b382-16fa-78ea" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Close Combat Weapon" id="c2e7-2ad4-2f77-8786" hidden="false" collective="false" import="true" defaultSelectionEntryId="56fdc68c-f82f-22a7-b9bd-26f3b5eb3d7b">
@@ -5089,7 +5089,7 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="73e4-5fff-b91d-2454" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Bolt Pistol" id="2fe2-c219-44fe-6ca1" hidden="false" targetId="82de7a82-9e87-8dc1-6d88-fbe1ee0c024c" type="profile"/>
+                        <infoLink name="Bolt Pistol" id="2fe2-c219-44fe-6ca1" hidden="false" targetId="e6d5-677a-d8ed-f6a5" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -5455,7 +5455,7 @@
                   </infoLinks>
                   <entryLinks>
                     <entryLink import="true" name="Carapace Armour" hidden="false" id="288d-23d0-54ad-cff7" collective="false" targetId="e627-ee26-ffb2-f571" type="selectionEntry"/>
-                    <entryLink import="true" name="Medi-pack" hidden="false" id="77b3-1acb-51f2-8c8c" collective="false" targetId="45479669-c720-a99b-c0f7-b11c39b56e03" type="selectionEntry"/>
+                    <entryLink import="true" name="Medi-pack" hidden="false" id="77b3-1acb-51f2-8c8c" collective="false" targetId="edf6-a84d-383b-4f06" type="selectionEntry"/>
                     <entryLink import="true" name="Hot-shot Lasgun" hidden="false" id="31fa-4aa4-02c8-d377" collective="false" targetId="8404-3cd6-1774-b01f" type="selectionEntry"/>
                     <entryLink import="true" name="Frag Grenades" hidden="false" id="8959-c831-f58e-bc87" collective="false" targetId="7c55-4b0e-ca04-d5a4" type="selectionEntry"/>
                     <entryLink import="true" name="Krak Grenades" hidden="false" id="1ce1-4ce2-48af-53af" collective="false" targetId="e56b-7ca0-ec48-34db" type="selectionEntry"/>
@@ -5478,7 +5478,7 @@
                         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="629c-c387-ae74-3f9b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink name="Platoon Standard" id="f1bf-f306-a8a9-0881" hidden="false" targetId="e3b413c9-7da7-a4d0-2d42-eed98aafce39" type="profile"/>
+                        <infoLink name="Platoon Standard" id="f1bf-f306-a8a9-0881" hidden="false" targetId="3c3e-a702-d911-a46a" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -5607,11 +5607,10 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Carapace Armour" hidden="false" id="e627-ee26-ffb2-f571" page="0" collective="false">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="56e3-acf5-f9f6-87d1-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="56e3-acf5-f9f6-87d1-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Carapace Armour" id="4043-e565-c73f-e13f" hidden="false" targetId="79e00ca6-01b8-3206-82a7-7a59f384f0bf" type="profile"/>
+        <infoLink name="Carapace Armour" id="4043-e565-c73f-e13f" hidden="false" targetId="7e43-ddbb-0638-5a73" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -5669,7 +5668,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="cc66-32d2-1f0e-46d1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Krak Grenades" id="fddd-4dde-a35e-ab31" hidden="false" targetId="2a70b795-1b42-0d58-a800-7f7061405f23" type="profile"/>
+        <infoLink name="Krak Grenades" id="fddd-4dde-a35e-ab31" hidden="false" targetId="3bf6-b4f7-6b2f-bb7b" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -5696,7 +5695,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="be87-053b-5606-573e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Doctrine: Demolitions" id="32f0-0e40-6a5f-f4c4" hidden="false" targetId="853955a3-6b4d-743b-5c67-a9e86bd6e295" type="rule"/>
+            <infoLink name="Doctrine: Demolitions" id="32f0-0e40-6a5f-f4c4" hidden="false" targetId="21d2-e3ae-7479-639e" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Melta-bombs for Squad" hidden="false" id="ec28-c074-8817-f6b3" page="0" collective="false">
@@ -5717,7 +5716,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8ad7-a6b3-68ef-4966" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Demolition Charge" id="d6a0-dd91-66ce-fbe1" hidden="false" targetId="14967f52-d203-8f7d-ce79-5ceed07560df" type="profile"/>
+                <infoLink name="Demolition Charge" id="d6a0-dd91-66ce-fbe1" hidden="false" targetId="e69f-d125-a227-7438" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -5733,7 +5732,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7b67-8b88-1d4b-69f1" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Doctrine: Forward Sentries" id="a18b-f5fa-2f29-4d0a" hidden="false" targetId="eccbda38-3d4f-43ff-4938-b8668e55849d" type="rule"/>
+            <infoLink name="Doctrine: Forward Sentries" id="a18b-f5fa-2f29-4d0a" hidden="false" targetId="b9f3-f559-bdf2-70da" type="rule"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Snare Mines for Squad" hidden="false" id="941b-5d90-8436-d32b" page="0" collective="false">
@@ -5742,7 +5741,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9424-2156-a8e9-4f4a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Snare Mines" id="9956-30d5-e529-0293" hidden="false" targetId="1bc2d4d7-6ef4-f810-2163-250af709cf68" type="profile"/>
+                <infoLink name="Snare Mines" id="9956-30d5-e529-0293" hidden="false" targetId="5d1a-bafd-5b5c-5153" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -5754,7 +5753,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="d275-d976-1bab-6e61" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Camo Gear" id="d1d2-b81e-26de-8bad" hidden="false" targetId="ab8b9db6-65f6-fc40-3e74-eabbecf223d2" type="profile"/>
+                <infoLink name="Camo Gear" id="d1d2-b81e-26de-8bad" hidden="false" targetId="cd63-e81b-b6e7-5004" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -5783,7 +5782,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="74b6-c0be-39d1-c9b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Carapace Armour" id="62b7-d8b1-df09-d9bb" hidden="false" targetId="79e00ca6-01b8-3206-82a7-7a59f384f0bf" type="profile"/>
+                <infoLink name="Carapace Armour" id="62b7-d8b1-df09-d9bb" hidden="false" targetId="7e43-ddbb-0638-5a73" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -5793,6 +5792,9 @@
           <costs>
             <cost name="pts" typeId="points" value="15"/>
           </costs>
+          <infoLinks>
+            <infoLink name="Doctrine: Grenadiers" id="b6fd-edae-758b-4fdd" hidden="false" type="rule" targetId="972b-a21a-7ac9-40ce"/>
+          </infoLinks>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Flak Armour for Squad" hidden="false" id="4e45-3178-0514-89c2" page="0" collective="false">
           <modifiers>
@@ -6144,7 +6146,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8057-9d85-449b-793c-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Veteran Sergeant" id="4570-cf2b-b967-57a1" hidden="false" targetId="5ad52c27-fffb-75ed-4945-ac60556dee9a" type="profile">
+                <infoLink name="Veteran Sergeant" id="4570-cf2b-b967-57a1" hidden="false" targetId="d456-ec29-78e4-22eb" type="profile">
                   <modifiers>
                     <modifier type="set" value="4+" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">
                       <conditions>
@@ -6260,7 +6262,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f6f6-b059-57c8-eda5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Camo Gear" id="8db5-faf3-aa1b-e3e6" hidden="false" targetId="ab8b9db6-65f6-fc40-3e74-eabbecf223d2" type="profile"/>
+            <infoLink name="Camo Gear" id="8db5-faf3-aa1b-e3e6" hidden="false" targetId="cd63-e81b-b6e7-5004" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="10"/>
@@ -6290,13 +6292,16 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7e08-f6f6-9013-8778" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Carapace Armour" id="c205-5d2a-2766-287b" hidden="false" targetId="79e00ca6-01b8-3206-82a7-7a59f384f0bf" type="profile"/>
+                <infoLink name="Carapace Armour" id="c205-5d2a-2766-287b" hidden="false" targetId="7e43-ddbb-0638-5a73" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="5"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Carapace Armour" hidden="false" id="2797-877f-4c2a-caef" type="selectionEntry" targetId="e627-ee26-ffb2-f571"/>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Bolt pistol" id="718d-1618-f13b-6d02" hidden="false" collective="false" import="true" defaultSelectionEntryId="683d-4756-6134-1fae">
           <constraints>
@@ -6309,7 +6314,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3a34-c196-ea78-f483" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Bolt Pistol" id="43fa-00f8-8f15-2a0c" hidden="false" targetId="82de7a82-9e87-8dc1-6d88-fbe1ee0c024c" type="profile"/>
+                <infoLink name="Bolt Pistol" id="43fa-00f8-8f15-2a0c" hidden="false" targetId="e6d5-677a-d8ed-f6a5" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -6331,7 +6336,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8c06-b3f1-2a5d-114f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Boltgun" id="e1c6-1b54-9b07-2b31" hidden="false" targetId="5f892a41-bd85-137f-d843-175ddd1897ec" type="profile"/>
+                <infoLink name="Bolt Pistol" id="e1c6-1b54-9b07-2b31" hidden="false" targetId="e6d5-677a-d8ed-f6a5" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -6540,7 +6545,7 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f53f-0509-8cae-7c00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Storm Bolter" id="855c-a874-5cf0-f391" hidden="false" targetId="a2da2b98-1a14-9a16-f860-077c1544545d" type="profile"/>
+                <infoLink name="Storm Bolter" id="855c-a874-5cf0-f391" hidden="false" targetId="505e-a5aa-edab-6d5b" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -6675,7 +6680,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4405-d768-5c9e-97b3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Earthshaker Cannon" id="098c-3153-e8fe-e204" hidden="false" targetId="a7f3ab1d-2bde-9130-1c04-7b684a087c51" type="profile"/>
+            <infoLink name="Earthshaker Cannon" id="098c-3153-e8fe-e204" hidden="false" targetId="f519-2e0a-04de-1b2e" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -6849,7 +6854,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup name="Astra Militarum Trait" id="18f7-e3f0-7da0-d8cb" hidden="false" collective="false" import="true">
           <modifiers>
-            <modifier type="set" value="2" field="425d-f271-d83a-3ee3">
+            <modifier type="set" value="2" field="eb6e-2aa0-e434-224b">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="parent" childId="dcb74f5d-1308-fbaa-205f-3ad8fbde5b04" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
@@ -7047,7 +7052,7 @@
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0de4-1692-3e55-0ba5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
-        <infoLink name="Vox-caster" id="fd33-9e44-3e71-4d5d" hidden="false" targetId="da2ab83a-4eca-7ee2-0a6a-372876704dfe" type="profile"/>
+        <infoLink name="Vox-caster" id="fd33-9e44-3e71-4d5d" hidden="false" targetId="2b9b-f2f2-92db-dd5d" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -7166,6 +7171,19 @@
           </characteristics>
         </profile>
       </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Medi-pack" hidden="false" id="edf6-a84d-383b-4f06" page="0" collective="false">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6c8a-b8d2-60bc-c557" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="c25e-21c6-079d-7a2c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Medi-pack" id="591f-e548-173b-5fa6" hidden="false" targetId="c5b5-4207-0872-3256" type="profile"/>
+        <infoLink name="Feel No Pain" id="2445-630b-de59-e5f1" hidden="false" targetId="3c7d-11d6-e265-abb4" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -7664,7 +7682,7 @@
                 <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="7cac-3fdf-a9eb-803e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Lascannon" id="a716-4321-7e01-d839" hidden="false" targetId="4944e4f5-94fb-d71d-5137-0114b4be41e1" type="profile"/>
+                <infoLink name="Lascannon" id="a716-4321-7e01-d839" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="50"/>
@@ -7949,9 +7967,9 @@
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f458-7aba-9468-c388" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Tank Orders: Strike and Shroud!" id="db21-24a2-a70d-0a0d" hidden="false" targetId="43b70a95-f432-14a3-5dbd-057fe861ef43" type="rule"/>
-                <infoLink name="Tank Orders: Gunners, Kill on Sight!" id="d0e6-002b-3434-6137" hidden="false" targetId="58e56144-d1c0-34f7-1665-af4ddf5176ea" type="rule"/>
-                <infoLink name="Tank Orders: Full Throttle!" id="0cb7-ab71-553f-2781" hidden="false" targetId="a0c6603e-25e1-bddf-3cdb-e6781636722e" type="rule"/>
+                <infoLink name="Tank Orders: Strike and Shroud!" id="db21-24a2-a70d-0a0d" hidden="false" targetId="43a7-9c74-cb9e-1fa4" type="rule"/>
+                <infoLink name="Tank Orders: Gunners, Kill on Sight!" id="d0e6-002b-3434-6137" hidden="false" targetId="e4a5-f8df-11ba-85f2" type="rule"/>
+                <infoLink name="Tank Orders: Full Throttle!" id="0cb7-ab71-553f-2781" hidden="false" targetId="b89d-cf77-5a9e-7c6d" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0"/>
@@ -7981,7 +7999,7 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8bad-5926-e82d-83f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Lasgun" id="dcc4-3c89-43d9-5457" hidden="false" targetId="96c16e5c-9c96-c572-55b7-bb1737883ba7" type="profile"/>
+            <infoLink name="Lasgun" id="dcc4-3c89-43d9-5457" hidden="false" targetId="d174-eb55-aaa6-d032" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -7992,8 +8010,8 @@
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="75aa-bba6-07fe-2f18" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
-            <infoLink name="Laspistol" id="594a-2526-b988-b978" hidden="false" targetId="026a09be-0092-0eda-96c7-f636c4afebdf" type="profile"/>
-            <infoLink name="Close Combat Weapon" id="86b5-676f-c43a-6c03" hidden="false" targetId="b5a15a10-378a-f59e-80a7-090b5c95a19d" type="profile"/>
+            <infoLink name="Laspistol" id="594a-2526-b988-b978" hidden="false" targetId="f2b7-768f-a270-de64" type="profile"/>
+            <infoLink name="Close Combat Weapon" id="86b5-676f-c43a-6c03" hidden="false" targetId="e294-a5c7-e01e-0a82" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -9227,6 +9245,288 @@
         <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
       </characteristics>
     </profile>
+    <profile name="Carapace Armour" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="7e43-ddbb-0638-5a73" publicationId="2be8d152--pubN72426" page="0">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">4+ Sv</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Magma Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="5c4c-ade1-0d9f-6ec4" publicationId="2be8d152--pubN100814" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Primary Weapon 1, 5&quot; Blast</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medi-pack" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="c5b5-4207-0872-3256" publicationId="2be8d152--pubN72426" page="0">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Bearer &amp; squad have Feel No Pain</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Doomhammer" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="63c0-c972-e607-94d4" publicationId="2be8d152--pubN100814" page="0">
+      <characteristics>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">14</characteristic>
+        <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">13</characteristic>
+        <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">12</characteristic>
+        <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">9</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Super-heavy Vehicle, Transport</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sergeant" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="7832-b382-16fa-78ea" publicationId="2be8d152--pubN72426" page="36">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry (Character)</characteristic>
+        <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tremor Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="32af-edba-153f-276d" publicationId="2be8d152--pubN100814" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Primary Weapon 1, 7&quot; Blast, Earthshock</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rapier Armoured Carrier" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="741f-db0c-bcd4-cfc8" publicationId="2be8d152--pubN100633" page="206">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Artillery</characteristic>
+        <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">-</characteristic>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">-</characteristic>
+        <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">-</characteristic>
+        <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">7</characteristic>
+        <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">-</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">-</characteristic>
+        <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">-</characteristic>
+        <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vulcan Mega-bolter" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="cc0f-446b-679b-77b3" publicationId="2be8d152--pubN99523" page="135">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 15</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cyclops" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="7943-623e-464d-f320" publicationId="2be8d152--pubN100633" page="215">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry - Special (Cyclops) Artillery</characteristic>
+        <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">-</characteristic>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5"/>
+        <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">-</characteristic>
+        <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">6</characteristic>
+        <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">-</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">-</characteristic>
+        <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">-</characteristic>
+        <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cyclops Demolition Charge" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="0c69-02fb-5348-0ecc" publicationId="2be8d152--pubN100633" page="215">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Centred on vehicle</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, 5&quot; Blast (No scatter)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Camo Gear" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="cd63-e81b-b6e7-5004" publicationId="2be8d152--pubN72426" page="0">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">+1 to Cover Sv. Note that this means it always has a cover save of at least 6+, even in the open.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medusa Siege Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="2d5f-97c7-6613-c26f" publicationId="2be8d152--pubN100633" page="269">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, 5&quot; Blast</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medusa Siege Gun" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="26d8-caa3-3aba-7565" publicationId="2be8d152--pubN100633" page="162">
+      <characteristics>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+        <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+        <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tank, Open-topped</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Taurox Prime" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="420f-92c3-2cfb-f1d9" publicationId="2be8d152--pubN72426" page="41">
+      <characteristics>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">11</characteristic>
+        <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+        <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fast, Transport</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Double Earthshaker Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="301c-0977-715d-9495" publicationId="2be8d152--pubN99523" page="135">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-240</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Primary Weapon 1, 7&quot; Blast, Twin-linked, Indirect Fire only</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Earthshaker Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="f519-2e0a-04de-1b2e" publicationId="2be8d152--pubN72426" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36-240</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Barrage, 5&quot; Blast</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Quake Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="2e54-394a-0911-2135" publicationId="2be8d152--pubN100814" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-180</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Primary Weapon 1, 10&quot; Blast</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Inferno Gun" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="0cb5-8614-4f39-314e" publicationId="2be8d152--pubN99523" page="136">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Hellstorm</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hydra Auto-targeting System" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="42c2-9b3b-03e5-f674" publicationId="2be8d152--pubN100633" page="49">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Ignores Supersonic &amp; Jink. May not move Flat Out.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Artillery Carriage" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="f32a-bcc3-64e5-62fe" publicationId="2be8d152--pubN100633" page="188">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Artillery</characteristic>
+        <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">-</characteristic>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">-</characteristic>
+        <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">-</characteristic>
+        <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">7</characteristic>
+        <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">-</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7"/>
+        <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">-</characteristic>
+        <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Armoured Prow" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="81fe-1f39-6d1e-c9db" publicationId="2be8d152--pubN99523" page="30">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">5+ Invul Sv against attacks from the front</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Demolition Charge" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="e69f-d125-a227-7438" publicationId="2be8d152--pubN72426" page="0">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 1, 5&quot; Blast, One Use</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Colossus Siege Mortar" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="29a7-e34d-81ec-9d67" publicationId="2be8d152--pubN100633" page="268">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24-240</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Barrage, 5&quot; Blast, No Cover Sv, Cannot Fire Directly</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Colossus Bombard" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="d9ca-5d30-0956-4878" publicationId="2be8d152--pubN100633" page="162">
+      <characteristics>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+        <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+        <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a"/>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tank, Open-topped</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bastion-breacher Shell" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="426c-40d2-a85b-b2bc" publicationId="2be8d152--pubN100633" page="268">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, 3&quot; Blast, Armourbane</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Neutron Laser Projector" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="021f-69be-0c27-8f92" publicationId="2be8d152--pubN99523" page="135">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">72</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Primary Weapon 1, Concussive, Feedback, Shock Pulse</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Quad Launcher" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6264-f105-f208-8195" publicationId="2be8d152--pubN100633" page="268">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12-60</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4, Barrage, 3&quot; Blast, Shell Shock</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Quad Launcher / Heavy Mortar" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="b213-608b-49df-5260" publicationId="2be8d152--pubN100633" page="197">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Artillery (Immobile)</characteristic>
+        <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">-</characteristic>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">-</characteristic>
+        <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">-</characteristic>
+        <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">7</characteristic>
+        <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">-</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">-</characteristic>
+        <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">-</characteristic>
+        <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Mortar" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6d79-f39f-cfb9-a232" publicationId="2be8d152--pubN100633" page="268">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12-48</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Barrage, 5&quot; Blast</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Veteran Sergeant" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="d456-ec29-78e4-22eb" publicationId="2be8d152--pubN72426" page="38">
+      <characteristics>
+        <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry (Character)</characteristic>
+        <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+        <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Snare Mines" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="5d1a-bafd-5b5c-5153" publicationId="2be8d152--pubN72426" page="0">
+      <characteristics>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Enemy units that charge a unit with snare mines count as having made a disordered charge.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sky Eagle Rocket" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="71eb-5d2c-249f-148c" publicationId="2be8d152--pubN100633" page="269">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Skyfire, Missile, Heatseeker</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Amphibious" id="66dc-0ab5-5203-158b" hidden="false" publicationId="2be8d152--pubN72426" page="40">
@@ -9314,5 +9614,21 @@ May not take Carapace Armour.</description>
     <rule name="Thunderblitzing &amp; Assaulting the Minotaur" id="d126-10bd-98e8-3487" hidden="false" publicationId="2be8d152--pubN99523" page="31"/>
     <rule name="Support Vehicle" id="0777-6271-c941-d988" hidden="false" publicationId="2be8d152--pubN100633" page="231"/>
     <rule name="Fire Modes - Point Defence, Sentry, Interceptor" id="93a7-72e3-92eb-2156" hidden="false" publicationId="2be8d152--pubN100633" page="201"/>
+    <rule name="Earthshock" id="f27d-f7f3-4ae4-8434" hidden="false" publicationId="2be8d152--pubN100814" page="0"/>
+    <rule name="Vulcan - Fire twice at same target if stationary" id="9542-a644-e593-efb2" hidden="false" publicationId="2be8d152--pubN99523" page="33"/>
+    <rule name="Operator" id="cf8c-ac37-37df-5993" hidden="false" publicationId="2be8d152--pubN100633" page="215"/>
+    <rule name="Fearless (Cyclops)" id="da33-0880-0257-7941" hidden="false" publicationId="2be8d152--pubN174596" page="0"/>
+    <rule name="Remote Control" id="cdda-b5fd-dd84-5a53" hidden="false" publicationId="2be8d152--pubN100633" page="215"/>
+    <rule name="Doctrine: Demolitions" id="21d2-e3ae-7479-639e" hidden="false" publicationId="2be8d152--pubN72426" page="38"/>
+    <rule name="Shell Shock" id="fddf-c823-6846-cc52" hidden="false" publicationId="2be8d152--pubN100633" page="197"/>
+    <rule name="Heat Seeker" id="0f14-5bd3-e836-0b08" hidden="false" publicationId="2be8d152--pubN71923" page="5"/>
+    <rule name="Explosive Demise" id="5df9-f1e9-97d0-c532" hidden="false" publicationId="2be8d152--pubN100633" page="206"/>
+    <rule name="Command Tank" id="a371-32f0-a357-c0c9" hidden="false" publicationId="2be8d152--pubN99523" page="6"/>
+    <rule name="Shock Pulse" id="4bb5-fd01-76eb-5bc5" hidden="false" publicationId="2be8d152--pubN99523" page="135"/>
+    <rule name="Feedback" id="cb18-f3bf-5406-46c4" hidden="false" publicationId="2be8d152--pubN99523" page="135"/>
+    <rule name="Doctrine: Forward Sentries" id="b9f3-f559-bdf2-70da" hidden="false" publicationId="2be8d152--pubN72426" page="38"/>
+    <rule name="Doctrine: Grenadiers" id="972b-a21a-7ac9-40ce" hidden="false" publicationId="2be8d152--pubN72426" page="38">
+      <description>4+ carapace armour</description>
+    </rule>
   </sharedRules>
 </catalogue>
