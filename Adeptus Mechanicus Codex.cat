@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="6" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="7" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
     <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
@@ -1426,10 +1426,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Galvanic Rifle" hidden="false" id="bf3f-b0ce-2d40-5d98" publicationId="2301-1cab-pubN65537" collective="false">
-      <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="0b9d-bfc8-bfd1-a26c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4fee-6f64-6d22-7043" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Galvanic Rifle" id="15f3-87bf-f472-56dc" hidden="false" targetId="30a6-4baf-67d3-5a85" type="profile"/>
         <infoLink name="Precision Shots" id="2e10-2f0a-bf01-be98" hidden="false" targetId="540d-b15f-f709-3bf9" type="rule"/>
@@ -1620,7 +1616,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
     <selectionEntry type="model" import="true" name="Onager Dunecrawler" hidden="false" id="ba7e-6ad9-c97f-52e8" publicationId="2301-1cab-pubN65537" page="63" collective="false">
       <constraints>
         <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="eb05-17d8-67c7-d0f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5cb1-53af-04e5-6d0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="3" field="selections" scope="parent" shared="false" id="5cb1-53af-04e5-6d0f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <rules>
         <rule name="Field Harmonics" id="a78a-38a1-b3b2-e934" hidden="false" publicationId="2301-1cab-pubN65537" page="63">
@@ -1829,9 +1825,9 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <cost name="pts" typeId="points" value="25"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Phosphor blast pistol" hidden="false" id="ff68-e777-ddef-36c2" publicationId="2301-1cab-pubN65537" page="56" collective="false">
+    <selectionEntry type="upgrade" import="true" name="Phosphor Hand Cannon" hidden="false" id="ff68-e777-ddef-36c2" publicationId="2301-1cab-pubN65537" page="56" collective="false">
       <infoLinks>
-        <infoLink name="Phosphor blast pistol" id="058e-b969-9c52-01bb" hidden="false" targetId="521d-0f7a-b153-8feb" type="profile"/>
+        <infoLink name="Phosphor Hand Cannon" id="058e-b969-9c52-01bb" hidden="false" targetId="521d-0f7a-b153-8feb" type="profile"/>
         <infoLink name="Luminagen" id="c703-a11a-efa0-ba96" hidden="false" targetId="1ef9-eb82-305a-6660" type="rule"/>
       </infoLinks>
       <costs>
@@ -1881,8 +1877,8 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Radium carbine" hidden="false" id="ea61-e378-4bc9-adfb" publicationId="2301-1cab-pubN65537" collective="false">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fed3-7c42-f9c0-a0ca" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e8ed-6092-56fa-0d0b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="fed3-7c42-f9c0-a0ca-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fed3-7c42-f9c0-a0ca-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Radium Carbine" id="e39f-7086-c0a6-9798" hidden="false" targetId="6263-cd7b-aecd-9361" type="profile"/>
@@ -1911,47 +1907,45 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <cost name="pts" typeId="points" value="5"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Ranger Alpha" hidden="false" id="69f9-ad7e-3602-d0f1" publicationId="2301-1cab-pubN65537" collective="false">
+    <selectionEntry type="model" import="true" name="Skitarii Ranger Alpha" hidden="false" id="69f9-ad7e-3602-d0f1" publicationId="2301-1cab-pubN65537" collective="false" collapsible="true">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6019-a843-b0fc-1158" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2adc-d9a6-34af-f344" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6019-a843-b0fc-1158-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6019-a843-b0fc-1158-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Ranger Alpha" id="e1d1-d403-31cf-89fb" hidden="false" targetId="37b0-3026-1bd4-e0c4" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Ranger Alpha Ranged Weapons" id="edb5-a9d2-f913-5ff1" hidden="false" collective="false" import="true" defaultSelectionEntryId="ddf8-4c3a-bf8d-da0c">
+        <selectionEntryGroup name="Ranger Alpha Ranged Weapons" id="edb5-a9d2-f913-5ff1" hidden="false" collective="false" import="true" defaultSelectionEntryId="b204-67a6-90e3-6d60" sortIndex="1">
           <modifiers>
-            <modifier type="set" value="0" field="maxSelections">
+            <modifier type="set" value="0" field="802c-7431-2d76-108a-min">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="69f9-ad7e-3602-d0f1" childId="810f-7caf-af9b-bcfe" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="802c-7431-2d76-108a-max">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="69f9-ad7e-3602-d0f1" childId="810f-7caf-af9b-bcfe" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="802c-7431-2d76-108a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="802c-7431-2d76-108a-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="802c-7431-2d76-108a-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Arc Pistol" hidden="false" id="0a4f-363d-93cb-4a82" collective="false" targetId="f9b0-8318-b9d1-8b25" type="selectionEntry"/>
-            <entryLink import="true" name="Phosphor blast pistol" hidden="false" id="ea8b-b25a-f177-c756" collective="false" targetId="ff68-e777-ddef-36c2" type="selectionEntry"/>
-            <entryLink import="true" name="Radium pistol" hidden="false" id="d328-3633-ab98-0e6a" collective="false" targetId="9363-c2b1-aad2-0147" type="selectionEntry"/>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Melee Weapons" id="3386-d35c-fb7b-f85b" hidden="false" collective="false" import="true" defaultSelectionEntryId="35fa-8f92-ce8f-f1bd">
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4c22-8a8a-5fb5-51df" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Taser goad" hidden="false" id="d797-eabd-c39b-fc03" collective="false" targetId="1315-cb8d-3666-d53a" type="selectionEntry"/>
-            <entryLink import="true" name="Arc Maul" hidden="false" id="97d5-a1dc-81ff-0541" collective="false" targetId="1fcb-4ca0-c310-1868" type="selectionEntry"/>
-            <entryLink import="true" name="Power Sword" hidden="false" id="8cf2-2ac2-d62e-373a" collective="false" targetId="9a63-71c7-f138-cac0" type="selectionEntry"/>
+            <entryLink import="true" name="Arc Pistol" hidden="false" id="0a4f-363d-93cb-4a82" collective="false" targetId="f9b0-8318-b9d1-8b25" type="selectionEntry" sortIndex="4"/>
+            <entryLink import="true" name="Phosphor blast pistol" hidden="false" id="ea8b-b25a-f177-c756" collective="false" targetId="ff68-e777-ddef-36c2" type="selectionEntry" sortIndex="2"/>
+            <entryLink import="true" name="Radium pistol" hidden="false" id="d328-3633-ab98-0e6a" collective="false" targetId="9363-c2b1-aad2-0147" type="selectionEntry" sortIndex="3"/>
+            <entryLink import="true" name="Galvanic Rifle" hidden="false" id="b204-67a6-90e3-6d60" type="selectionEntry" targetId="bf3f-b0ce-2d40-5d98" sortIndex="1"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Special Issue Wargear" hidden="false" id="a0e1-48fd-18d9-1515" collective="false" targetId="37a4-769d-a261-c43d" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Relics of Mars" hidden="false" id="03b6-a61d-e2a8-58c5" collective="false" targetId="6963-eb80-f96c-d588" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Skitarii war plate" hidden="false" id="38b3-a739-c2be-8432" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry"/>
+        <entryLink import="true" name="Special Issue Wargear" hidden="false" id="a0e1-48fd-18d9-1515" collective="false" targetId="37a4-769d-a261-c43d" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink import="true" name="Relics of Mars" hidden="false" id="03b6-a61d-e2a8-58c5" collective="false" targetId="6963-eb80-f96c-d588" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink import="true" name="Skitarii war plate" hidden="false" id="38b3-a739-c2be-8432" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Skitarii Alpha Melee Weapons" hidden="false" id="a313-9903-cf52-3208" type="selectionEntryGroup" targetId="3386-d35c-fb7b-f85b" sortIndex="2"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="21"/>
@@ -2132,7 +2126,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Skitarii Ranger" hidden="false" id="57f8-af77-fc19-283e" publicationId="2301-1cab-pubN65537" collective="false">
+    <selectionEntry type="model" import="true" name="Skitarii Ranger" hidden="false" id="57f8-af77-fc19-283e" publicationId="2301-1cab-pubN65537" collective="true">
       <constraints>
         <constraint type="min" value="4" field="selections" scope="parent" shared="false" id="b307-4676-d79e-d220" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
         <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="79de-d64e-6eea-dc02" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
@@ -2143,6 +2137,26 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <costs>
         <cost name="pts" typeId="points" value="11"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Galvanic Rifle" hidden="false" id="0b39-653b-ebc3-cd2b" collective="false" targetId="bf3f-b0ce-2d40-5d98" type="selectionEntry" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6363-895a-9805-e00d-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6363-895a-9805-e00d-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Skitarii war plate" hidden="false" id="765b-a941-39d1-f974" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="f271-be11-edc9-0014" defaultAmount="" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Close Combat Weapon" id="1074-609f-3a8c-fc5a" hidden="false" type="profile" targetId="e294-a5c7-e01e-0a82"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab0f-3e80-9e6e-7ab9-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab0f-3e80-9e6e-7ab9-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skitarii Rangers" hidden="false" id="abb8-4b80-f568-a051" publicationId="2301-1cab-pubN65537" collective="false">
       <infoLinks>
@@ -2152,35 +2166,15 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <infoLink name="Relentless" id="4515-f5c6-17c5-4864" hidden="false" targetId="7674-690c-ab59-1444" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Ranger Alpha" hidden="false" id="bfba-b0b8-5fc4-03b1" collective="false" targetId="69f9-ad7e-3602-d0f1" type="selectionEntry"/>
-        <entryLink import="true" name="Skitarii Ranger" hidden="false" id="377b-1256-a015-5497" collective="false" targetId="57f8-af77-fc19-283e" type="selectionEntry"/>
-        <entryLink import="true" name="Galvanic Rifle" hidden="false" id="0b39-653b-ebc3-cd2b" collective="false" targetId="bf3f-b0ce-2d40-5d98" type="selectionEntry"/>
-        <entryLink import="true" name="Skitarii war plate" hidden="false" id="765b-a941-39d1-f974" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry"/>
+        <entryLink import="true" name="Skitarii Ranger Alpha" hidden="false" id="bfba-b0b8-5fc4-03b1" collective="false" targetId="69f9-ad7e-3602-d0f1" type="selectionEntry" sortIndex="1" collapsible="true"/>
+        <entryLink import="true" name="Skitarii Ranger" hidden="false" id="377b-1256-a015-5497" targetId="57f8-af77-fc19-283e" type="selectionEntry" defaultAmount="4" sortIndex="2"/>
         <entryLink import="true" name="Data Upgrades" hidden="false" id="43c8-c612-a7ed-571e" collective="false" targetId="547b-2e63-5458-e2a9" type="selectionEntryGroup"/>
         <entryLink import="true" name="Dedicated Transport" hidden="false" id="fabb-2d88-7078-b477" type="selectionEntryGroup" targetId="d691-b7e6-aab0-df02"/>
+        <entryLink import="true" name="Skitarii Special Weapons" hidden="false" id="116c-b695-450d-c043" type="selectionEntryGroup" targetId="40e5-69bc-c582-29bc" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Special Weapons" id="40e5-69bc-c582-29bc" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Arc Rifle" hidden="false" id="7308-13e5-4aa6-8e35" type="selectionEntry" targetId="847e-9e0f-f87b-f877"/>
-            <entryLink import="true" name="Plasma Caliver" hidden="false" id="caf2-e524-4a9c-2594" type="selectionEntry" targetId="99b7-dd0c-0627-a165"/>
-            <entryLink import="true" name="Transuranic arquebus" hidden="false" id="1e6b-b4ad-717f-696d" type="selectionEntry" targetId="2579-0761-e3ef-3c6c"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4b89-8146-079c-1593" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="3" field="maxSelections">
-              <conditions>
-                <condition type="equalTo" value="9" field="selections" scope="parent" childId="57f8-af77-fc19-283e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Skitarii Vanguard" hidden="false" id="4df3-e84c-cffb-c72d" publicationId="2301-1cab-pubN65537" collective="false">
       <constraints>
@@ -2193,6 +2187,21 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <costs>
         <cost name="pts" typeId="points" value="9"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Radium carbine" hidden="false" id="425a-0ec1-76a9-1b4e" collective="false" targetId="ea61-e378-4bc9-adfb" type="selectionEntry" sortIndex="1"/>
+        <entryLink import="true" name="Skitarii war plate" hidden="false" id="0688-bdfa-8593-c954" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="3ad5-2ab9-012e-d43f" defaultAmount="" sortIndex="2">
+          <infoLinks>
+            <infoLink name="Close Combat Weapon" id="1fdc-8111-a118-7dd6" hidden="false" type="profile" targetId="e294-a5c7-e01e-0a82"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8ff2-9aaa-621c-457e-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8ff2-9aaa-621c-457e-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Skitarii Vanguards" hidden="false" id="1385-dc09-2ff3-37a4" publicationId="2301-1cab-pubN65537" collective="false">
       <infoLinks>
@@ -2202,9 +2211,8 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <infoLink name="Rad-saturation" id="f0f8-b310-a4b8-a4af" hidden="false" targetId="9b35-7ed9-3c6b-bdc5" type="rule"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Skitarii war plate" hidden="false" id="0688-bdfa-8593-c954" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry"/>
-        <entryLink import="true" name="Skitarii Vanguard" hidden="false" id="aa7a-db79-f95d-d286" collective="false" targetId="4df3-e84c-cffb-c72d" type="selectionEntry"/>
-        <entryLink import="true" name="Vanguard Alpha" hidden="false" id="87bc-c622-0fa4-cd46" collective="false" targetId="b177-a42d-8df2-2cf5" type="selectionEntry">
+        <entryLink import="true" name="Skitarii Vanguard" hidden="false" id="aa7a-db79-f95d-d286" collective="true" targetId="4df3-e84c-cffb-c72d" type="selectionEntry" defaultAmount="4" sortIndex="2" collapsible="true"/>
+        <entryLink import="true" name="Vanguard Alpha" hidden="false" id="87bc-c622-0fa4-cd46" collective="false" targetId="b177-a42d-8df2-2cf5" type="selectionEntry" sortIndex="1" collapsible="true">
           <selectionEntryGroups>
             <selectionEntryGroup name="Melee Weapons" id="7b1f-4df3-6801-6767" hidden="false" collective="false" import="true" defaultSelectionEntryId="35fa-8f92-ce8f-f1bd">
               <constraints>
@@ -2219,36 +2227,17 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           </selectionEntryGroups>
         </entryLink>
         <entryLink import="true" name="Data Upgrades" hidden="false" id="e392-e0c2-1169-cd1e" collective="false" targetId="547b-2e63-5458-e2a9" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Radium carbine" hidden="false" id="425a-0ec1-76a9-1b4e" collective="false" targetId="ea61-e378-4bc9-adfb" type="selectionEntry"/>
         <entryLink import="true" name="Dedicated Transport" hidden="false" id="8d5b-7aff-d38b-44d2" type="selectionEntryGroup" targetId="d691-b7e6-aab0-df02"/>
+        <entryLink import="true" name="Skitarii Special Weapons" hidden="false" id="03cd-0b8d-b128-b705" type="selectionEntryGroup" targetId="40e5-69bc-c582-29bc" sortIndex="3"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Special Weapons" id="a25f-43c1-0d95-38c3" hidden="false">
-          <entryLinks>
-            <entryLink import="true" name="Arc Rifle" hidden="false" id="7526-8fb8-35fa-649b" type="selectionEntry" targetId="847e-9e0f-f87b-f877"/>
-            <entryLink import="true" name="Plasma Caliver" hidden="false" id="2e09-0dd4-89cc-a203" type="selectionEntry" targetId="99b7-dd0c-0627-a165"/>
-            <entryLink import="true" name="Transuranic arquebus" hidden="false" id="45c1-0978-76bd-3623" type="selectionEntry" targetId="2579-0761-e3ef-3c6c"/>
-          </entryLinks>
-          <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c268-a838-36ce-fdfe" includeChildSelections="false"/>
-          </constraints>
-          <modifiers>
-            <modifier type="set" value="3" field="maxSelections">
-              <conditions>
-                <condition type="equalTo" value="9" field="selections" scope="parent" childId="4df3-e84c-cffb-c72d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Skitarii war plate" hidden="false" id="3be5-f0e3-9f00-f564" publicationId="2301-1cab-pubN65537" collective="false">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a3e3-1f5a-f76a-3d0e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b8fc-6316-dbca-ab3e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a3e3-1f5a-f76a-3d0e-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a3e3-1f5a-f76a-3d0e-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Skitarii War Plate" id="607f-16b9-d140-d06d" hidden="false" targetId="42c3-6f45-6a7e-4717" type="profile"/>
@@ -2426,29 +2415,34 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry type="model" import="true" name="Vanguard Alpha" hidden="false" id="b177-a42d-8df2-2cf5" publicationId="2301-1cab-pubN65537" collective="false">
+    <selectionEntry type="model" import="true" name="Skitarii Vanguard Alpha" hidden="false" id="b177-a42d-8df2-2cf5" publicationId="2301-1cab-pubN65537" collective="false" collapsible="true">
       <constraints>
-        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="277f-c6e1-28f6-b82b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a6d4-bf78-977e-90c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a6d4-bf78-977e-90c8-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a6d4-bf78-977e-90c8-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
       <infoLinks>
         <infoLink name="Vanguard Alpha" id="7eb0-6301-a438-5f22" hidden="false" targetId="efd1-9c0f-3dec-dcd6" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Vanguard Alpha Ranged Weapons" id="e4cd-dd23-3732-4c77" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b83-a308-c247-a9aa">
+        <selectionEntryGroup name="Vanguard Alpha Ranged Weapons" id="e4cd-dd23-3732-4c77" hidden="false" collective="false" import="true" defaultSelectionEntryId="1dc6-3457-add7-896e" sortIndex="1">
           <modifiers>
-            <modifier type="set" value="0" field="maxSelections">
+            <modifier type="set" value="0" field="921d-fadd-917a-a030-min">
+              <conditions>
+                <condition type="equalTo" value="1" field="selections" scope="b177-a42d-8df2-2cf5" childId="810f-7caf-af9b-bcfe" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+            <modifier type="set" value="0" field="921d-fadd-917a-a030-max">
               <conditions>
                 <condition type="equalTo" value="1" field="selections" scope="b177-a42d-8df2-2cf5" childId="810f-7caf-af9b-bcfe" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </conditions>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="921d-fadd-917a-a030" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2cc1-1a95-5f2d-3a43" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="921d-fadd-917a-a030-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="921d-fadd-917a-a030-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Radium carbine" hidden="false" id="1dc6-3457-add7-896e" collective="false">
+            <selectionEntry type="upgrade" import="true" name="Radium carbine" hidden="false" id="1dc6-3457-add7-896e" collective="false" sortIndex="1">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3566-1cef-0a7b-5943" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
               </constraints>
@@ -2462,16 +2456,17 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink import="true" name="Arc Pistol" hidden="false" id="7371-f083-e457-6e28" collective="false" targetId="f9b0-8318-b9d1-8b25" type="selectionEntry"/>
-            <entryLink import="true" name="Phosphor blast pistol" hidden="false" id="3473-62c9-3db4-2047" collective="false" targetId="ff68-e777-ddef-36c2" type="selectionEntry"/>
-            <entryLink import="true" name="Radium pistol" hidden="false" id="5a8f-6e62-da40-90cf" collective="false" targetId="9363-c2b1-aad2-0147" type="selectionEntry"/>
+            <entryLink import="true" name="Arc Pistol" hidden="false" id="7371-f083-e457-6e28" collective="false" targetId="f9b0-8318-b9d1-8b25" type="selectionEntry" sortIndex="4"/>
+            <entryLink import="true" name="Phosphor blast pistol" hidden="false" id="3473-62c9-3db4-2047" collective="false" targetId="ff68-e777-ddef-36c2" type="selectionEntry" sortIndex="3"/>
+            <entryLink import="true" name="Radium pistol" hidden="false" id="5a8f-6e62-da40-90cf" collective="false" targetId="9363-c2b1-aad2-0147" type="selectionEntry" sortIndex="2"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Special Issue Wargear" hidden="false" id="9ef2-e93e-a7b4-81ad" collective="false" targetId="37a4-769d-a261-c43d" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Relics of Mars" hidden="false" id="bd05-94e3-1e09-821b" collective="false" targetId="6963-eb80-f96c-d588" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Skitarii war plate" hidden="false" id="b876-42d9-5dca-d1c6" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry"/>
+        <entryLink import="true" name="Special Issue Wargear" hidden="false" id="9ef2-e93e-a7b4-81ad" collective="false" targetId="37a4-769d-a261-c43d" type="selectionEntryGroup" sortIndex="4"/>
+        <entryLink import="true" name="Relics of Mars" hidden="false" id="bd05-94e3-1e09-821b" collective="false" targetId="6963-eb80-f96c-d588" type="selectionEntryGroup" sortIndex="5"/>
+        <entryLink import="true" name="Skitarii war plate" hidden="false" id="b876-42d9-5dca-d1c6" collective="false" targetId="3be5-f0e3-9f00-f564" type="selectionEntry" sortIndex="3"/>
+        <entryLink import="true" name="Skitarii Alpha Melee Weapons" hidden="false" id="c4be-a26e-3090-1425" type="selectionEntryGroup" targetId="3386-d35c-fb7b-f85b" sortIndex="2"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="19"/>
@@ -2485,10 +2480,10 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <entryLink import="true" name="Broad spectrum data-tether" hidden="false" id="d35a-74fb-da43-4587" type="selectionEntry" targetId="dce4-8e6d-ab63-3ac0"/>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Cognis heavy stubber" hidden="false" id="4f25-eb96-5fc1-7429" publicationId="2301-1cab-pubN65537" page="56" collective="false">
+        <selectionEntry type="upgrade" import="true" name="Cognis heavy stubber" hidden="false" id="4f25-eb96-5fc1-7429" publicationId="2301-1cab-pubN65537" page="56" collective="false" defaultAmount="2">
           <constraints>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="ecf1-8e7e-d39b-4d6c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="afdb-6e44-3be3-5e2e" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="ecf1-8e7e-d39b-4d6c-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="ecf1-8e7e-d39b-4d6c-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
           <infoLinks>
             <infoLink name="Cognis Heavy Stubber" id="62eb-f38c-d7da-8529" hidden="false" targetId="024f-8fac-ebf8-edcc" type="profile"/>
@@ -2505,8 +2500,8 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <infoLink name="Cognis" id="83b2-b22c-34fa-93be" hidden="false" type="rule" targetId="ecab-a747-9585-8e78"/>
           </infoLinks>
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="153c-90ef-ffb7-5c2c" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3151-6c16-bbdb-6f7d" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="153c-90ef-ffb7-5c2c-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="153c-90ef-ffb7-5c2c-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
       </selectionEntries>
@@ -2702,94 +2697,94 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <costs>
         <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
       </costs>
-      <selectionEntries>
-        <selectionEntry type="model" import="true" name="Vorax Battle-Automata" hidden="false" id="6711-d580-b463-bc7e" publicationId="bde1-6db1-163b-3b76" page="42" collective="false">
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vorax Battle-Automata" hidden="false" id="6711-d580-b463-bc7e" publicationId="bde1-6db1-163b-3b76" page="42" collective="false">
+      <constraints>
+        <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5505-f1cf-a3e4-60d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a2a-94fd-740e-3d27" includeChildSelections="false"/>
+      </constraints>
+      <infoLinks>
+        <infoLink name="Fleet" id="963f-8d5b-228b-aee8" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
+          <modifiers>
+            <modifier type="set" value="Fleet (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Scout" id="05fa-5f99-01fa-8186" hidden="false" targetId="1794-e0e0-bedf-e46b" type="rule"/>
+        <infoLink name="Hammer of Wrath" id="bac5-1453-370b-d20f" hidden="false" targetId="4628-0ada-2997-8568" type="rule">
+          <modifiers>
+            <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="It Will Not Die" id="fe55-672c-e459-017b" hidden="false" targetId="8de3-9e93-da02-b9dd" type="rule">
+          <modifiers>
+            <modifier type="set" value="It Will Not Die (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Vorax Battle-Automata" id="fb37-f8aa-601e-0e21" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="75"/>
+        <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="6ec3-a358-9bb3-c95" type="selectionEntry" targetId="3840-c678-634f-5428">
           <constraints>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="5505-f1cf-a3e4-60d6" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5a2a-94fd-740e-3d27" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b93-2d67-30c5-50cb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb9-cab7-18d2-427d"/>
           </constraints>
-          <infoLinks>
-            <infoLink name="Fleet" id="963f-8d5b-228b-aee8" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule">
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="4f60-1e42-3652-4e9e" hidden="false" collective="false" import="true" defaultSelectionEntryId="4f2a-53f2-7067-b3ce">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eef-9e33-8006-1688" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="559a-d072-252b-cc6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Irad-Cleanser" hidden="false" id="b3c5-237f-e1d2-d9f8" collective="true" defaultAmount="0" sortIndex="2">
+              <infoLinks>
+                <infoLink name="Fleshbane" id="356e-6348-0213-3dff" hidden="false" targetId="3897-5e71-1b57-57ba" type="rule"/>
+                <infoLink name="Rad-Phage" id="f1bf-681e-abf4-bb79" hidden="false" targetId="8bfd-42ae-5a40-a914" type="rule"/>
+                <infoLink name="Irad-cleanser" id="7867-c15a-f791-19e9" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
               <modifiers>
-                <modifier type="set" value="Fleet (2)" field="name"/>
+                <modifier type="increment" value="1" field="80be-28b5-97f0-9437">
+                  <repeats>
+                    <repeat value="3" repeats="1" field="selections" scope="6711-d580-b463-bc7e" childId="6711-d580-b463-bc7e" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Vorax Battle-Automata"/>
+                  </repeats>
+                </modifier>
               </modifiers>
-            </infoLink>
-            <infoLink name="Scout" id="05fa-5f99-01fa-8186" hidden="false" targetId="1794-e0e0-bedf-e46b" type="rule"/>
-            <infoLink name="Hammer of Wrath" id="bac5-1453-370b-d20f" hidden="false" targetId="4628-0ada-2997-8568" type="rule">
-              <modifiers>
-                <modifier type="set" value="Hammer of Wrath (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="It Will Not Die" id="fe55-672c-e459-017b" hidden="false" targetId="8de3-9e93-da02-b9dd" type="rule">
-              <modifiers>
-                <modifier type="set" value="It Will Not Die (5+)" field="name"/>
-              </modifiers>
-            </infoLink>
-            <infoLink name="Vorax Battle-Automata" id="fb37-f8aa-601e-0e21" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="65"/>
-          </costs>
-          <entryLinks>
-            <entryLink import="true" name="Atomantic Deflector" hidden="false" id="6ec3-a358-9bb3-c95" type="selectionEntry" targetId="3840-c678-634f-5428">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6b93-2d67-30c5-50cb"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb9-cab7-18d2-427d"/>
+                <constraint type="max" value="0" field="selections" scope="f144-1079-11ff-019d" shared="true" id="80be-28b5-97f0-9437" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2907-5fe0-673a-adfb"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="4f60-1e42-3652-4e9e" hidden="false" collective="false" import="true" defaultSelectionEntryId="4f2a-53f2-7067-b3ce">
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6eef-9e33-8006-1688" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="559a-d072-252b-cc6a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Irad-Cleanser" hidden="false" id="b3c5-237f-e1d2-d9f8" collective="true" defaultAmount="0" sortIndex="2">
-                  <infoLinks>
-                    <infoLink name="Fleshbane" id="356e-6348-0213-3dff" hidden="false" targetId="3897-5e71-1b57-57ba" type="rule"/>
-                    <infoLink name="Rad-Phage" id="f1bf-681e-abf4-bb79" hidden="false" targetId="8bfd-42ae-5a40-a914" type="rule"/>
-                    <infoLink name="Irad-cleanser" id="7867-c15a-f791-19e9" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="10"/>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                  </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="ebea-d754-7cfa-914b" collective="true" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Rending" id="ffdb-4f3b-428c-30a5" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule">
                   <modifiers>
-                    <modifier type="increment" value="1" field="80be-28b5-97f0-9437">
-                      <repeats>
-                        <repeat value="3" repeats="1" field="selections" scope="f144-1079-11ff-019d" childId="model" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                      </repeats>
-                    </modifier>
+                    <modifier type="set" value="Rending (4+)" field="name"/>
                   </modifiers>
-                  <constraints>
-                    <constraint type="max" value="0" field="selections" scope="f144-1079-11ff-019d" shared="true" id="80be-28b5-97f0-9437" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2907-5fe0-673a-adfb"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="ebea-d754-7cfa-914b" collective="true" sortIndex="1">
-                  <infoLinks>
-                    <infoLink name="Rending" id="ffdb-4f3b-428c-30a5" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule">
-                      <modifiers>
-                        <modifier type="set" value="Rending (4+)" field="name"/>
-                      </modifiers>
-                    </infoLink>
-                    <infoLink name="Shred" id="258e-543d-666c-718c" hidden="false" targetId="5770-35c6-7341-5527" type="rule"/>
-                    <infoLink name="Lightning Gun (Arc)" id="c366-76e5-4db1-2ad0" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
-                    <infoLink name="Lightning Gun (Strike)" id="9174-bbde-eb9e-1e72" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-                  </costs>
-                  <constraints>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7754-8f99-fd1c-ff94" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-      </selectionEntries>
+                </infoLink>
+                <infoLink name="Shred" id="258e-543d-666c-718c" hidden="false" targetId="5770-35c6-7341-5527" type="rule"/>
+                <infoLink name="Lightning Gun (Arc)" id="c366-76e5-4db1-2ad0" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
+                <infoLink name="Lightning Gun (Strike)" id="9174-bbde-eb9e-1e72" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7754-8f99-fd1c-ff94" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <comment>Hey this is just a sketch, kay?</comment>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -3391,7 +3386,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Haywire, no I penalty for charging to cover</characteristic>
       </characteristics>
     </profile>
-    <profile name="Phosphor blast pistol" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="521d-0f7a-b153-8feb" publicationId="2301-1cab-pubN65537" page="73">
+    <profile name="Phosphor Hand Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="521d-0f7a-b153-8feb" publicationId="2301-1cab-pubN65537" page="73">
       <characteristics>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">12&quot;</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
@@ -4166,9 +4161,9 @@ as described in the Allies section of Warhammer 40,000: The Rules.</description>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Special Issue Wargear" id="37a4-769d-a261-c43d" hidden="false" collective="false" import="true">
+    <selectionEntryGroup name="Special Issue Wargear" id="37a4-769d-a261-c43d" hidden="false" collective="false" import="true" defaultSelectionEntryId="none">
       <selectionEntryGroups>
-        <selectionEntryGroup name="Protection Fields" id="7656-00a0-8aac-5caa" hidden="false" collective="false" import="true" defaultSelectionEntryId="6f1f-ef07-c41d-2d37">
+        <selectionEntryGroup name="Protection Fields" id="7656-00a0-8aac-5caa" hidden="false" collective="false" import="true" defaultSelectionEntryId="6f1f-ef07-c41d-2d37" flatten="true">
           <modifiers>
             <modifier type="set" value="1" field="b19c-7118-6790-cd51">
               <conditionGroups>
@@ -4194,6 +4189,9 @@ as described in the Allies section of Warhammer 40,000: The Rules.</description>
                   </conditions>
                 </modifier>
               </modifiers>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
             </entryLink>
             <entryLink import="true" name="Conversion field" hidden="false" id="d225-7f09-ffd5-f62e" collective="false" targetId="496a-d077-d0f4-ab04" type="selectionEntry">
               <modifiers>
@@ -4246,7 +4244,7 @@ as described in the Allies section of Warhammer 40,000: The Rules.</description>
         <entryLink import="true" name="Omnispex" hidden="false" id="2784-f9c4-c418-475e" collective="false" targetId="40ee-f768-52d0-78f2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup name="Relics of Mars" id="6963-eb80-f96c-d588" hidden="false" collective="false" import="true">
+    <selectionEntryGroup name="Relics of Mars" id="6963-eb80-f96c-d588" hidden="false" collective="false" import="true" collapsible="true" defaultSelectionEntryId="none">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fd23-5ac1-f8c6-eb11" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
@@ -4330,7 +4328,7 @@ as described in the Allies section of Warhammer 40,000: The Rules.</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Arcana Mechanicum" hidden="true" id="834d-8a15-26d0-4c12" collective="false" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup">
+        <entryLink import="true" name="Arcana Mechanicum" hidden="true" id="834d-8a15-26d0-4c12" collective="false" targetId="80a5-f64a-d9dd-9e73" type="selectionEntryGroup" flatten="true">
           <modifiers>
             <modifier type="set" value="false" field="hidden">
               <conditions>
@@ -4346,15 +4344,56 @@ as described in the Allies section of Warhammer 40,000: The Rules.</description>
         <entryLink import="true" name="Skorpius Dunerider" hidden="false" id="0c4d-be98-7d66-3adb" type="selectionEntry" targetId="483f-9c92-7c7e-7c05"/>
       </entryLinks>
       <constraints>
-        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="ee6e-f715-ed95-85ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="59fe-ec38-b686-fd9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="force" shared="true" id="756f-0257-6256-745d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="selections" scope="force" shared="true" id="2b53-dd7d-f9c8-0686" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="min" value="0" field="selections" scope="roster" shared="true" id="ebc3-ae6c-e646-5498" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="selections" scope="roster" shared="true" id="6e24-3605-fe4d-fe78" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="9e7b-51b6-93c7-96d9" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
-        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="5380-b458-b4e4-1d1f" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="ee6e-f715-ed95-85ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="59fe-ec38-b686-fd9a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Skitarii Special Weapons" id="40e5-69bc-c582-29bc" hidden="false">
+      <entryLinks>
+        <entryLink import="true" name="Arc Rifle" hidden="false" id="7308-13e5-4aa6-8e35" type="selectionEntry" targetId="847e-9e0f-f87b-f877">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a678-77d1-af6b-9617" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Plasma Caliver" hidden="false" id="caf2-e524-4a9c-2594" type="selectionEntry" targetId="99b7-dd0c-0627-a165">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="a2b9-9f49-d057-c6db" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Transuranic arquebus" hidden="false" id="1e6b-b4ad-717f-696d" type="selectionEntry" targetId="2579-0761-e3ef-3c6c">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="4210-0564-5f45-1455" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <constraints>
+        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="4b89-8146-079c-1593" includeChildSelections="false"/>
+      </constraints>
+      <modifiers>
+        <modifier type="set" value="3" field="4b89-8146-079c-1593">
+          <conditions>
+            <condition type="equalTo" value="9" field="selections" scope="parent" childId="57f8-af77-fc19-283e" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Skitarii Alpha Melee Weapons" id="3386-d35c-fb7b-f85b" hidden="false" collective="false" import="true" defaultSelectionEntryId="00ba-5051-d315-51e3">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="4c22-8a8a-5fb5-51df-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4c22-8a8a-5fb5-51df-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Taser goad" hidden="false" id="d797-eabd-c39b-fc03" collective="false" targetId="1315-cb8d-3666-d53a" type="selectionEntry" sortIndex="2"/>
+        <entryLink import="true" name="Arc Maul" hidden="false" id="97d5-a1dc-81ff-0541" collective="false" targetId="1fcb-4ca0-c310-1868" type="selectionEntry" sortIndex="4"/>
+        <entryLink import="true" name="Power Sword" hidden="false" id="8cf2-2ac2-d62e-373a" collective="false" targetId="9a63-71c7-f138-cac0" type="selectionEntry" sortIndex="3"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Close Combat Weapon" hidden="false" id="00ba-5051-d315-51e3" sortIndex="1" defaultAmount="">
+          <infoLinks>
+            <infoLink name="Close Combat Weapon" id="5c73-0a4f-5897-fdf0" hidden="false" type="profile" targetId="e294-a5c7-e01e-0a82"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
