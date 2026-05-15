@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="2356-2cb7-076f-e91e" name="Astra Militarum" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="6" revision="7" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Imperial Guard Library" id="06a7-5d35-913d-5fdb" targetId="6aad-252a-c22e-e66c"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Wyvern Battery" hidden="false" id="5108-23d5-0ca7-d0bc" collective="false" targetId="f086-79d8-7487-d33c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="0d3f-18be-c65f-7926" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Aquila Lander (RR)" hidden="false" id="a0ee749a-8f23-f10a-eaa7-3d769a062eb2" collective="false" targetId="ff6d-1f50-dbc3-d9b0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="a0ee749a-8f23-f10a-eaa7-3d769a062eb2-c274d0b0-5866-44bc-9810-91c136ae7438" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Armoured Sentinel Squadron" hidden="false" id="cdfa-f55c-369d-14d7" collective="false" targetId="eb98-9c65-0915-9483" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="4256-1fb6-faff-c57d" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Arvus Lighter Fleet (RR)" hidden="false" id="4622-9a63-6c6d-84c2" collective="false" targetId="00cb-4bd0-05fd-03b0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="4622-9a63-6c6d-84c2-c274d0b0-5866-44bc-9810-91c136ae7438" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Atlas Recovery Tank (RR)" hidden="false" id="0cbb-d9cc-eec9-01d7" collective="false" targetId="0f4b-6c7f-50f0-24cb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="b1c6-21c7-2e32-623a" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Avenger Strike Fighter (FW)" hidden="false" id="92a2-c9f6-7adb-92d8" collective="false" targetId="0dd9-c01f-713a-a527" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="92a2-c9f6-7adb-92d8-abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Baneblade" hidden="false" id="31a7-11cd-6ad7-3c5d" collective="false" targetId="4143-4673-dfb1-04b3" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="344c-aac5-2a60-666a" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Banehammer" hidden="false" id="869a-062c-d358-3349" collective="false" targetId="9680-d92f-e786-9609" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="ad4a-d40a-6dcb-17b9" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Banesword" hidden="false" id="a5f9-d5ee-e7f2-275f" collective="false" targetId="7a37-7278-a548-c657" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="7410-cd0c-f992-b75a" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Basilisk Battery" hidden="false" id="6b84-0515-d419-3849" collective="false" targetId="cd88-7658-62d8-841c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="62af-ba86-4ffe-c530" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Belisarius Cawl" hidden="false" id="ad17-486d-e98d-ef04" collective="false" targetId="5bc2-e061-a439-c689" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="5374616e6461726423232344415441232323" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="416c6c696564204465746163686d656e7423232344415441232323" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="2d52-d1c1-0941-891c" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Bullgryns" hidden="false" id="37d5-2f6d-a1a3-f83e" collective="false" targetId="6c53-2ad1-c3ae-fb1d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="37d5-2f6d-a1a3-f83e-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Celestine, The Living Saint (FoC)" hidden="false" id="81b4-4588-e7dd-71b1" collective="false" targetId="bdee-f95e-fcbd-01ec" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="5374616e6461726423232344415441232323" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="416c6c696564204465746163686d656e7423232344415441232323" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="0514-dcdf-2318-d953" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Centaur Squadron" hidden="false" id="9aa9-3460-6934-125b" collective="false" targetId="81b2-f00a-9b89-9564" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="3436-e7a3-e663-5870" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Commissar" hidden="false" id="81f3-81c5-9b05-fe4c" collective="false" targetId="5d9c650e-5d0d-3490-f151-8161623ea294" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="eeb8-9518-4bf7-3cf8" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Commissar Yarrick" hidden="false" id="99a162d9-4854-cc3b-c35e-b0c3a3cc77d6" collective="false" targetId="08cd-ee17-b0b2-c0c0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="99a162d9-4854-cc3b-c35e-b0c3a3cc77d6-848a6ff2-0def-4c72-8433-ff7da70e6bc7" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Company Command Squad" hidden="false" id="5f44-129d-c825-aa50" collective="false" targetId="4ac7-d3fc-4d84-2894" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="5f44-129d-c825-aa50-848a6ff2-0def-4c72-8433-ff7da70e6bc7" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Crassus" hidden="false" id="0023-4b41-36a6-cb12" collective="false" targetId="a695-1bf6-7d5b-8561" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="d1df-061a-93fa-6dde" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cyclops Demolition Squadron (RR)" hidden="false" id="c0d1-45b0-6d76-7f4f" collective="false" targetId="c901-d2b6-eb0b-ee53" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="30e2-5b95-cd98-bdc5" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cypher, Lord of the Fallen" hidden="false" id="aa5e-66ed-6d19-7e00" collective="false" targetId="1595-cd9a-be0f-b396" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="b599-12f4-d800-5499" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Deathstrike" hidden="false" id="efcf-bb3a-dfd4-0d9a" collective="false" targetId="4b15-3a7b-4b75-7c9d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="2b1f-0e80-377b-101b" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Siege Tank Squadron" hidden="false" id="786d-398a-831a-3477" collective="false" targetId="383e-e89f-e1df-0b43" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="9a4a-d1fd-45ad-4779-abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Dominus Triple Bombard" hidden="false" id="4154-6e40-bbb7-e6cf" collective="false" targetId="7150-6498-f754-2ef0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="d624-b0c9-4245-69a9" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Doomhammer" hidden="false" id="f013-ee15-8619-8fbf" collective="false" targetId="93e4-6a90-cc55-6a30" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="341b-3512-20f4-e0bc" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Earthshaker Platform Battery (RR)" hidden="false" id="611f-6c6b-22f2-0d87" collective="false" targetId="ce84-d938-4232-79f0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="611f-6c6b-22f2-0d87-abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Enginseer" hidden="false" id="d665-2800-f2ed-a2e9" collective="false" targetId="59b7-2520-58a9-9e6a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="d665-2800-f2ed-a2e9-848a6ff2-0def-4c72-8433-ff7da70e6bc7" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Field Artillery Battery" hidden="false" id="bdd1-0755-00f0-f285" collective="false" targetId="822d-8a73-36ae-4817" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="76e7-9e02-b552-8e11" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Gorgon" hidden="false" id="84d5-8d73-a77c-17c6" collective="false" targetId="d242-21ca-d41d-06a7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="6545-e48a-8a26-937d" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Grand Master Voldus, Warden of the Librarius" hidden="false" id="2205-5346-2568-4a47" collective="false" targetId="01cb-069b-1e31-75ee" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="2205-5346-2568-4a47-848a6ff2-0def-4c72-8433-ff7da70e6bc7" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hades Breaching Drill with Hades Assault Squad (FW)" hidden="false" id="219a-44c6-5c20-230e" collective="false" targetId="c0d1-e80b-1cc3-5e37" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="219a-44c6-5c20-230e-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Heavy Artillery Carriage Battery (FW)" hidden="false" id="95d6-48b2-ded2-f337" collective="false" targetId="15c6-8514-41ed-883a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="ae74-b51a-53a8-ef65" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hellhammer" hidden="false" id="ad39-5c27-5594-f166" collective="false" targetId="bc4e-7856-f4d8-d22a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="01a6-ea88-a2e4-1211" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hellhound Squadron" hidden="false" id="ab35-c36a-64c7-fd35" collective="false" targetId="03d7-be62-f48a-bcf1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="436d-1bf9-913c-8ffc" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hydra Battery" hidden="false" id="9631-fcc5-782e-5e28" collective="false" targetId="aa13-951c-6fe2-3eba" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="292b-0c1a-4910-c9b4" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hydra Platform Battery" hidden="false" id="bb8f-be67-f5fa-5814" collective="false" targetId="a404-bc45-a019-4b81" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="1d9a-b9d9-f019-bbcf" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Infantry Platoon" hidden="false" id="92c5-ee75-d9dd-0cbd" collective="false" targetId="e77f-ab6b-0fbe-3d5c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="15ec-6757-5818-12eb" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Inquisitor Greyfax" hidden="false" id="ca1e-4f88-0290-1e60" collective="false" targetId="6755-ac2f-6fcf-d8ac" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" value="false" field="hidden">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="5374616e6461726423232344415441232323" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                <condition type="instanceOf" value="0" field="selections" scope="force" childId="416c6c696564204465746163686d656e7423232344415441232323" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="37cb-e987-eaaa-7840" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Leman Russ Squadron" hidden="false" id="00dd-cdc6-8b6b-bd69" collective="false" targetId="c755-71d0-b284-1d3d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="9594-c6ed-6ad6-bdb8" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Lord Commissar" hidden="false" id="c679-b8cc-9ec5-ebb9" collective="false" targetId="7f27-1b6c-adb0-1699" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="0729-4d89-178b-a592" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Macharius (RR)" hidden="false" id="dc8b-7580-86ca-d7bc" collective="false" targetId="3d2c-b34a-f179-c634" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="ee2c-c2c8-869d-4bf6" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Macharius Omega (RR)" hidden="false" id="d0d7-2819-2034-7077" collective="false" targetId="975b-61dc-bca9-30b0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="0c25-b29a-8787-14a0" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Macharius Vanquisher (RR)" hidden="false" id="e154-6c70-d98d-6b76" collective="false" targetId="5b8a-e149-1471-75d4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="584b-1b93-db07-ad75" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Macharius Vulcan (RR)" hidden="false" id="ccc7-ade0-6987-df8d" collective="false" targetId="43de-72a2-e3fa-8a77" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="a785-cf7c-626e-4c11" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Malcador (RR)" hidden="false" id="bddc-fdab-cd97-bca1" collective="false" targetId="3441-89d5-6de5-4725" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="923a-c805-3ffe-2ff5" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Malcador Annihilator (RR)" hidden="false" id="5e63-a733-9721-a891" collective="false" targetId="5a4c-d893-c416-6ac4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="af1a-6dfb-034f-5397" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Malcador Defender (RR)" hidden="false" id="b9b1-7e6f-7ea9-245a" collective="false" targetId="6935-41c2-ea3c-3cb2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="997a-40ee-76c9-0426" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Malcador Infernus (RR)" hidden="false" id="afc6-6743-4c53-d599" collective="false" targetId="6675-be74-2465-0993" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="56f4-43e9-f0d5-b22e" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Manticore" hidden="false" id="4b12-6f04-cee5-29ad" collective="false" targetId="444e-ce0c-8682-49fe" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="f755-e3e2-4b25-5c5c" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Manticore Platform Battery (RR)" hidden="false" id="32dd-e26e-7456-b0db" collective="false" targetId="08ad-85be-8ca7-da42" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="c4c1-524d-9a6d-e6b8" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Imperial Navy Marauder Bomber (RR)" hidden="false" id="5bfc-8759-86ff-27bf" collective="false" targetId="9270-28be-3981-a044" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="267c-52be-ca6e-5f24" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Imperial Navy Marauder Destroyer (RR)" hidden="false" id="2a6a-fc5b-9497-7b42" collective="false" targetId="c3bd-0cb7-e26a-0c54" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="59a9-e3d8-30e9-a00c" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Militarum Tempestus Platoon" hidden="false" id="5d6e-1dd6-0bfb-fb59" collective="false" targetId="2432-645c-1c18-1b99" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="3350-3850-a44b-91ef" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ministorum Priest" hidden="false" id="a98d-554c-0fc2-2cdc" collective="false" targetId="0dc0-1cc6-c7f6-1b31" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="a98d-554c-0fc2-2cdc-848a6ff2-0def-4c72-8433-ff7da70e6bc7" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Minotaur Artillery Tank (RR)" hidden="false" id="0532-6966-c0cf-d917" collective="false" targetId="9df4-841b-dfe0-647c" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="52a7-d650-50a3-e485" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ogryns" hidden="false" id="8d90-63c4-a710-0ee0" collective="false" targetId="d2e8-99bd-45a9-9bd7" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="8d90-63c4-a710-0ee0-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ordnance Battery (wth is this ???)" hidden="false" id="686d-0b22-b05b-3fa7" collective="false" targetId="c079-4241-747f-7e45" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="261b-6dd7-673c-4126" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Praetor" hidden="false" id="a468-3b03-761e-72e2" collective="false" targetId="eb57-5d0d-1b6a-87ce" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="231c-9be7-804a-b6d1" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Primaris Psyker" hidden="false" id="59ed-fd07-7d08-7677" collective="false" targetId="b02c-c4a8-37be-15eb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="59ed-fd07-7d08-7677-848a6ff2-0def-4c72-8433-ff7da70e6bc7" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rapier Battery (RR)" hidden="false" id="d067-b5eb-0334-ce2a" collective="false" targetId="bc4d-faa0-fd15-51c5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="713c-f800-2c87-443a" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ratlings (RR)" hidden="false" id="10d8-f940-2821-d295" collective="false" targetId="d773-65d2-bf15-5388" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="10d8-f940-2821-d295-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Roboute Guilliman, Primarch of the Ultramarines" hidden="false" id="7965-4ae5-a913-5e30" collective="false" targetId="42fe-b322-a2a3-0ed8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="7965-4ae5-a913-5e30-c888f08a-6cea-4a01-8126-d374a9231554" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Rough Riders" hidden="false" id="4f73-fca7-1f3e-40ac" collective="false" targetId="907d-e6a5-3f37-23b0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="4f73-fca7-1f3e-40ac-c274d0b0-5866-44bc-9810-91c136ae7438" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Salamander Command" hidden="false" id="ba1e-4d41-b1c0-5bdd" collective="false" targetId="ab08-4ae6-5fbf-9885" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="a762-548b-2dc9-d4a7" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Salamander Squadron" hidden="false" id="9200-5316-b1cf-0296" collective="false" targetId="e8a6-7e97-e8f6-6b54" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="9d2c-8f26-8aa8-b9d9" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Scout Sentinel Squadron" hidden="false" id="dd8c-c1f4-6f45-86d2" collective="false" targetId="c982-368f-69b8-5465" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="c835-db0e-4312-7806" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sentinel Powerlifter Squadron (FW)" hidden="false" id="fa72-f161-c88b-02bc" collective="false" targetId="0a21-b454-ad7e-b34f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="cd0d-63d9-002e-4968" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sentry Gun Battery (RR)" hidden="false" id="0490-a9df-8d73-07c8" collective="false" targetId="9694-af17-abaa-8136" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="9a27-6c7e-76cf-f7f6" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Shadowsword" hidden="false" id="497f-ade9-1879-fe19" collective="false" targetId="ac21-7d9b-9161-f689" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="3640-abfb-641b-bf21" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sly Marbo" hidden="false" id="1a08-ed7a-1fe2-8407" collective="false" targetId="cccb-e0a9-b859-95b5" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="1a08-ed7a-1fe2-8407-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Stormblade" hidden="false" id="0bc1-b4ce-571e-3153" collective="false" targetId="d69a-6d43-572e-18e8" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="8181-2f07-994a-053f" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Stormlord" hidden="false" id="19af-1f6d-8b9a-df26" collective="false" targetId="1147-8b0f-613f-8b36" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="e3f0-272b-44bb-df84" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Stormsword" hidden="false" id="9e12-833b-f148-0b5a" collective="false" targetId="89a4-012a-118b-d598" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="37b4-15bd-1acc-2e9b" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tank Commander" hidden="false" id="764b-6fd6-0677-daef" collective="false" targetId="5fe0-b305-823b-503e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="4ffe-f51d-2f9d-4c5d" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Tauros Squadron" hidden="false" id="fce3-8184-0e00-8be0" collective="false" targetId="46d5-776c-6785-356a" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="3b13-a374-7014-c079" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Imperial Navy Thunderbolts (RR)" hidden="false" id="3919-407b-aeb6-34cd" collective="false" targetId="39e5-d8f6-4b31-0700" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="3919-407b-aeb6-34cd-abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Valdor Tank Hunter (RR)" hidden="false" id="9278-7e76-26c0-3d51" collective="false" targetId="80a1-ce1a-00d7-9bac" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Lord of War" hidden="false" id="eeba-e74c-e20e-eb4d" targetId="c888f08a-6cea-4a01-8126-d374a9231554" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Valkyrie Squadron" hidden="false" id="f1bc-94a8-3f5f-df8d" collective="false" targetId="1fbc-d961-e509-e2cd" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="f1bc-94a8-3f5f-df8d-c274d0b0-5866-44bc-9810-91c136ae7438" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vendetta Squadron" hidden="false" id="137f-4fcf-8227-22ff" collective="false" targetId="0c2b-ac20-c0d9-4fed" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="137f-4fcf-8227-22ff-c274d0b0-5866-44bc-9810-91c136ae7438" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Veterans" hidden="false" id="1f6c-7a89-6c91-aecf" collective="false" targetId="1c09-5dbb-4bdf-9248" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="dce0-1e11-664f-527d" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vulture Gunship (RR)" hidden="false" id="a5a3-cad7-ae5e-562c" collective="false" targetId="2fb3-7a0b-2ec1-b77b" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="a5a3-cad7-ae5e-562c-c274d0b0-5866-44bc-9810-91c136ae7438" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wyrdvane Psykers" hidden="false" id="e17f-4d66-7062-0185" collective="false" targetId="f312-87d5-b1b6-16fb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="e17f-4d66-7062-0185-638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>

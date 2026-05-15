@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="9e00-0436-148e-24c2" name="Warhammer 40K 7th House Edit" revision="2044" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="9e00-0436-148e-24c2" name="7th House Edit" revision="7" battleScribeVersion="2.03" authorName="The Nerds, but originally the BSdata contributors." xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <publications>
     <publication id="e1ebd931--pubN66380" name="BRB"/>
     <publication id="e1ebd931--pubN67328" name="Kill Team Dataslate"/>
@@ -4740,9 +4740,6 @@ If a weapon has the Sniper special rule, or is fired by a model with the Sniper 
 
 Against vehicles, shooting attacks from weapons and models with the Sniper special rule count as Strength 4.</description>
     </rule>
-    <rule id="1c72-b2a6-9ff3-8662" name="Split Fire" publicationId="e1ebd931--pubN66380" hidden="false">
-      <description>When a unit that contains at least one model with this special rule shoots, one model in the unit can shoot at a different target to the rest of his unit. Once this shooting attack has been resolved, resolve the shooting attacks made by the rest of the unit. These must be at a different target, which cannot be a unit forced to disembark as a result of the Split Firing unit&apos;s initial shooting attack.</description>
-    </rule>
     <rule id="9079-7061-f12c-a6ba" name="Swarms" publicationId="e1ebd931--pubN66380" hidden="false">
       <description>If, when allocating Wounds to a unit with the Swarms special rule, two or more models could be chosen as the closest enemy, the closest enemy is always the model with the least number of Wounds. If a model with the Swarm special rule suffers an unsaved Wound from a Blast (any size) or Template weapon, each unsaved Wound is multiplied to two unsaved Wounds unless that Wound has the Instant Death special rule. However, a unit entirely composed of models with the Swarm special rule is not slowed by difficult terrain, but must test for Dangerous Terrain as normal.</description>
     </rule>
@@ -4910,9 +4907,6 @@ D6 Result
     <rule id="f1d4-5b05-ff67-81d4" name="Master-Craftsman" hidden="false">
       <description>When selecting this special rule, pick a ranged weapon carried by this model. You can re-roll one failed To Hit roll per turn with that weapon.</description>
     </rule>
-    <rule id="9f0c-d4f2-94ee-c3a8" name="Reaping Volley" hidden="false">
-      <description>When attacking with a ranged weapon that fires more than one shot, this model may target different enemy models with each shot. Announce the intended target of every shot before making any To Hit rolls.</description>
-    </rule>
     <rule id="dfe1-2bfb-7c50-092f" name="Sharpshooter" hidden="false">
       <description>Cover saves cannot be taken against Wounds, glancing or penetrating hits caused by shooting attacks made this model.</description>
     </rule>
@@ -4956,6 +4950,9 @@ If the special rules of a model specify that they can never be Pinned, they auto
     </rule>
     <rule id="1497-66f9-23dd-1aa4" name="Lord Castellan" publicationId="e1ebd931--pubN96489" hidden="false">
       <description>If this Detachment is chosen as your Primary Detachment, you can choose to re-roll the result on the Warlord Trait table.</description>
+    </rule>
+    <rule name="Deflagrate" id="60bc-f79a-67ae-be4f" hidden="false" publicationId="e77a-823a-da94-16b9" page="237">
+      <description>After normal attacks by this weapon have been resolved, count the number of unsaved Wounds caused on the target unit. Immediately resolve a number of additional automatic Hits on the same unit using the weapon’s profile equal to the number of unsaved Wounds – these can then be saved normally. Models in the targeted unit must still be in range in order for these additional Hits to take effect. These additional Hits do not themselves inflict more Hits and do not benefit from any other special rules possessed by the attacking model, such as Preferred Enemy (X) or Precision Strikes (X).</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -5013,14 +5010,6 @@ If the special rules of a model specify that they can never be Pinned, they auto
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="ccc3-cffe-e84e-abd0" name="Vulcan Mega-bolter" publicationId="e1ebd931--pubN66380" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
-      <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60&quot;</characteristic>
-        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 15</characteristic>
       </characteristics>
     </profile>
     <profile id="cdc3-3459-a28c-a9cf" name="Flamer" publicationId="e1ebd931--pubN66380" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
