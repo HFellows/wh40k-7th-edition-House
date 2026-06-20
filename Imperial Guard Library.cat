@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="10" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Hellhound Squadron" hidden="false" id="03d7-be62-f48a-bcf1" publicationId="2be8d152--pubN72426" page="54" collective="false">
       <categoryLinks>
@@ -2344,6 +2344,29 @@
                     <cost name="pts" typeId="points" value="0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Bombast Field Gun" hidden="false" id="6b46-fced-4daa-2a96">
+                  <profiles>
+                    <profile name="Bombast Field Gun" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="4932-9daf-6508-faa7">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, 3&quot; Blast</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d359-4d42-2d1b-7912"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Heavy Lascannon" hidden="false" id="4649-f817-ea5b-b858">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e7c7-fab1-81a0-8d37"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Heavy Lascannon" id="c373-f3bd-dfc9-9d53" hidden="false" type="profile" targetId="22cc-2f86-4d39-b064"/>
+                  </infoLinks>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2990,7 +3013,15 @@
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Salamander Command" hidden="false" id="ab08-4ae6-5fbf-9885" publicationId="2be8d152--pubN100633" page="82" collective="false">
       <infoLinks>
-        <infoLink name="Salamander" id="99ce-411e-e8fd-6932" hidden="false" targetId="ba79-a6a2-98b7-ac4f" type="profile"/>
+        <infoLink name="Salamander" id="99ce-411e-e8fd-6932" hidden="false" targetId="ba79-a6a2-98b7-ac4f" type="profile">
+          <modifiers>
+            <modifier type="set" value="3" field="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="b70b-67ca-1b4b-07f6" shared="true" includeChildSelections="false" childName="Salamander Command Squadron"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Scout" id="ed3c-1046-5d3b-45fc" hidden="false" targetId="1794-e0e0-bedf-e46b" type="rule"/>
         <infoLink name="Amphibious" id="d76d-8df0-62fb-60b6" hidden="false" targetId="66dc-0ab5-5203-158b" type="rule"/>
       </infoLinks>
@@ -10679,6 +10710,393 @@
         <infoLink name="Plasma Gun" id="7dc1-316d-aab4-ba69" hidden="false" type="profile" targetId="03e5-60f2-4726-5cdd"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vehicle Command Squad" hidden="false" id="4122-1651-9c3c-e947">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Vehicle" id="023a-4852-4475-9de7" hidden="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4faf-3509-1a14-ff2b"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5fe-6049-7223-f5a6"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="unit" import="true" name="Leman Russ Command Squadron" hidden="false" id="65a6-2745-8902-669c" publicationId="2be8d152--pubN72426" page="0" collective="false">
+              <entryLinks>
+                <entryLink import="true" name="Leman Russ Command Tank" hidden="false" id="fe6e-6161-cedf-99b3" type="selectionEntryGroup" targetId="b43c-3138-78a8-9b55"/>
+              </entryLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+              </costs>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Leman Russ Command Tank" hidden="false" id="12b1-afcc-b76d-6eab">
+                  <entryLinks>
+                    <entryLink import="true" name="Leman Russ" hidden="false" id="7694-4f02-a275-f5db" type="selectionEntryGroup" targetId="130a-f968-3551-8c23">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf9f-b5cd-abc7-1c5d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Sentinel Command Squadron" hidden="false" id="f6ad-dca8-ad34-4d86">
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Armoured Sentinel" hidden="false" id="ddd0-879e-9550-d0d2" page="0" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="05a9-8482-3dd3-d449" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="4f33-ee0f-3994-0a6b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Armoured Sentinel" id="8b4f-12cb-cd83-2015" hidden="false" targetId="1ad9-11da-9068-d18c" type="profile"/>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon" id="fe28-a9f6-d11f-2fd4" hidden="false" collective="false" import="true" defaultSelectionEntryId="73a5-142f-86f3-ddcd">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="a93c-ca85-0ed5-7f9f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="9728-88b6-8d18-157a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="f269-4040-e67c-64e7" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="239e-492d-3bd5-8473" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Multi-laser" id="fa70-1a10-72e9-bf78" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="c98e-aab5-19d5-4b2e" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="bc3c-889c-8ff0-1c28" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="235f-5c23-b7f9-958c" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="fb53-6eef-ff15-8ceb" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b65c-c71e-9716-eb34" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Missile Launcher (Frag)" id="16f1-b29f-c244-9d34" hidden="false" targetId="4fa0-0fb9-87e9-33c5" type="profile"/>
+                            <infoLink name="Missile Launcher (Krak)" id="c3de-6415-aa9c-7be6" hidden="false" targetId="18d2-24ba-94e0-753b" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="5"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="d47e-4f9b-44e1-8493" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fe17-ff3f-9d40-db6d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="ccb7-8cc2-4405-a51d" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="2105-0b8d-81a9-a8dd" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="75b8-4689-5d20-9f78" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Plasma Cannon" id="b4d4-a291-4f04-0afb" hidden="false" targetId="7983-8451-cdc3-ce7e" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <entryLinks>
+                        <entryLink import="true" name="Autocannon" hidden="false" id="8535-9284-afe8-9ed2" type="selectionEntry" targetId="ee26-f62a-3465-6440">
+                          <costs>
+                            <cost name="pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Sentinel Upgrades" hidden="false" id="32a5-c550-06d0-cf61" collective="false" targetId="f2aeb023-205d-bdb2-66d5-a7d33d1974e3" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="40"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="model" import="true" name="Armoured Sentinel Commander" hidden="false" id="3ca6-7583-1614-842b" page="0" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="402a-f6b4-dd87-6020" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c2ce-d4c4-8a91-1e86"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Armoured Sentinel" id="f81c-4a15-f551-3743" hidden="false" targetId="1ad9-11da-9068-d18c" type="profile">
+                      <modifiers>
+                        <modifier type="set" value="3+" field="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">
+                          <conditions>
+                            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="f6ad-dca8-ad34-4d86" shared="true" includeChildSelections="false" childName="Sentinel Command Squadron"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Weapon" id="8039-9787-cd43-22d8" hidden="false" collective="false" import="true" defaultSelectionEntryId="73a5-142f-86f3-ddcd">
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="84ec-1a4f-39ea-660b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e874-9e69-d185-49a5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                      </constraints>
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Multi-laser" hidden="false" id="d4bf-d847-8755-8a2b" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="89dc-d688-9f8e-f707" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Multi-laser" id="472f-8883-fd5d-2a06" hidden="false" targetId="92be-1bfc-f355-f214" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Heavy Flamer" hidden="false" id="d45d-cd77-70d8-f3f6" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2eed-2e69-8a99-9734" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Heavy Flamer" id="897a-ccb8-2ecb-7c00" hidden="false" targetId="2608-8425-4f4f-7f41" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="0"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Missile Launcher" hidden="false" id="2826-fae3-498e-daa0" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3e56-9ad2-9e79-7f1d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Missile Launcher (Frag)" id="c0e6-a58b-0b90-d252" hidden="false" targetId="4fa0-0fb9-87e9-33c5" type="profile"/>
+                            <infoLink name="Missile Launcher (Krak)" id="97d2-5060-40bb-4be4" hidden="false" targetId="18d2-24ba-94e0-753b" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="5"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Lascannon" hidden="false" id="26b4-34ee-5fe1-ab76" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e55c-96b0-d89f-6256" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Lascannon" id="f0a8-72c5-06bb-755e" hidden="false" targetId="f14a-07e5-5465-69cf" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Plasma Cannon" hidden="false" id="e10a-f645-2291-e491" page="0" collective="false">
+                          <constraints>
+                            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="918c-14b0-2c79-862f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                          </constraints>
+                          <infoLinks>
+                            <infoLink name="Plasma Cannon" id="43cb-5356-b6fe-2f53" hidden="false" targetId="7983-8451-cdc3-ce7e" type="profile"/>
+                          </infoLinks>
+                          <costs>
+                            <cost name="pts" typeId="points" value="10"/>
+                          </costs>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <entryLinks>
+                        <entryLink import="true" name="Autocannon" hidden="false" id="3218-9fab-7e63-d207" type="selectionEntry" targetId="ee26-f62a-3465-6440">
+                          <costs>
+                            <cost name="pts" typeId="points" value="5"/>
+                          </costs>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                  <entryLinks>
+                    <entryLink import="true" name="Sentinel Upgrades" hidden="false" id="e73e-1841-5569-4149" collective="false" targetId="f2aeb023-205d-bdb2-66d5-a7d33d1974e3" type="selectionEntryGroup"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="40"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Salamander Command Squadron" hidden="false" id="b70b-67ca-1b4b-07f6">
+              <entryLinks>
+                <entryLink import="true" name="Salamander Command" hidden="false" id="b386-3bba-6e20-4828" type="selectionEntry" targetId="ab08-4ae6-5fbf-9885">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6073-c1cc-047a-b991"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c7f9-10e5-fe23-71cd"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntries>
+                <selectionEntry type="model" import="true" name="Salamander" hidden="false" id="ccff-5079-6492-2a11" publicationId="2be8d152--pubN100633" page="81" collective="false">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="67cc-b3d4-d9b4-03f9" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                    <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="4682-06ee-3e2a-2edb" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Salamander" id="e395-0439-3ac6-0b10" hidden="false" targetId="ba79-a6a2-98b7-ac4f" type="profile"/>
+                    <infoLink name="Scout" id="eac9-a09c-a94d-79b2" hidden="false" targetId="1794-e0e0-bedf-e46b" type="rule"/>
+                    <infoLink name="Amphibious" id="8ae2-3320-4547-ea75" hidden="false" targetId="66dc-0ab5-5203-158b" type="rule"/>
+                  </infoLinks>
+                  <selectionEntries>
+                    <selectionEntry type="upgrade" import="true" name="Turret Mount for Autocannon" hidden="false" id="e0bd-e6aa-27a5-c73c">
+                      <costs>
+                        <cost name="pts" typeId="points" value="10"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                  <entryLinks>
+                    <entryLink import="true" name="Searchlight" hidden="false" id="d710-8191-c31b-b9d9" collective="false" targetId="d26eb534-d6b2-ac11-a207-627c7497e876" type="selectionEntry"/>
+                    <entryLink import="true" name="Smoke Launchers" hidden="false" id="a188-3195-e7f2-8e6e" collective="false" targetId="c5066441-7f6f-5497-5df6-4462463a5807" type="selectionEntry">
+                      <costs>
+                        <cost name="pts" typeId="points" value="0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Autocannon" hidden="false" id="91ff-8a33-0e2d-a18f" collective="false" targetId="ee26-f62a-3465-6440" type="selectionEntry"/>
+                    <entryLink import="true" name="Light Vehicle Equipment List" hidden="false" id="ca6f-00f1-7e03-985c" type="selectionEntryGroup" targetId="2cba-9105-6ebe-fd97"/>
+                    <entryLink import="true" name="Hull-mounted Weapon" hidden="false" id="8e19-7891-0ecb-65f2" type="selectionEntryGroup" targetId="0985-0e74-bdc2-b669"/>
+                  </entryLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="55"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Hippogriff Command Squadron" hidden="false" id="dc45-c716-3934-e17a" type="selectionEntry" targetId="8640-a632-6ff1-02ff">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a40a-2ca4-35f3-a4af"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe2b-7517-809d-28ca"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="aa46-66a0-b962-0f1a" primary="true" name="HQ"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hippogriff" hidden="false" id="d43d-e7a6-e9ea-8018">
+      <profiles>
+        <profile name="Hippogriff AFV" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="78c8-a176-1bfa-324f">
+          <characteristics>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tank, Fast</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="4" field="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="d9d0-0b81-27b8-2fd1" shared="true" includeChildSelections="false" childName="Hippogriff Commander"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hull-mounted Weapon" id="6817-09c2-42fa-5d50" hidden="false" collective="false" import="true" defaultSelectionEntryId="395a6689-095f-540c-704f-240480f390f4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="444e-4746-0e2e-b7e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="7e1c-b1b7-03a5-5e0a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Heavy Stubber" hidden="false" id="dfee-36db-bf98-e0e4" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2c08-8fd3-387f-38d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Heavy Stubber" id="083a-d2d0-5b86-475d" hidden="false" targetId="0031-0314-5b36-a220" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Meltagun" hidden="false" id="c52a-f87a-d1b5-2521">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+              <infoLinks>
+                <infoLink name="Meltagun" id="78a1-a295-5b29-8f67" hidden="false" type="profile" targetId="ec4c-1132-ddaf-db8e"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc1b-a864-6eeb-811b"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Turret-mounted Weapon" id="8fad-f40f-1181-cd0b" hidden="false" collective="false" import="true" defaultSelectionEntryId="cd2bc2a7-c5af-90af-25e8-d38c591f6ba2">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="c20b-4a37-f433-b68c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="aee1-503d-fef0-30fe" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Chiron Gatling Cannon" hidden="false" id="3675-1a07-93f5-736a">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6862-3be0-9e59-5d25"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Chiron Gatling Cannon" id="9380-4d54-b10d-14c1" hidden="false" type="profile" targetId="f784-8702-8ec0-ffca"/>
+                <infoLink name="Pinning" id="c91b-e130-b39f-fc9c" hidden="false" type="rule" targetId="8918-d7ce-5edb-3b70"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Heavy Lascannon" hidden="false" id="b581-0336-14e8-4c6d">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1635-44d9-b4a7-15ca"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Heavy Lascannon" id="e244-7d71-b128-2e92" hidden="false" type="profile" targetId="22cc-2f86-4d39-b064"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Vigilator Cannon" hidden="false" id="8565-5996-b963-8192">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db87-60ad-09b0-03a6"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Vigilator Cannon" id="02cc-cf03-00ca-a388" hidden="false" type="profile" targetId="ca62-ddd1-7ee6-6ed8"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Vehicle Equipment List" hidden="false" id="67ca-299d-8311-e8e3" type="selectionEntryGroup" targetId="37b794d7-0eae-7b05-9ba5-042be742da28"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hippogriff Command Squadron" hidden="false" id="8640-a632-6ff1-02ff">
+      <entryLinks>
+        <entryLink import="true" name="Hippogriff" hidden="false" id="69de-7896-20ca-1331" type="selectionEntry" targetId="d43d-e7a6-e9ea-8018">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7dda-cd42-0597-fc96"/>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="d5f4-c990-ba26-f5c0"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hippogriff Commander" hidden="false" id="d9d0-0b81-27b8-2fd1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b0cd-a1f4-1352-3fc4"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="06c2-a0b2-ad68-cb17"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Hippogriff" hidden="false" id="af7a-5063-17ed-9170" type="selectionEntry" targetId="d43d-e7a6-e9ea-8018"/>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Vehicle Equipment List" id="37b794d7-0eae-7b05-9ba5-042be742da28" hidden="false" collective="false" import="true">
@@ -13902,6 +14320,30 @@
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">+2</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
         <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Specialist Weapon, One Use Only</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chiron Gatling Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="f784-8702-8ec0-ffca">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 12, Pinning</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Heavy Lascannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="22cc-2f86-4d39-b064">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vigilator Cannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="ca62-ddd1-7ee6-6ed8">
+      <characteristics>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36</characteristic>
+        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, 5&quot; Blast</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

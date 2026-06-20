@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0356-0150-1bee-07c2" name="Astra Militarum: Codex (2014)" revision="2043" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="0356-0150-1bee-07c2" name="Astra Militarum: Codex (2014)" revision="2044" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="2be8d152--pubN71923" name="IA Aeronautica"/>
     <publication id="2be8d152--pubN72426" name="Codex: Astra Militarum"/>
@@ -1155,6 +1155,11 @@
     <entryLink import="true" name="Rogal Dorn" hidden="false" id="9bc2-6cae-ade3-1cb3" type="selectionEntry" targetId="c27d-4010-a244-7573">
       <categoryLinks>
         <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="390e-aa05-ef64-5657" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Vehicle Command Squad" hidden="false" id="53df-0aea-8693-6dfc" type="selectionEntry" targetId="4122-1651-9c3c-e947">
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="eac9-0971-4e5b-1b66" primary="true" name="HQ"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -19239,7 +19244,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <selectionEntryGroup name="Missiles" id="d7b1-9ae7-2376-d13c" hidden="false">
           <entryLinks>
             <entryLink import="true" name="Aethon Missile Battery" hidden="false" id="869a-aab3-3622-fae3" type="selectionEntry" targetId="99d0-aec1-8c56-1b33"/>
-            <entryLink import="true" name="2x Hunted Killer Battery" hidden="false" id="7089-0673-83dd-ffbc" type="selectionEntry" targetId="c0c0-7287-ef34-b80a">
+            <entryLink import="true" name="Hunted Killer Battery" hidden="false" id="7089-0673-83dd-ffbc" type="selectionEntry" targetId="c0c0-7287-ef34-b80a">
               <modifiers>
                 <modifier type="set" value="20" field="points"/>
               </modifiers>
@@ -19268,19 +19273,20 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </profiles>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Hunted Killer Battery" hidden="false" id="c0c0-7287-ef34-b80a">
+      <infoLinks>
+        <infoLink name="Hunter-Killer Missile" id="7ae4-d7ba-58ba-a23f" hidden="false" type="profile" targetId="e2a9-e8fc-3a6b-2eec">
+          <modifiers>
+            <modifier type="set" value="Heavy 2, One Use Only" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c0c0-7287-ef34-b80a" shared="true" includeChildSelections="false" childName="Hunted Killer Battery"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="93cf-7965-1c25-9f69"/>
       </constraints>
-      <profiles>
-        <profile name="Hunted Killer Battery" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="d27e-83d8-6311-e0e2">
-          <characteristics>
-            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Infinite</characteristic>
-            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
-            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
-            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2, One Use Only</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aethon Heavy Sentinel Squadron" hidden="false" id="d4be-47d3-3db3-9898">
       <entryLinks>
@@ -22188,7 +22194,7 @@ May not take Carapace Armour.</description>
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 7</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 8</characteristic>
       </characteristics>
     </profile>
     <profile id="30ba83af-f04b-188f-0948-b5e81e63e160" name="Avenger Strike Fighter" publicationId="2be8d152--pubN71923" page="20" hidden="false" typeId="3a08-ea03-a598-8615" typeName="Flyer">
@@ -25667,4 +25673,7 @@ May not take Carapace Armour.</description>
       </characteristics>
     </profile>
   </sharedProfiles>
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Imperial Guard Library" id="32ea-ca8b-5b3a-ec14" targetId="6aad-252a-c22e-e66c"/>
+  </catalogueLinks>
 </catalogue>
