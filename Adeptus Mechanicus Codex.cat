@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="26" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="d5e5-097e-c84a-9f03" name="Adeptus Mechanicus" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" revision="27" battleScribeVersion="2.03" authorName="Henry" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Elites" id="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" hidden="false"/>
     <categoryEntry name="Fast Attack" id="c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false"/>
@@ -213,6 +213,11 @@
     <entryLink import="true" name="Myrmidon Destructor Host" hidden="false" id="8206-4996-5674-5104" type="selectionEntry" targetId="0fd2-04fa-2fbb-dd8d">
       <categoryLinks>
         <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="25d3-6f6a-e3bb-bde7" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Adsecularis Tech Thralls" hidden="false" id="98a7-b0d5-5dff-df27" type="selectionEntry" targetId="1ead-1f2c-f09a-b75e">
+      <categoryLinks>
+        <categoryLink targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" id="d75c-422a-f153-a32a" primary="true" name="Troops"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -1109,38 +1114,38 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <entryLink import="true" name="Plasma Cannon" hidden="false" id="dfb4-903c-0717-81ee" collective="false" targetId="29ea-0d67-9abe-5165" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="2" field="417f-e6e1-8478-c3e9"/>
-                <modifier type="decrement" value="1" field="417f-e6e1-8478-c3e9">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="82ed-e6eb-b439-b845" childId="a028-ca83-6ebc-d804" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <repeat value="1" repeats="1" field="selections" scope="82ed-e6eb-b439-b845" childId="9a72-c2d2-73e6-532c" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Heavy Bolter" hidden="false" id="d2e2-d3e8-9651-396f" collective="false" targetId="a028-ca83-6ebc-d804" type="selectionEntry">
-              <modifiers>
-                <modifier type="set" value="4" field="06f5-cb4a-82fa-cb0d"/>
-                <modifier type="decrement" value="1" field="06f5-cb4a-82fa-cb0d">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="82ed-e6eb-b439-b845" childId="dfb4-903c-0717-81ee" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <repeat value="1" repeats="1" field="selections" scope="82ed-e6eb-b439-b845" childId="9a72-c2d2-73e6-532c" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Multi-Melta" hidden="false" id="9a72-c2d2-73e6-532c" collective="false" targetId="e010-de14-a52d-1d54" type="selectionEntry">
               <modifiers>
                 <modifier type="set" value="2" field="da99-91bd-4797-3b6a"/>
-                <modifier type="decrement" value="1" field="da99-91bd-4797-3b6a">
-                  <repeats>
-                    <repeat value="1" repeats="1" field="selections" scope="82ed-e6eb-b439-b845" childId="a028-ca83-6ebc-d804" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <repeat value="1" repeats="1" field="selections" scope="82ed-e6eb-b439-b845" childId="dfb4-903c-0717-81ee" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </repeats>
-                </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Cognis flamer" hidden="false" id="55d8-da02-46c0-c123" type="selectionEntry" targetId="ab28-5667-e7a5-af49"/>
-            <entryLink import="true" name="Phosphor blaster" hidden="false" id="a0f3-ba1a-b872-58b7" type="selectionEntry" targetId="efbc-32f4-ba17-742e"/>
+            <entryLink import="true" name="Cognis flamer" hidden="false" id="55d8-da02-46c0-c123" type="selectionEntry" targetId="ab28-5667-e7a5-af49">
+              <modifiers>
+                <modifier type="increment" value="1" field="87eb-60fb-4517-5873">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d74f-e3ad-fa4a-3d5f" shared="true" roundUp="false" childName="Servitor"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="0" field="87eb-60fb-4517-5873"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Phosphor blaster" hidden="false" id="a0f3-ba1a-b872-58b7" type="selectionEntry" targetId="efbc-32f4-ba17-742e">
+              <modifiers>
+                <modifier type="increment" value="1" field="1da0-780c-f534-5699">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="d74f-e3ad-fa4a-3d5f" shared="true" roundUp="false" childName="Servitor"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" value="0" field="1da0-780c-f534-5699"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Heavy Bolter" hidden="false" id="cb94-0c16-ae33-43d3" type="selectionEntry" targetId="a028-ca83-6ebc-d804">
+              <modifiers>
+                <modifier type="set" value="4" field="06f5-cb4a-82fa-cb0d"/>
+              </modifiers>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -1313,9 +1318,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Secutarii Hoplites" hidden="false" id="b5a4-27ad-27cf-fcd4" publicationId="2301-1cab-pubN75893" collective="false">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4238-72b6-56d3-4efd" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Doctrina Imperatives" id="0fbd-5da4-ff08-d106" hidden="false" targetId="a816-e86a-b5d0-8037" type="rule"/>
         <infoLink name="Feel No Pain (6+)" id="13fb-c277-c2fc-0447" hidden="false" targetId="ec9c-b641-f98b-a0ca" type="rule"/>
@@ -1337,9 +1339,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Secutarii Peltasts" hidden="false" id="46c4-7681-31a0-1ae1" publicationId="2301-1cab-pubN75893" collective="false">
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f34f-2c01-d90a-082c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Doctrina Imperatives" id="d763-bc83-82e5-529e" hidden="false" targetId="a816-e86a-b5d0-8037" type="rule"/>
         <infoLink name="Feel No Pain (6+)" id="c362-de24-deb6-99d9" hidden="false" targetId="ec9c-b641-f98b-a0ca" type="rule"/>
@@ -2840,6 +2839,37 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           </entryLinks>
         </entryLink>
       </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="3ffe-438d-d2a8-8d7f" hidden="false" collective="false" import="true" defaultSelectionEntryId="4f2a-53f2-7067-b3ce">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8329-9ce0-5f32-eeb5-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="8329-9ce0-5f32-eeb5-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Irad-Cleanser" hidden="false" id="2d3a-eae8-35ae-da78" collective="true" defaultAmount="0" sortIndex="1">
+              <infoLinks>
+                <infoLink name="Fleshbane" id="e4d8-619f-104a-faaa" hidden="false" targetId="3897-5e71-1b57-57ba" type="rule"/>
+                <infoLink name="Rad-Phage" id="87b3-7046-a082-cdf9" hidden="false" targetId="8bfd-42ae-5a40-a914" type="rule"/>
+                <infoLink name="Irad-cleanser" id="68dd-34f7-9ada-cb49" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="increment" value="1" field="8329-9ce0-5f32-eeb5-max">
+              <repeats>
+                <repeat value="3" repeats="1" field="selections" scope="parent" childId="e8da-690b-bcca-bfb8" shared="true" roundUp="false" childName="Vorax Battle-Automata"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah (CotO)" id="8316-67ac-fd4a-a632" hidden="false" type="rule" targetId="2624-ddf9-eb70-e0f9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Vorax Battle-Automata" hidden="false" id="1307-096e-8283-89a2">
       <entryLinks>
@@ -2851,51 +2881,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         </entryLink>
         <entryLink import="true" name="Power blade array with in-built rotor cannon" hidden="false" id="a46b-8966-dac4-c86e" type="selectionEntry" targetId="9e6b-0ebd-4efb-79f8"/>
       </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="1 in 3 may exchange Lightning Gun for Irad Cleanser" id="3ffe-438d-d2a8-8d7f" hidden="false" collective="false" import="true" defaultSelectionEntryId="4f2a-53f2-7067-b3ce">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8329-9ce0-5f32-eeb5-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8329-9ce0-5f32-eeb5-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Irad-Cleanser" hidden="false" id="2d3a-eae8-35ae-da78" collective="true" defaultAmount="0" sortIndex="2">
-              <infoLinks>
-                <infoLink name="Fleshbane" id="e4d8-619f-104a-faaa" hidden="false" targetId="3897-5e71-1b57-57ba" type="rule"/>
-                <infoLink name="Rad-Phage" id="87b3-7046-a082-cdf9" hidden="false" targetId="8bfd-42ae-5a40-a914" type="rule"/>
-                <infoLink name="Irad-cleanser" id="68dd-34f7-9ada-cb49" hidden="false" type="profile" targetId="16df-f111-e768-a56f"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="10"/>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-              <modifiers>
-                <modifier type="increment" value="1" field="db70-e20d-0349-83ea">
-                  <repeats>
-                    <repeat value="3" repeats="1" field="selections" scope="3ffe-438d-d2a8-8d7f" childId="f144-1079-11ff-019d" shared="true" roundUp="false" percentValue="false" includeChildSelections="true" includeChildForces="false" childName="Vorax Battle-Automata Maniple"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="db70-e20d-0349-83ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="0e67-e67e-2f8f-0e7c" collective="true" sortIndex="1">
-              <infoLinks>
-                <infoLink name="Rending" id="ee18-7fbc-c705-61f1" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule"/>
-                <infoLink name="Shred" id="fc9d-73e3-c854-ed41" hidden="false" targetId="5770-35c6-7341-5527" type="rule"/>
-                <infoLink name="Lightning Gun (Arc)" id="8f88-0950-8bef-47c5" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
-                <infoLink name="Lightning Gun (Strike)" id="6d0d-0804-f38b-a1d4" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
-              </infoLinks>
-              <costs>
-                <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bac-85a9-c12c-5f9f" includeChildSelections="false"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Vorax Battle-Automata" id="0e53-b745-2820-53e4" hidden="false" type="profile" targetId="3e83-9291-ea53-6587"/>
         <infoLink name="Fleet" id="d5f8-3403-0a7f-dc23" hidden="false" targetId="39c6-1f20-a156-47f4" type="rule"/>
@@ -2904,8 +2889,25 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <infoLink name="Dunestrider" id="bf23-e369-ad5a-8f26" hidden="false" targetId="3c86-254a-ea6a-2ca6" type="rule"/>
       </infoLinks>
       <costs>
-        <cost name="pts" typeId="points" value="75"/>
+        <cost name="pts" typeId="points" value="70"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Lightning Gun" hidden="false" id="0e67-e67e-2f8f-0e7c" collective="true">
+          <infoLinks>
+            <infoLink name="Rending" id="ee18-7fbc-c705-61f1" hidden="false" targetId="6a76-59d1-822c-59c9" type="rule"/>
+            <infoLink name="Shred" id="fc9d-73e3-c854-ed41" hidden="false" targetId="5770-35c6-7341-5527" type="rule"/>
+            <infoLink name="Lightning Gun (Arc)" id="8f88-0950-8bef-47c5" hidden="false" type="profile" targetId="2acc-ded9-0acc-e93b"/>
+            <infoLink name="Lightning Gun (Strike)" id="6d0d-0804-f38b-a1d4" hidden="false" type="profile" targetId="5478-0083-9a4a-5c6b"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="d2ee-04cb-5f8a-2642" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3bac-85a9-c12c-5f9f" includeChildSelections="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a870-1d3c-f99b-15de"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cybernetica Automata" hidden="false" id="6385-930f-9114-9d3d">
       <infoLinks>
@@ -2933,24 +2935,47 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <entryLinks>
         <entryLink import="true" name="Atomantic Deflector" hidden="false" id="92b5-4d42-8b6e-4bf4" type="selectionEntry" targetId="3840-c678-634f-5428"/>
       </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Main Weapon" hidden="false" id="dcb4-06cd-e2ea-2a7b">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ab39-d19b-b9e3-2e1c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="312c-5e44-d8dd-1901"/>
-          </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="90"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Hammer of Wrath" id="4dc2-fa93-033e-a2ae" hidden="false" type="rule" targetId="4628-0ada-2997-8568"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Main weapon" id="42ba-e130-7c66-3c00" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Multi-Melta" hidden="false" id="e18a-276b-defb-6098" type="selectionEntry" targetId="e010-de14-a52d-1d54"/>
-            <entryLink import="true" name="Darkfire Cannon" hidden="false" id="380c-3eb8-762b-11b4" type="selectionEntry" targetId="d946-6e0b-2a2a-bc37"/>
-            <entryLink import="true" name="Mauler Bolt Cannon" hidden="false" id="39ac-bb3d-11f0-c809" type="selectionEntry" targetId="7a21-5956-40f2-5519"/>
+            <entryLink import="true" name="Darkfire Cannon" hidden="false" id="380c-3eb8-762b-11b4" type="selectionEntry" targetId="d946-6e0b-2a2a-bc37">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5400-eb44-7604-bc88"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Mauler Bolt Cannon" hidden="false" id="39ac-bb3d-11f0-c809" type="selectionEntry" targetId="7a21-5956-40f2-5519">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1634-6c39-b484-5e61"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Multi-Melta" hidden="false" id="e18a-276b-defb-6098" type="selectionEntry" targetId="e010-de14-a52d-1d54">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af7a-bb37-e975-b58c"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Melee" hidden="false" id="ec24-29e1-248f-d3a8">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fc16-deb2-b26d-d53c"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f333-45f0-7bd3-4fa4"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4dd3-6f3a-fb5c-4816"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="752b-f034-3c39-3ecd"/>
           </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Melee" id="de75-2575-db2d-9b65" hidden="false">
           <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="2x Power Blade Array" hidden="false" id="cca9-ba00-437c-f5e1">
+              <infoLinks>
+                <infoLink name="Power Blade Arrays" id="7cf0-4bcf-13a1-87f4" hidden="false" type="profile" targetId="89fc-aef5-5dfb-e51d"/>
+                <infoLink name="Rending" id="8941-f4f2-4c3c-1db1" hidden="false" type="rule" targetId="6a76-59d1-822c-59c9"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d715-3c17-f4c2-6b5e" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="2x Shock Charger" hidden="false" id="1053-cf30-7782-c19e">
               <profiles>
                 <profile name="Shock Charger" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="7795-083f-4e81-3526">
@@ -3008,16 +3033,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="2x Power Blade Array" hidden="false" id="cca9-ba00-437c-f5e1">
-              <infoLinks>
-                <infoLink name="Power Blade Arrays" id="7cf0-4bcf-13a1-87f4" hidden="false" type="profile" targetId="89fc-aef5-5dfb-e51d"/>
-                <infoLink name="Rending" id="8941-f4f2-4c3c-1db1" hidden="false" type="rule" targetId="6a76-59d1-822c-59c9"/>
-              </infoLinks>
-              <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="144b-f32a-976c-9a5e" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d715-3c17-f4c2-6b5e" includeChildSelections="false"/>
-              </constraints>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Siege Wrecker &amp; Shock Charger" hidden="false" id="028b-e2ff-29ad-8975">
               <profiles>
@@ -3091,14 +3106,12 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
               </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="90"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Hammer of Wrath" id="4dc2-fa93-033e-a2ae" hidden="false" type="rule" targetId="4628-0ada-2997-8568"/>
-      </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="02d1-b3b2-7a62-3198"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac53-f505-f6da-567a"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mauler Bolt Cannon" hidden="false" id="7a21-5956-40f2-5519">
       <profiles>
@@ -3149,7 +3162,30 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="f43a-2c42-c6b3-3731"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Cybernetica Automata" hidden="false" id="240a-8723-6357-2b3e" type="selectionEntry" targetId="6385-930f-9114-9d3d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="79e2-fc49-2e43-8ef8" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5c7d-0bd2-45c0-c130" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Programmed Behavior" id="8d1f-c07d-6304-2739" hidden="false">
+              <description>During both the controlling player’s Shooting phase and the Assault phase, a Cybernetica-Automata unit must attempt a Shooting Attack or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge.</description>
+            </rule>
+            <rule name="Pre-set Kill Limit" id="c918-a7da-cc17-9f92" hidden="false">
+              <description>Cybernetica-Automata units may not fire overwatch.</description>
+            </rule>
+            <rule name="For The Machine Is Immortal" id="063e-995b-67af-cbfa" hidden="false">
+              <description>Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Cybernetica-Automata Unit Type.</description>
+            </rule>
+            <rule name="The Zeroth Law" id="9edd-7290-7f7f-4a94" hidden="false">
+              <description>No model that is not also of the Cybernetica-Automata Unit Type may join a unit that includes an Cybernetica-Automata model unless otherwise specified.</description>
+            </rule>
+          </rules>
+        </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah (CotO)" id="33d1-0c38-04f9-1815" hidden="false" type="rule" targetId="2624-ddf9-eb70-e0f9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Domitar" hidden="false" id="2b9f-7bc8-acd2-2268">
       <profiles>
@@ -3246,6 +3282,10 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           </constraints>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah (CotO)" id="d771-5c87-bea1-4141" hidden="false" type="rule" targetId="2624-ddf9-eb70-e0f9"/>
+        <infoLink name="Doctrina Imperatives" id="a418-9ff8-50fc-aefd" hidden="false" type="rule" targetId="a816-e86a-b5d0-8037"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Thallax Battle-Automata" hidden="false" id="ac3a-5c59-7655-6b1b">
       <profiles>
@@ -3340,6 +3380,26 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3655-cd07-2dc6-6353"/>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="1081-2494-28dc-f919"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cybernetica Automata" hidden="false" id="04d5-25ea-55e5-d308" type="selectionEntry" targetId="6385-930f-9114-9d3d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="42bc-b4d2-e6ad-3012" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adf9-988b-d0b3-c204" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Programmed Behavior" id="8d64-0dc0-6db7-2cfe" hidden="false">
+              <description>During both the controlling player’s Shooting phase and the Assault phase, a Cybernetica-Automata unit must attempt a Shooting Attack or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge.</description>
+            </rule>
+            <rule name="Pre-set Kill Limit" id="3a0e-15dc-43b1-9bc1" hidden="false">
+              <description>Cybernetica-Automata units may not fire overwatch.</description>
+            </rule>
+            <rule name="For The Machine Is Immortal" id="0980-11da-572d-f4c9" hidden="false">
+              <description>Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Cybernetica-Automata Unit Type.</description>
+            </rule>
+            <rule name="The Zeroth Law" id="f0b4-20bf-8384-8003" hidden="false">
+              <description>No model that is not also of the Cybernetica-Automata Unit Type may join a unit that includes an Cybernetica-Automata model unless otherwise specified.</description>
+            </rule>
+          </rules>
         </entryLink>
       </entryLinks>
       <selectionEntryGroups>
@@ -3477,6 +3537,9 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           </constraints>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Doctrina Imperatives" id="1ecc-4eba-5555-b68e" hidden="false" type="rule" targetId="a816-e86a-b5d0-8037"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Arcuitor Magisterium" hidden="false" id="05af-de0f-3545-b30b">
       <profiles>
@@ -3511,6 +3574,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <infoLink name="Feel No Pain" id="3071-958f-b23c-057c" hidden="false" type="rule" targetId="3c7d-11d6-e265-abb4"/>
         <infoLink name="Monster Hunter" id="7281-abf3-453d-0b33" hidden="false" type="rule" targetId="93c5-dcdd-af20-413e"/>
         <infoLink name="Independent Character" id="f425-58c5-7e77-092d" hidden="false" type="rule" targetId="ef3b-09c6-4024-cd37"/>
+        <infoLink name="Canticles of the Omnissiah (CotO)" id="f7e9-52eb-3f50-a62f" hidden="false" type="rule" targetId="2624-ddf9-eb70-e0f9"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="May take one of the following" hidden="false" id="4e22-b0c4-dd13-8bb5">
@@ -3666,48 +3730,19 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a83-6e0c-4e9c-d55a"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Utan Jump Pack" hidden="false" id="4f3c-ca7d-1a9f-bcde" type="selectionEntry" targetId="672c-05f4-8f5c-d798"/>
-      </entryLinks>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Melee Weapon" hidden="false" id="3e95-c41a-264f-cfa6">
+        <entryLink import="true" name="Utan Jump Pack" hidden="false" id="4f3c-ca7d-1a9f-bcde" type="selectionEntry" targetId="672c-05f4-8f5c-d798">
           <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="055c-d556-5e82-d39f"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="31db-dc4b-2bc0-2731"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5bdb-93b1-7c47-2344"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="beaa-318c-18ae-5c0b"/>
           </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="120"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="ab3c-eb47-533b-42d0" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="2x Power blade array with inbuilt Light Autocannon" hidden="false" id="5a58-5c4b-3a94-0f30">
-              <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="072c-be4a-5883-e6ec">
-                  <infoLinks>
-                    <infoLink name="Power Blade Arrays" id="4911-96ac-a27c-c624" hidden="false" type="profile" targetId="89fc-aef5-5dfb-e51d"/>
-                    <infoLink name="Rending" id="057d-36c2-0924-b58d" hidden="false" type="rule" targetId="6a76-59d1-822c-59c9"/>
-                  </infoLinks>
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ade-549b-1d3a-fba5" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a751-209f-ea48-5058" includeChildSelections="false"/>
-                  </constraints>
-                </selectionEntry>
-                <selectionEntry type="upgrade" import="true" name="Light Autocannon" hidden="false" id="e367-a36f-ad98-d260">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="532e-2743-f43f-b93d"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c78c-50eb-eb61-e17e"/>
-                  </constraints>
-                  <profiles>
-                    <profile name="Autocannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6ea6-f78c-2563-e6f8">
-                      <characteristics>
-                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
-                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                </selectionEntry>
-              </selectionEntries>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="471f-12e3-f778-cfaa"/>
-              </constraints>
-            </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="1 Arc Scourge &amp; 1 Power blade array with inbuilt Light Autocannon" hidden="false" id="d731-46ac-fda7-de5c">
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Power blade array with inbuilt Light Autocannon" hidden="false" id="9478-1652-34d7-f2e8">
@@ -3810,12 +3845,49 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
                 <cost name="pts" typeId="points" value="40"/>
               </costs>
             </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Power blade array with inbuilt Light Autocannon" hidden="false" id="5a58-5c4b-3a94-0f30">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Power Blade Array" hidden="false" id="072c-be4a-5883-e6ec">
+                  <infoLinks>
+                    <infoLink name="Power Blade Arrays" id="4911-96ac-a27c-c624" hidden="false" type="profile" targetId="89fc-aef5-5dfb-e51d"/>
+                    <infoLink name="Rending" id="057d-36c2-0924-b58d" hidden="false" type="rule" targetId="6a76-59d1-822c-59c9"/>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3ade-549b-1d3a-fba5" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a751-209f-ea48-5058" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Light Autocannon" hidden="false" id="e367-a36f-ad98-d260">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="532e-2743-f43f-b93d"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c78c-50eb-eb61-e17e"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Autocannon" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="6ea6-f78c-2563-e6f8">
+                      <characteristics>
+                        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
+                        <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                        <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="471f-12e3-f778-cfaa"/>
+              </constraints>
+            </selectionEntry>
           </selectionEntries>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="150"/>
-      </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1964-61a3-e552-ab07"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81a6-9284-cd3c-c1c4"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah (CotO)" id="be0d-f26e-ab24-575a" hidden="false" type="rule" targetId="2624-ddf9-eb70-e0f9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Arlatax Battle-Automata Maniple" hidden="false" id="2c99-6edd-18b8-5000">
       <entryLinks>
@@ -3824,6 +3896,26 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2c0a-508c-19d4-682a"/>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="318a-6c00-2663-1a3e"/>
           </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cybernetica Automata" hidden="false" id="a6a4-a7c9-1e67-c4ce" type="selectionEntry" targetId="6385-930f-9114-9d3d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eb1b-9d6b-d540-dff2" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c05f-3584-22ee-1aec" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Programmed Behavior" id="9423-5ced-37c4-3ed8" hidden="false">
+              <description>During both the controlling player’s Shooting phase and the Assault phase, a Cybernetica-Automata unit must attempt a Shooting Attack or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge.</description>
+            </rule>
+            <rule name="Pre-set Kill Limit" id="ef8d-03b2-c8ee-1b4c" hidden="false">
+              <description>Cybernetica-Automata units may not fire overwatch.</description>
+            </rule>
+            <rule name="For The Machine Is Immortal" id="7d59-93de-f214-8b5c" hidden="false">
+              <description>Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Cybernetica-Automata Unit Type.</description>
+            </rule>
+            <rule name="The Zeroth Law" id="b889-271d-756b-f1e3" hidden="false">
+              <description>No model that is not also of the Cybernetica-Automata Unit Type may join a unit that includes an Cybernetica-Automata model unless otherwise specified.</description>
+            </rule>
+          </rules>
         </entryLink>
       </entryLinks>
       <categoryLinks>
@@ -3891,7 +3983,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <entryLinks>
         <entryLink import="true" name="Myrmidon" hidden="false" id="6f8b-25b2-65af-bc2c" type="selectionEntry" targetId="20b0-a491-ebe9-0129">
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="a724-bc75-09d7-5b85"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a724-bc75-09d7-5b85"/>
             <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="f639-bd60-6c19-c01a"/>
           </constraints>
         </entryLink>
@@ -4000,25 +4092,24 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             </selectionEntry>
           </selectionEntries>
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="aea8-4f5a-2748-0a1d"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="aea8-4f5a-2748-0a1d"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="2741-9df3-40ec-e6c0"/>
           </constraints>
           <modifiers>
-            <modifier type="increment" value="2" field="aea8-4f5a-2748-0a1d">
-              <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6f8b-25b2-65af-bc2c" shared="true" roundUp="false" childName="Myrmidon Secutor"/>
-              </repeats>
-            </modifier>
             <modifier type="increment" value="2" field="2741-9df3-40ec-e6c0">
               <repeats>
-                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6f8b-25b2-65af-bc2c" shared="true" roundUp="false" childName="Myrmidon Secutor"/>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="6f8b-25b2-65af-bc2c" shared="true" roundUp="false" childName="Myrmidon"/>
               </repeats>
             </modifier>
           </modifiers>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah (CotO)" id="58c0-272e-52e7-9448" hidden="false" type="rule" targetId="2624-ddf9-eb70-e0f9"/>
+        <infoLink name="Relentless" id="1361-c7dd-c924-b419" hidden="false" type="rule" targetId="7674-690c-ab59-1444"/>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Myrmidon Lord" hidden="false" id="ad27-2099-22e7-e6aa">
+    <selectionEntry type="model" import="true" name="Myrmidon Lord" hidden="false" id="ad27-2099-22e7-e6aa">
       <profiles>
         <profile name="Myrmidon Secutor" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="9d1d-2cb6-036f-d870">
           <characteristics>
@@ -4605,7 +4696,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
                 <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">36&quot;</characteristic>
                 <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
                 <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
-                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Large Blast, Luminagen, Reactor Overload</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ordnance 1, Large Blast, Luminagen, Reactor Overload, Plasma Wave</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4617,6 +4708,9 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
               <description>units hit by this attack must reroll cover saves</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink name="Luminagen" id="f24a-ae3c-3c08-408d" hidden="false" type="rule" targetId="1ef9-eb82-305a-6660"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -4630,24 +4724,46 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <entryLinks>
         <entryLink import="true" name="Thanatar-Calix Siege-automata " hidden="false" id="c18d-aa31-9cd2-744a" type="selectionEntry" targetId="a79c-aa59-813f-522e">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0499-38e0-cefa-5356"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="da8a-51b1-3256-044d"/>
-          </constraints>
-        </entryLink>
-        <entryLink import="true" name="Thanatar-Cavas Siege-automata" hidden="false" id="af16-4b4c-05f6-2040" type="selectionEntry" targetId="f9eb-2aeb-cfa0-683a">
-          <constraints>
-            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="610f-0717-8ebe-fff5"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="587c-1255-22d6-a4cb"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0499-38e0-cefa-5356"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="da8a-51b1-3256-044d"/>
           </constraints>
           <modifiers>
-            <modifier type="decrement" value="1" field="610f-0717-8ebe-fff5">
+            <modifier type="decrement" value="1" field="0499-38e0-cefa-5356">
               <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="c18d-aa31-9cd2-744a" shared="true" includeChildSelections="false" childName="Thanatar-Calix Siege-automata "/>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="af16-4b4c-05f6-2040" shared="true" childName="Thanatar-Cavas Siege-automata"/>
               </conditions>
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Thanatar-Cavas Siege-automata" hidden="false" id="af16-4b4c-05f6-2040" type="selectionEntry" targetId="f9eb-2aeb-cfa0-683a">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="610f-0717-8ebe-fff5"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cybernetica Automata" hidden="false" id="e58c-8473-1131-9748" type="selectionEntry" targetId="6385-930f-9114-9d3d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e33a-164e-49d8-5188" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b880-c680-5e9d-6854" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Programmed Behavior" id="a7aa-d1ce-ce8e-d766" hidden="false">
+              <description>During both the controlling player’s Shooting phase and the Assault phase, a Cybernetica-Automata unit must attempt a Shooting Attack or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge.</description>
+            </rule>
+            <rule name="Pre-set Kill Limit" id="209e-e13d-92be-e765" hidden="false">
+              <description>Cybernetica-Automata units may not fire overwatch.</description>
+            </rule>
+            <rule name="For The Machine Is Immortal" id="57c3-545c-a07b-b38f" hidden="false">
+              <description>Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Cybernetica-Automata Unit Type.</description>
+            </rule>
+            <rule name="The Zeroth Law" id="7393-df56-82dd-a37e" hidden="false">
+              <description>No model that is not also of the Cybernetica-Automata Unit Type may join a unit that includes an Cybernetica-Automata model unless otherwise specified.</description>
+            </rule>
+          </rules>
+        </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Canticles of the Omnissiah (CotO)" id="ddf0-c3b0-1a0a-62fb" hidden="false" type="rule" targetId="2624-ddf9-eb70-e0f9"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Ursarax" hidden="false" id="6d82-2bb0-df94-a10c">
       <profiles>
@@ -4671,7 +4787,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <entryLink import="true" name="Utan Jump Pack" hidden="false" id="d0c6-2aa5-c23a-4525" type="selectionEntry" targetId="672c-05f4-8f5c-d798"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="45"/>
+        <cost name="pts" typeId="points" value="40"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Volkite Incinerator" hidden="false" id="51ef-319b-15b5-473f">
@@ -4928,34 +5044,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77b9-34a5-0df2-c9ed"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Phosphor Blaster" hidden="false" id="5bee-e78e-82d7-4d21">
-              <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="894f-932f-2060-9d62"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="1" field="894f-932f-2060-9d62">
-                  <conditions>
-                    <condition type="lessThan" value="4" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <profiles>
-                <profile name="Phosphor Blaster" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="bf2f-5b83-77ba-bcfb">
-                  <characteristics>
-                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
-                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4, Luminagen</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <infoLinks>
-                <infoLink name="Luminagen" id="4f39-54bb-b1a7-2508" hidden="false" type="rule" targetId="1ef9-eb82-305a-6660"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="12"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ef5a-f431-a939-d3cb"/>
@@ -5064,6 +5152,34 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <cost name="pts" typeId="points" value="18"/>
           </costs>
         </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Phosphor Blaster" hidden="false" id="cabf-0481-e4de-666e">
+          <profiles>
+            <profile name="Phosphor Blaster" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="3e5d-3798-3c82-8d77">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4, Luminagen</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Luminagen" id="c76a-9015-c77d-1166" hidden="false" type="rule" targetId="1ef9-eb82-305a-6660"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="33af-1e1f-68ec-d598"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="1" field="33af-1e1f-68ec-d598">
+              <conditions>
+                <condition type="notEqualTo" value="5" field="selections" scope="parent" childId="b814-e618-c6c5-38d7" shared="true" childName="Serbery Sulphurhound"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="pts" typeId="points" value="12"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <infoLinks>
         <infoLink name="Rad-saturation" id="0caa-3998-737f-e3fb" hidden="false" type="rule" targetId="9b35-7ed9-3c6b-bdc5"/>
@@ -5075,6 +5191,34 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           <description>Can shoot pistols after advancing</description>
         </rule>
       </rules>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Phosphor Blaster" id="31b3-c39e-b15a-bb8e" hidden="false">
+          <constraints>
+            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="606a-b087-4b94-3df5"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="4305-2f8f-6765-1079"/>
+          </constraints>
+          <profiles>
+            <profile name="Phosphor Blaster" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="99c4-83df-3c11-4441">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 4, Luminagen</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Luminagen" id="0a46-e6fd-670b-e57f" hidden="false" type="rule" targetId="1ef9-eb82-305a-6660"/>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" value="1" field="606a-b087-4b94-3df5">
+              <conditions>
+                <condition type="lessThan" value="5" field="selections" scope="parent" childId="any" shared="true" includeChildSelections="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cognis Heavy Phosphor Blaster" hidden="false" id="4696-64a6-9e24-8117">
       <infoLinks>
@@ -5534,7 +5678,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Pteraxii Skyborne" hidden="false" id="7ea9-45f8-ac94-3858">
+    <selectionEntry type="unit" import="true" name="Sicarian Pteraxii" hidden="false" id="7ea9-45f8-ac94-3858">
       <infoLinks>
         <infoLink name="Deep Strike" id="476e-a32c-139c-8d60" hidden="false" type="rule" targetId="243a-b08c-3c8c-c363"/>
         <infoLink name="Doctrina Imperatives" id="1821-a272-78d9-a7e9" hidden="false" type="rule" targetId="a816-e86a-b5d0-8037"/>
@@ -5543,7 +5687,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <infoLink name="Bulky" id="9720-5824-c312-ff3a" hidden="false" type="rule" targetId="b4c1-e1df-b875-92a6"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry type="model" import="true" name="Pteraxii Skyborne" hidden="false" id="1ad4-1230-9514-20db">
+        <selectionEntry type="model" import="true" name="Pteraxii" hidden="false" id="1ad4-1230-9514-20db">
           <profiles>
             <profile name="Pteraxii Skyborne" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="2e34-ef97-764a-199e">
               <characteristics>
@@ -5568,7 +5712,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
             <cost name="pts" typeId="points" value="35"/>
           </costs>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Pteraxii Skyborne Princeps" hidden="false" id="c919-a2e7-a239-036f">
+        <selectionEntry type="model" import="true" name="Pteraxii Princeps" hidden="false" id="c919-a2e7-a239-036f">
           <profiles>
             <profile name="Pteraxii Skyborne Princeps" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="bf9d-0473-0926-00c7">
               <characteristics>
@@ -5667,29 +5811,6 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           </characteristics>
         </profile>
       </profiles>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Gun" hidden="false" id="e6d7-89e6-2e29-db17">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0afd-89ff-10cb-0358"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="13f0-adeb-a99b-502a"/>
-          </constraints>
-          <entryLinks>
-            <entryLink import="true" name="Transuranic arquebus" hidden="false" id="fb18-66e4-a310-f9fd" type="selectionEntry" targetId="2579-0761-e3ef-3c6c">
-              <modifiers>
-                <modifier type="set" value="0" field="points"/>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c33d-a07b-8d66-4326"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Radium jezzail" hidden="false" id="7d42-dc0e-9970-cd63" type="selectionEntry" targetId="0db5-8880-fdb6-0d6c">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3eca-d8e9-2758-41d8"/>
-              </constraints>
-            </entryLink>
-          </entryLinks>
-        </selectionEntry>
-      </selectionEntries>
       <entryLinks>
         <entryLink import="true" name="Archaeotech Pistol" hidden="false" id="2d28-804b-4f58-acf5" type="selectionEntry" targetId="1ca5-de07-2ba9-6c3e">
           <constraints>
@@ -5706,6 +5827,29 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <costs>
         <cost name="pts" typeId="points" value="40"/>
       </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Gun" id="e88a-9a9d-f1a6-861e" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Radium jezzail" hidden="false" id="b16c-30c9-22e8-1aef" type="selectionEntry" targetId="0db5-8880-fdb6-0d6c">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a151-fdb7-9920-61ec"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Transuranic arquebus" hidden="false" id="349a-d8f0-bcc2-a4f0" type="selectionEntry" targetId="2579-0761-e3ef-3c6c">
+              <modifiers>
+                <modifier type="set" value="0" field="points"/>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c66b-c64f-3d65-7f18"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="378b-1f08-40f7-b545"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c0b8-0908-c0d2-cd75"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Sydonian Skatross" hidden="false" id="ec3e-a61b-a6a3-067a">
       <entryLinks>
@@ -5716,6 +5860,9 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
           </constraints>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Doctrina Imperatives" id="7e83-6ea5-7e24-431a" hidden="false" targetId="a816-e86a-b5d0-8037" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Triaros Armoured Conveyor" hidden="false" id="7774-7b68-f5f1-6241">
       <costs>
@@ -5879,6 +6026,242 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
       <costs>
         <cost name="pts" typeId="points" value="90"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Adsecularis Tech Thrall" hidden="false" id="0af8-c7b7-6f27-5617">
+      <profiles>
+        <profile name="Adsecularis Tech Thrall" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="23f6-66c3-2920-ac66">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">2</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">6</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Stubborn" id="1b4b-5019-fc38-e064" hidden="false" type="rule" targetId="a1e0-247a-474f-2f5a"/>
+        <infoLink name="Feel No Pain" id="b807-a887-0572-176b" hidden="false" type="rule" targetId="3c7d-11d6-e265-abb4"/>
+        <infoLink name="Hatred" id="abc6-3d7e-6bad-fd8c" hidden="false" type="rule" targetId="5e10-0200-5a10-0e8a"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="4"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Adsecularis Tech Thralls" hidden="false" id="1ead-1f2c-f09a-b75e">
+      <entryLinks>
+        <entryLink import="true" name="Adsecularis Tech Thrall" hidden="false" id="f7a1-89c4-3e0c-4ee8" type="selectionEntry" targetId="0af8-c7b7-6f27-5617">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="75fd-b79d-d979-56d6"/>
+            <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="b3fc-aecd-85f1-e99d"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Slow and Purposeful" id="b43a-85f5-073b-c4c1" hidden="false" type="rule" targetId="e6bc-ea23-502f-5042"/>
+          </infoLinks>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Weapon" id="6d2b-cb18-b552-2162" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Laslock" hidden="false" id="e31e-b9c9-4152-54a2">
+              <profiles>
+                <profile name="Laslock" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="e9da-dd97-cea9-b3cf">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cc5-bfc4-fc5b-9806"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Mitra-lock" hidden="false" id="2678-c789-1a37-a0eb">
+              <profiles>
+                <profile name="Mitra-lock" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a62c-24c5-9fa7-58b7">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">9&quot;
+</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault 2, Shred</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Shred" id="a2e6-5d4f-5673-26fb" hidden="false" type="rule" targetId="5770-35c6-7341-5527"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3556-d154-27c7-0deb"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="55e8-c520-f8aa-dbfb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b6d7-8a98-640c-5565"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Vultarax Stratos" hidden="false" id="811e-9869-e0fb-c318">
+      <profiles>
+        <profile name="Vultarax Stratos" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="4d94-42eb-e153-491c">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Automata (Skimmer)</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">6</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Arc Blaster" hidden="false" id="4d65-8c6c-9d98-1c5d">
+          <profiles>
+            <profile name="Arc Blaster" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="f122-ed1f-243c-eede">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 4, Shred, Disruption</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Disruption" id="f20c-dfba-19f1-19ba" hidden="false">
+              <description>Auto Glance (Vehicles) /Auto wound (Automata) on a 6+ to hit</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="316e-9892-7dec-65b9"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5b90-a418-7d32-a253"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Twin-linked Havoc Launcher" hidden="false" id="fec7-6eec-ffd8-fa79">
+          <infoLinks>
+            <infoLink name="Twin-Linked" id="6ec1-49ef-1786-c202" hidden="false" type="rule" targetId="3002-de38-7230-fbc6"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Twin-linked Havoc Launcher" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="49ab-6a3f-0a50-c706">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">48&quot;</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, 5&quot; Blast, Twin-linked</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="45fa-57a7-accc-cf64"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="29bc-302c-0b2e-21a7"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <rules>
+        <rule name="Stratos Thrusters" id="9f38-3495-f448-448e" hidden="false">
+          <description>This model can move 16&quot; in addition this model never takes difficult or dangerous terrain checks</description>
+        </rule>
+        <rule name="Automated Hunter" id="0163-c80f-17d7-fc71" hidden="false">
+          <description>This model may ignored the Programmed behavior of Cybernetica Automata</description>
+        </rule>
+      </rules>
+      <entryLinks>
+        <entryLink import="true" name="Atomantic Deflector" hidden="false" id="10bc-5646-f598-629b" type="selectionEntry" targetId="3840-c678-634f-5428"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vultarax Stratos-Automata Squadron" hidden="false" id="15a3-4056-3893-5e55">
+      <entryLinks>
+        <entryLink import="true" name="Vultarax Stratos" hidden="false" id="3b7b-e9b2-ad17-a37c" type="selectionEntry" targetId="811e-9869-e0fb-c318">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7f19-1166-a443-292a"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="7f4b-eb00-9f25-bc64"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cybernetica Automata" hidden="false" id="922d-01aa-6cdb-5bc7" type="selectionEntry" targetId="6385-930f-9114-9d3d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="642b-8537-9acf-46c9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e39c-3f09-c2bb-f4b7" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Programmed Behavior" id="d964-8ed0-146a-8d15" hidden="false">
+              <description>During both the controlling player’s Shooting phase and the Assault phase, a Cybernetica-Automata unit must attempt a Shooting Attack or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge.</description>
+            </rule>
+            <rule name="Pre-set Kill Limit" id="f060-5733-b1ea-b383" hidden="false">
+              <description>Cybernetica-Automata units may not fire overwatch.</description>
+            </rule>
+            <rule name="For The Machine Is Immortal" id="e72a-7f34-8c89-a54c" hidden="false">
+              <description>Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Cybernetica-Automata Unit Type.</description>
+            </rule>
+            <rule name="The Zeroth Law" id="cbd1-9c16-def3-f0f5" hidden="false">
+              <description>No model that is not also of the Cybernetica-Automata Unit Type may join a unit that includes an Cybernetica-Automata model unless otherwise specified.</description>
+            </rule>
+          </rules>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Doctrina Imperatives" id="6b94-612d-e6cf-a304" hidden="false" type="rule" targetId="a816-e86a-b5d0-8037"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ursarax Cohort" hidden="false" id="c3ae-eb0b-1693-0768">
+      <entryLinks>
+        <entryLink import="true" name="Ursarax" hidden="false" id="2df1-3c17-cffa-1e32" type="selectionEntry" targetId="6d82-2bb0-df94-a10c">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d067-97f0-ac77-4cda"/>
+            <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="87c0-2d6b-ac21-25f2"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Cybernetica Automata" hidden="false" id="c59c-aa8d-3807-d785" type="selectionEntry" targetId="6385-930f-9114-9d3d">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57b5-4455-c3bd-793d" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bc8f-7752-a8e9-ca06" includeChildSelections="false"/>
+          </constraints>
+          <rules>
+            <rule name="Programmed Behavior" id="e555-ee4e-937e-f0e4" hidden="false">
+              <description>During both the controlling player’s Shooting phase and the Assault phase, a Cybernetica-Automata unit must attempt a Shooting Attack or Charge if there is an enemy unit within range, and must target the closest enemy unit possible that is within its line of sight and is a valid target for a Shooting Attack or Charge. If two or more targets are equally close then the controlling player chooses which will be the target of a Shooting Attack or Charge.</description>
+            </rule>
+            <rule name="Pre-set Kill Limit" id="fb1e-3e33-c30d-3126" hidden="false">
+              <description>Cybernetica-Automata units may not fire overwatch.</description>
+            </rule>
+            <rule name="For The Machine Is Immortal" id="21ab-f406-2705-0499" hidden="false">
+              <description>Successful Wounds inflicted by attacks with the Poisoned or Fleshbane special rules must be re-rolled against models of the Cybernetica-Automata Unit Type.</description>
+            </rule>
+            <rule name="The Zeroth Law" id="a8c0-c5f0-9a18-8973" hidden="false">
+              <description>No model that is not also of the Cybernetica-Automata Unit Type may join a unit that includes an Cybernetica-Automata model unless otherwise specified.</description>
+            </rule>
+          </rules>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Doctrina Imperatives" id="292c-d18d-cf5b-3231" hidden="false" type="rule" targetId="a816-e86a-b5d0-8037"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Domitar Battle-Maniple" hidden="false" id="c3f8-22bb-fcaa-587b">
+      <entryLinks>
+        <entryLink import="true" name="Domitar" hidden="false" id="13a9-f933-3a81-735b" type="selectionEntry" targetId="2b9f-7bc8-acd2-2268">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="794e-2be2-3a0a-f802"/>
+            <constraint type="max" value="5" field="selections" scope="parent" shared="true" id="ad7f-94ed-5ab1-5c92"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -6177,7 +6560,7 @@ A mindlocked unit may not voluntarily move, shoot or charge. A mindlocked unit m
         <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">24&quot;</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 2, Blast, Gets Hot</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 3, Gets Hot</characteristic>
       </characteristics>
     </profile>
     <profile name="Servo Arm" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="4a9e-00e5-c259-06b9" publicationId="4fe1-8588-pubN77626" page="151">
