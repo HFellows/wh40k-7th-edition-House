@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="13" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Hellhound Squadron" hidden="false" id="03d7-be62-f48a-bcf1" publicationId="2be8d152--pubN72426" page="54" collective="false">
       <categoryLinks>
@@ -3043,7 +3043,6 @@
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Searchlight" hidden="false" id="eaa9-cc9d-534f-206a" collective="false" targetId="d26eb534-d6b2-ac11-a207-627c7497e876" type="selectionEntry"/>
         <entryLink import="true" name="Smoke Launchers" hidden="false" id="bebd-9ccb-719f-852c" collective="false" targetId="c5066441-7f6f-5497-5df6-4462463a5807" type="selectionEntry">
           <costs>
             <cost name="pts" typeId="points" value="0"/>
@@ -9838,10 +9837,6 @@
       </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Bullgryns" hidden="false" id="6c53-2ad1-c3ae-fb1d" publicationId="2be8d152--pubN72426" page="44" collective="false">
-      <constraints>
-        <constraint type="min" value="2" field="selections" scope="parent" shared="false" id="050d-5e2c-e8c5-8643-min" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-        <constraint type="max" value="2" field="selections" scope="parent" shared="false" id="050d-5e2c-e8c5-8643-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-      </constraints>
       <infoLinks>
         <infoLink name="Stubborn" id="00d5-c73c-73e9-8182" hidden="false" targetId="a1e0-247a-474f-2f5a" type="rule"/>
         <infoLink name="Very Bulky" id="14ab-6681-7d79-750b" hidden="false" targetId="20e0-3f6c-f3ac-fda2" type="rule"/>
@@ -10736,8 +10731,11 @@
                   </entryLinks>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9e8-c773-ed60-8018"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Sentinel Command Squadron" hidden="false" id="f6ad-dca8-ad34-4d86">
+            <selectionEntry type="unit" import="true" name="Sentinel Command Squadron" hidden="false" id="f6ad-dca8-ad34-4d86">
               <selectionEntries>
                 <selectionEntry type="model" import="true" name="Armoured Sentinel" hidden="false" id="ddd0-879e-9550-d0d2" page="0" collective="false">
                   <constraints>
@@ -10924,8 +10922,11 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a983-fbc0-7f0c-9851"/>
+              </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Salamander Command Squadron" hidden="false" id="b70b-67ca-1b4b-07f6">
+            <selectionEntry type="unit" import="true" name="Salamander Command Squadron" hidden="false" id="b70b-67ca-1b4b-07f6">
               <entryLinks>
                 <entryLink import="true" name="Salamander Command" hidden="false" id="b386-3bba-6e20-4828" type="selectionEntry" targetId="ab08-4ae6-5fbf-9885">
                   <constraints>
@@ -10953,7 +10954,6 @@
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
-                    <entryLink import="true" name="Searchlight" hidden="false" id="d710-8191-c31b-b9d9" collective="false" targetId="d26eb534-d6b2-ac11-a207-627c7497e876" type="selectionEntry"/>
                     <entryLink import="true" name="Smoke Launchers" hidden="false" id="a188-3195-e7f2-8e6e" collective="false" targetId="c5066441-7f6f-5497-5df6-4462463a5807" type="selectionEntry">
                       <costs>
                         <cost name="pts" typeId="points" value="0"/>
@@ -10968,13 +10968,15 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9810-a5ce-0e14-cd7c"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
             <entryLink import="true" name="Hippogriff Command Squadron" hidden="false" id="dc45-c716-3934-e17a" type="selectionEntry" targetId="8640-a632-6ff1-02ff">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a40a-2ca4-35f3-a4af"/>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fe2b-7517-809d-28ca"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -11049,6 +11051,9 @@
                 <infoLink name="Chiron Gatling Cannon" id="9380-4d54-b10d-14c1" hidden="false" type="profile" targetId="f784-8702-8ec0-ffca"/>
                 <infoLink name="Pinning" id="c91b-e130-b39f-fc9c" hidden="false" type="rule" targetId="8918-d7ce-5edb-3b70"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Heavy Lascannon" hidden="false" id="b581-0336-14e8-4c6d">
               <constraints>
@@ -11057,14 +11062,20 @@
               <infoLinks>
                 <infoLink name="Heavy Lascannon" id="e244-7d71-b128-2e92" hidden="false" type="profile" targetId="22cc-2f86-4d39-b064"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="95"/>
+              </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Vigilator Cannon" hidden="false" id="8565-5996-b963-8192">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db87-60ad-09b0-03a6"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db87-60ad-09b0-03a6"/>
               </constraints>
               <infoLinks>
                 <infoLink name="Vigilator Cannon" id="02cc-cf03-00ca-a388" hidden="false" type="profile" targetId="ca62-ddd1-7ee6-6ed8"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="80"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
