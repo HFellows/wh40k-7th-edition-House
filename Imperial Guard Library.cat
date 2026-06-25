@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="17" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="18" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Hellhound Squadron" hidden="false" id="03d7-be62-f48a-bcf1" publicationId="2be8d152--pubN72426" page="54" collective="false">
       <categoryLinks>
@@ -10951,6 +10951,9 @@
                       <costs>
                         <cost name="pts" typeId="points" value="10"/>
                       </costs>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e88a-0dbe-13a2-7f21"/>
+                      </constraints>
                     </selectionEntry>
                   </selectionEntries>
                   <entryLinks>
@@ -11498,6 +11501,9 @@
           <costs>
             <cost name="pts" typeId="points" value="10"/>
           </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6499-f674-ec21-d90d"/>
+          </constraints>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
