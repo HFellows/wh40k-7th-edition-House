@@ -11111,7 +11111,7 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Storm Trooper Command Squad" hidden="false" id="d4ee-f638-dbd9-99db" page="0" collective="false">
+    <selectionEntry type="unit" import="true" name="Stormtrooper Command Squad" hidden="false" id="d4ee-f638-dbd9-99db" page="0" collective="false">
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2fa9-f64e-7fed-65aa"/>
       </constraints>
@@ -11779,7 +11779,7 @@
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="0b36-2fb1-eddc-9e40"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Stormtrooper" hidden="false" id="928c-d14e-6fa6-f20e" page="0" collective="false">
+            <selectionEntry type="model" import="true" name="Stormtrooper" hidden="false" id="928c-d14e-6fa6-f20e" page="0" collective="false">
               <constraints>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="3b5c-9a6d-5b6c-3fdc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                 <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="1ff2-429d-f8ba-010f"/>
@@ -11818,78 +11818,6 @@
               </entryLinks>
               <costs>
                 <cost name="pts" typeId="points" value="12"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Stormtrooper w/ Vox-caster" hidden="false" id="ddf5-6e6f-c714-efd8" page="0" collective="false">
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="eab9-c64d-9e39-655c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Tempestus Scion" id="9cee-b4d1-2969-9b69" hidden="false" targetId="f51905c4-7ffb-3a41-ad86-de14eba93ba3" type="profile">
-                  <modifiers>
-                    <modifier type="set" value="Stormtrooper" field="name"/>
-                  </modifiers>
-                  <modifierGroups>
-                    <modifierGroup type="and">
-                      <modifiers>
-                        <modifier type="set" value="5+" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d"/>
-                        <modifier type="set" value="Jet Pack Infantry" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5"/>
-                      </modifiers>
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="1f12-e0cc-92f5-8965" shared="true" childName="Aquillan"/>
-                      </conditions>
-                    </modifierGroup>
-                  </modifierGroups>
-                </infoLink>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Hot-shot Lasgun" id="b607-f27c-0570-3297" hidden="false" collective="false" import="true" defaultSelectionEntryId="f7a4-dca9-7b59-77e0">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="98b6-c606-5d60-8c25" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="be87-2106-bbc1-89d8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Hot-shot Laspistol" hidden="false" id="c800-219e-a5bc-1e28" page="0" collective="false">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b350-ea36-6b3a-b43b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink name="Hot-shot Laspistol" id="0b8c-2ae0-70b7-34d9" hidden="false" targetId="4609-79eb-7505-68a5" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Hot-shot Lasgun" hidden="false" id="bdd9-8747-948a-4507" page="0" collective="false">
-                      <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="3f3d-16bc-35d7-1cd4" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
-                      </constraints>
-                      <entryLinks>
-                        <entryLink import="true" name="Hot-shot Lasgun" hidden="false" id="dcc1-313e-40cf-8a34" collective="false" targetId="8404-3cd6-1774-b01f" type="selectionEntry"/>
-                      </entryLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink import="true" name="Vox-caster" hidden="false" id="f27a-4d0f-5cf6-6eb6" collective="false" targetId="7a92df87-45d3-df85-751a-5af138476a79" type="selectionEntry"/>
-                <entryLink import="true" name="Frag Grenades" hidden="false" id="206f-849b-2055-69d5" collective="false" targetId="7c55-4b0e-ca04-d5a4" type="selectionEntry"/>
-                <entryLink import="true" name="Krak Grenades" hidden="false" id="ac15-e358-015d-ef0e" collective="false" targetId="e56b-7ca0-ec48-34db" type="selectionEntry"/>
-                <entryLink import="true" name="Carapace Armour" hidden="false" id="d5a9-a034-30ed-6a07" collective="false" targetId="e627-ee26-ffb2-f571" type="selectionEntry">
-                  <modifiers>
-                    <modifier type="set" value="true" field="hidden">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="317d-0bc9-b631-656d" shared="true" childName="Jetpacks"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="17"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -12101,6 +12029,13 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="4" field="bb58-f53f-9ac8-b327">
+                  <conditions>
+                    <condition type="atLeast" value="5" field="selections" scope="parent" childId="928c-d14e-6fa6-f20e" shared="true" childName="Stormtrooper"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
@@ -12148,6 +12083,12 @@
         <entryLink import="true" name="Stormtrooper Dedicated Transport" hidden="false" id="4ee3-eb46-1fe0-5b90" type="selectionEntryGroup" targetId="4e53-45fa-8975-75eb">
           <modifiers>
             <modifier type="set" value="Stormtrooper Dedicated Transport" field="name"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Vox-caster" hidden="false" id="16ac-c875-d88d-7452" type="selectionEntry" targetId="7a92df87-45d3-df85-751a-5af138476a79">
+          <modifiers>
+            <modifier type="set" value="0" field="b917-95ce-788f-23b3"/>
+            <modifier type="set" value="5" field="points"/>
           </modifiers>
         </entryLink>
       </entryLinks>
