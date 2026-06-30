@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="19" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="20" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Hellhound Squadron" hidden="false" id="03d7-be62-f48a-bcf1" publicationId="2be8d152--pubN72426" page="54" collective="false">
       <categoryLinks>
@@ -1937,7 +1937,7 @@
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="135"/>
+        <cost name="pts" typeId="points" value="140"/>
       </costs>
       <entryLinks>
         <entryLink import="true" name="Leman Russ Equipment List" hidden="false" id="dad7-6e5a-6874-44a3" type="selectionEntryGroup" targetId="3214-82fd-4496-11fb"/>
@@ -6869,7 +6869,7 @@
         <entryLink import="true" name="Vehicle Equipment List" hidden="false" id="6043-2de3-2c9c-3906" type="selectionEntryGroup" targetId="37b794d7-0eae-7b05-9ba5-042be742da28"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="160"/>
+        <cost name="pts" typeId="points" value="120"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Siege Tank Squadron" hidden="false" id="383e-e89f-e1df-0b43">
@@ -10803,14 +10803,18 @@
                 <cost name="pts" typeId="points" value="30"/>
               </costs>
               <selectionEntries>
-                <selectionEntry type="upgrade" import="true" name="Leman Russ Command Tank" hidden="false" id="12b1-afcc-b76d-6eab">
+                <selectionEntry type="upgrade" import="true" name="Leman Russ Tank" hidden="false" id="12b1-afcc-b76d-6eab">
                   <entryLinks>
                     <entryLink import="true" name="Leman Russ" hidden="false" id="7694-4f02-a275-f5db" type="selectionEntryGroup" targetId="130a-f968-3551-8c23">
                       <constraints>
-                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf9f-b5cd-abc7-1c5d" includeChildSelections="false"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="cf9f-b5cd-abc7-1c5d" includeChildSelections="false"/>
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="baa9-d9c2-fa86-c45c"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dbc4-f9a8-d484-3baf"/>
+                  </constraints>
                 </selectionEntry>
               </selectionEntries>
               <constraints>
@@ -11842,7 +11846,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Commissar" hidden="false" id="e4f0-5e4d-9994-455f" collective="false" targetId="5d9c650e-5d0d-3490-f151-8161623ea294" type="selectionEntry"/>
-        <entryLink import="true" name="Stormtrooper Dedicated Transport" hidden="false" id="ec1a-35c4-5d41-4ff2" type="selectionEntryGroup" targetId="4e53-45fa-8975-75eb">
+        <entryLink import="true" name="Tempestus Dedicated Transport" hidden="false" id="ec1a-35c4-5d41-4ff2" type="selectionEntryGroup" targetId="4e53-45fa-8975-75eb">
           <modifiers>
             <modifier type="set" value="Stormtrooper Dedicated Transport" field="name"/>
           </modifiers>
@@ -12340,7 +12344,7 @@
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Commissar" hidden="false" id="d739-ad54-ad55-4e06" collective="false" targetId="5d9c650e-5d0d-3490-f151-8161623ea294" type="selectionEntry"/>
-        <entryLink import="true" name="Stormtrooper Dedicated Transport" hidden="false" id="4ee3-eb46-1fe0-5b90" type="selectionEntryGroup" targetId="4e53-45fa-8975-75eb">
+        <entryLink import="true" name="Tempestus Dedicated Transport" hidden="false" id="4ee3-eb46-1fe0-5b90" type="selectionEntryGroup" targetId="4e53-45fa-8975-75eb">
           <modifiers>
             <modifier type="set" value="Stormtrooper Dedicated Transport" field="name"/>
           </modifiers>
@@ -12358,7 +12362,7 @@
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Stormtrooper Plantoon" hidden="false" id="c60a-77f9-ce2d-dd2f">
       <entryLinks>
-        <entryLink import="true" name="Storm Trooper Command Squad" hidden="false" id="8532-291e-71d7-93e8" type="selectionEntry" targetId="d4ee-f638-dbd9-99db"/>
+        <entryLink import="true" name="Stormtrooper Command Squad" hidden="false" id="8532-291e-71d7-93e8" type="selectionEntry" targetId="d4ee-f638-dbd9-99db"/>
         <entryLink import="true" name="Stormtrooper Squad" hidden="false" id="b881-b571-5523-cabe" type="selectionEntry" targetId="5dd5-fdcd-cad0-9a8d"/>
       </entryLinks>
       <selectionEntryGroups>
