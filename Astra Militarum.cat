@@ -460,7 +460,11 @@
         <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="276e-c1c8-a8a6-2727" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Reconnaissance Squad" hidden="false" id="4953-54e0-f435-3394" type="selectionEntry" targetId="6a90-6dc5-1e0b-9eaf"/>
+    <entryLink import="true" name="Reconnaissance Squad" hidden="false" id="4953-54e0-f435-3394" type="selectionEntry" targetId="6a90-6dc5-1e0b-9eaf">
+      <costs>
+        <cost name="pts" typeId="points" value="9"/>
+      </costs>
+    </entryLink>
     <entryLink import="true" name="Provenances of War" hidden="false" id="b92b-b15f-6358-5e86" type="selectionEntry" targetId="66fe-b707-a989-1a0a">
       <categoryLinks>
         <categoryLink targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" id="f613-672b-889e-659d" primary="true" name="No Force Org Slot"/>
