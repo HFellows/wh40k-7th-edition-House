@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="528a-ef70-976b-e362" name="Leagues of Votann" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="10" revision="2" authorName="gibbous" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <catalogueLinks>
+    <catalogueLink type="catalogue" name="Votann Library " id="c2f1-ad1f-c939-9494" targetId="359a-b744-765a-097d"/>
+  </catalogueLinks>
+  <entryLinks>
+    <entryLink import="true" name="Brokhyr Thunderkyn" hidden="false" id="0e5d-64ed-8133-50d2" type="selectionEntry" targetId="e206-64e6-0855-bcae">
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="e5f5-e9f0-56d6-5ae6" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Cthonian Beserks" hidden="false" id="0fd9-bf37-aaf4-f9d0" type="selectionEntry" targetId="a64f-5327-d2d7-3024">
+      <categoryLinks>
+        <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="671b-d2c8-db24-1ab0" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Earth Shakers" hidden="false" id="7b01-cb8b-d81a-308c" type="selectionEntry" targetId="ca5e-f740-4f47-5a2b">
+      <categoryLinks>
+        <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="49ff-28a2-6151-8726" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Einhyr Hearthguards" hidden="false" id="cd4f-90c8-1fcf-6e68" type="selectionEntry" targetId="0c0c-7c9f-3007-02b1">
+      <categoryLinks>
+        <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="7a09-755d-d2ea-e5db" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hearthkyn Warriors" hidden="false" id="11d0-b6e8-b8ea-f160" type="selectionEntry" targetId="26f5-5249-a57d-4de6">
+      <categoryLinks>
+        <categoryLink targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" id="79c2-e070-5694-95c8" primary="true" name="Troops"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hekaton Land Fortress Squadron" hidden="false" id="6908-421b-a9d8-8dfa" type="selectionEntry" targetId="a186-be4b-5d45-8770">
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="de35-9cbd-10db-3211" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hernkyn Pioneers" hidden="false" id="99e9-84e6-f871-809b" type="selectionEntry" targetId="ebda-9960-4f7c-7204">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="e65a-ad50-a113-dfa5" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Hernkyn Yaegirs" hidden="false" id="910a-f43b-8bfc-2627" type="selectionEntry" targetId="3dfd-2ea2-bc8a-e6b1">
+      <categoryLinks>
+        <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="c1e1-6840-8b7d-2deb" primary="true" name="Elites"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Ironkin Steeljacks" hidden="false" id="6f76-a7e6-854f-2a7d" type="selectionEntry" targetId="31ae-daff-4ada-b9df">
+      <categoryLinks>
+        <categoryLink targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" id="7a23-34a5-4cec-7c68" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kapricus Defender Squadron" hidden="false" id="fb19-9b68-657a-a27b" type="selectionEntry" targetId="b5b4-49eb-58ec-5222">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="8bf9-f728-39b6-dfb3" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Sagitaur Squadron" hidden="false" id="57da-989a-7d5c-3216" type="selectionEntry" targetId="5d85-7f43-bfa3-ed4e">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="7e07-ee6c-0c9c-1578" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kahl" hidden="false" id="56c8-c60b-1dc0-e96d" type="selectionEntry" targetId="3e9f-77c6-2a74-0c88">
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="2521-8aa9-fbea-08f8" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Grimnyr" hidden="false" id="ec98-c345-60fd-95d2" type="selectionEntry" targetId="ad83-33c2-824a-6705">
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="a427-8135-6106-393f" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Einhyr Champion" hidden="false" id="0f02-a208-23f5-a0f3" type="selectionEntry" targetId="39e9-b6ca-def8-8371">
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="6084-c299-0b2f-01ac" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Brokhyr Iron-master" hidden="false" id="900a-df16-7837-6bb7" type="selectionEntry" targetId="f1d4-8d09-10de-c17f">
+      <categoryLinks>
+        <categoryLink targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" id="255b-3bec-cdbd-018d" primary="true" name="HQ"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="ECOG Swarm" hidden="false" id="a915-fad5-b015-6d19" type="selectionEntry" targetId="b4fa-bd84-f4d9-6522">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="3db3-31af-00f8-c54e" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+</catalogue>
