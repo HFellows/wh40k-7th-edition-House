@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b823-fe32-4af1-77d0" name="Chaos Space Marines: Codex (2012)" revision="2027" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="b823-fe32-4af1-77d0" name="Chaos Space Marines: Codex (2012)" revision="2030" battleScribeVersion="2.03" authorName="BSData Developers" authorUrl="https://discord.gg/KqPVhds" library="false" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2041" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <publications>
     <publication id="5af86795--pubN75167" name="IA Vraks 2015"/>
     <publication id="5af86795--pubN75711" name="Imperial Armour 13"/>
@@ -2007,6 +2007,11 @@ D6 Result
       </modifiers>
       <categoryLinks>
         <categoryLink id="5072-fdd6-e0c3-a9cb-c274d0b0-5866-44bc-9810-91c136ae7438" hidden="false" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Venom Crawler " hidden="false" id="bc87-f0a6-4ec8-248f" type="selectionEntry" targetId="dd99-82ee-3346-6f49">
+      <categoryLinks>
+        <categoryLink targetId="c274d0b0-5866-44bc-9810-91c136ae7438" id="bf2d-136a-e82b-4791" primary="true" name="Fast Attack"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
@@ -9429,7 +9434,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="3321-1fb9-1a78-d3ad" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -9676,9 +9680,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="5b2f-db56-40a8-aa2b" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
@@ -11476,7 +11477,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="84bd-169b-5d98-5e8c" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -11571,13 +11571,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
       </costs>
     </selectionEntry>
     <selectionEntry id="8a3b-80c7-0cf3-e044" name="Chaos Terminators" page="0" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -12216,7 +12209,7 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
         <entryLink id="d7fd-229c-0c79-bc3d" name="Searchlight" hidden="false" collective="false" import="true" targetId="9a52-7dfa-ebd7-2fb6" type="selectionEntry"/>
       </entryLinks>
       <costs>
-        <cost name="pts" typeId="points" value="120"/>
+        <cost name="pts" typeId="points" value="140"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea09-b8bf-3543-ccbc" name="Chaos Warhound Titan" publicationId="5af86795--pubN94676" page="0" hidden="false" collective="false" import="true" type="model">
@@ -12968,7 +12961,6 @@ The Warlord Titan&apos;s carapace-mounted weapons may not target models closer t
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="0a4d-a75e-ee66-dd26" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -14612,13 +14604,6 @@ The nominated unit has Fearless and +1 Strength for the entire game.</descriptio
       </costs>
     </selectionEntry>
     <selectionEntry id="c3c4-425d-e94e-1b26" name="Helbrute" page="0" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="minSelections" type="min"/>
         <constraint field="selections" scope="parent" value="-1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
@@ -14896,13 +14881,6 @@ The nominated unit has Fearless and +1 Strength for the entire game.</descriptio
       </costs>
     </selectionEntry>
     <selectionEntry id="0d77-1f37-3b32-c978" name="Heldrake" page="0" hidden="false" collective="false" import="true" type="model">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="4584-d763-afb5-0bba" name="Heldrake" hidden="false" typeId="3a08-ea03-a598-8615" typeName="Flyer">
           <characteristics>
@@ -14996,13 +14974,6 @@ If the special Vector Strike is used, the squadron may not make another that tur
       </costs>
     </selectionEntry>
     <selectionEntry id="3b28-c612-5cca-f864" name="Heldrake Flyer Wing" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <selectionEntryGroups>
         <selectionEntryGroup id="afda-2075-d368-4cba" name="Heldrakes" hidden="false" collective="false" import="true" defaultSelectionEntryId="1509-b3dc-a24c-a1f0">
           <constraints>
@@ -15858,7 +15829,6 @@ At the beginning of each turn, roll a D3 (consulting the table in Hurons profile
             <modifier type="set" field="points" value="15"/>
           </modifiers>
         </entryLink>
-        <entryLink id="9f4f-3e37-3281-ec9d" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -16845,29 +16815,9 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       </costs>
     </selectionEntry>
     <selectionEntry id="1928-7e7c-ce4d-3bef" name="Mark of Nurgle" hidden="true" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="or">
-              <conditions>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="41e6-3cbd-0bdf-91c3" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7829-adb0-4afd-dafe" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4635-d223-be9f-4960" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d29-efef-8db0-ed67" type="equalTo"/>
-                <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2cca-8847-194e-40fb" type="equalTo"/>
-              </conditions>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-        <modifier type="set" field="806a-5baa-2f4b-9b4b" value="1">
-          <conditions>
-            <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9c55-dd66-6f7b-8bc8" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="maxSelections" type="max"/>
-        <constraint field="selections" scope="parent" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="806a-5baa-2f4b-9b4b" type="min"/>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="806a-5baa-2f4b-9b4b" type="min"/>
       </constraints>
       <infoLinks>
         <infoLink id="1b282f94-4d22-6e8e-54b1-9835ff80f8cc" hidden="false" targetId="2d3dd5aa-ee83-304c-3129-f7ecb73f1928" type="rule" name="Mark of Nurgle"/>
@@ -17028,14 +16978,24 @@ Enemy units that are within 12&quot; of at least two units from this formation s
                 <infoLink id="e341-26df-c66b-889a" hidden="false" targetId="501ad747-a878-718c-ebb9-ddf7f1742d4b" type="profile" name="Lasher Tendrils"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="10"/>
+                <cost name="pts" typeId="points" value="15"/>
               </costs>
+              <profiles>
+                <profile name="Lasher tendrils" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="becc-5b23-23ec-bb3a">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
-        <cost name="pts" typeId="points" value="125"/>
+        <cost name="pts" typeId="points" value="130"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2160-a7de-6d37-4310" name="Mayhem Pack" publicationId="5af86795--pubN143093" page="0" hidden="false" collective="false" import="true" type="unit">
@@ -17069,13 +17029,6 @@ Enemy units that are within 12&quot; of at least two units from this formation s
       </costs>
     </selectionEntry>
     <selectionEntry id="5827-0f87-428a-2bdf" name="Mutilator" page="0" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="09a0-c32c-6590-58da" name="Multilator" page="0" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit">
           <modifiers>
@@ -17470,20 +17423,12 @@ Enemy units that are within 12&quot; of at least two units from this formation s
             <modifier type="set" field="points" value="30"/>
           </modifiers>
         </entryLink>
-        <entryLink id="86c0-8833-e748-d58c" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="07c3-8ec0-bfc9-8f99" name="Obliterators" page="0" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="instanceOf"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <profiles>
         <profile id="3542-2f02-281f-23dd" name="Obliterator" page="0" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit">
           <modifiers>
@@ -17949,7 +17894,6 @@ TL Plasma Gun</description>
             <modifier type="set" field="points" value="10"/>
           </modifiers>
         </entryLink>
-        <entryLink id="d7db-c4f6-7bc4-c24b" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -18410,7 +18354,6 @@ TL Plasma Gun</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="bfc6-f701-c71a-5006" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -18723,7 +18666,6 @@ TL Plasma Gun</description>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="b722-41fe-8bba-1f75" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -20220,7 +20162,6 @@ At the end of a phase that the Black Mace caused an unsaved wound, all non vehic
             <modifier type="set" field="points" value="15"/>
           </modifiers>
         </entryLink>
-        <entryLink id="b5dd-8806-ad28-0aba" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -21234,7 +21175,6 @@ These hits are S4 AP2 and Ignores Cover. This attack does not affect Typhus.</de
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="6acb-9129-b8ca-4af5" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
@@ -21816,11 +21756,6 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
       </costs>
     </selectionEntry>
     <selectionEntry id="0ede-6d82-9959-7841" name="Chaos Vindicators" hidden="false" collective="false" import="true" type="unit">
-      <rules>
-        <rule id="1150-185d-5885-fbfb" name="Linebreaker Bombardment" hidden="false">
-          <description>If this unit contains three Chaos Vindicators that can all fire their demolisher cannons, the squadron can fire a single Linebreaker Bombardment instead of firing normally. To do so, nominate one model in the squadron as the firer; the firer&apos;s demolisher cannon changes its type from Large Blast to Apocalyptic Blast and gains the Ignores Cover special rule.</description>
-        </rule>
-      </rules>
       <selectionEntryGroups>
         <selectionEntryGroup id="b4d0-1972-f3a7-6e97" name="Vindicators" hidden="false" collective="false" import="true" defaultSelectionEntryId="f663-cf63-f32b-dc96">
           <constraints>
@@ -22825,26 +22760,6 @@ The sokar may also transport a single Rhino, including a squad within, occupying
       </costs>
     </selectionEntry>
     <selectionEntry id="c8ba-1df2-c188-f6b8" name="Scarab Occult Terminators" page="0" hidden="true" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="hidden" value="false">
-          <conditionGroups>
-            <conditionGroup type="and">
-              <conditions>
-                <condition field="selections" scope="ancestor" value="0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f1c4-09e2-1971-7362" type="notInstanceOf"/>
-              </conditions>
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d47-164c-da91-85bc" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d29-efef-8db0-ed67" type="equalTo"/>
-                    <condition field="selections" scope="force" value="1" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7829-adb0-4afd-dafe" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </conditionGroup>
-          </conditionGroups>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="d4bd-2ed0-6ade-671e" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule" name="Deep Strike"/>
         <infoLink id="a66f-e428-fc2c-f7c7" name="Fearless" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
@@ -23331,9 +23246,6 @@ The sokar may also transport a single Rhino, including a squad within, occupying
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="592e-e2bf-9253-0c36" name="Specialists" hidden="false" collective="false" import="true" targetId="6fce-9698-40be-cf5e" type="selectionEntryGroup"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0"/>
       </costs>
@@ -25375,6 +25287,103 @@ In addition, if a model that has the VotLW special rule is slain in the Fight su
         <cost name="pts" typeId="points" value="20"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="model" import="true" name="Venom Crawler " hidden="false" id="dd99-82ee-3346-6f49">
+      <costs>
+        <cost name="pts" typeId="points" value="120"/>
+      </costs>
+      <profiles>
+        <profile name="Venom crawler " typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Walker" hidden="false" id="331a-c7f6-a4c2-34cd">
+          <characteristics>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">6</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Walker</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Primary Weapon" id="8e44-5f7a-3b63-9c81" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Twin-linked Butcher Cannon" hidden="false" id="7934-0fa8-7a0f-953a">
+              <infoLinks>
+                <infoLink name="Twin-Linked" id="0609-6816-d078-1fe3" hidden="false" type="rule" targetId="3002-de38-7230-fbc6"/>
+                <infoLink name="Butcher Cannon" id="04bf-e759-9f50-aa74" hidden="false" type="profile" targetId="411378aa-db07-c3d0-fd39-32858efcea54"/>
+              </infoLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d352-e82e-8d46-5d16"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="2x Reaper Autocannon " hidden="false" id="d425-4120-b158-13e1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d45-2ac6-6744-73db"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Reaper Autocannon" id="a5ce-6b38-6c47-eb5e" hidden="false" type="profile" targetId="4302374c-8225-ec0f-b1ea-b4d8fed05e74"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="5"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f39-8d56-f0ae-13cb"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d2d3-5408-4478-3677"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Tendrils and Claws" hidden="false" id="38a0-5c17-aa8d-8233">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4bf9-c2f3-4a22-81f9"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ede-1cf4-fd75-3ab0"/>
+          </constraints>
+          <profiles>
+            <profile name="Tendrils and Claws" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="3c97-d66c-4c75-52c0">
+              <characteristics>
+                <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+                <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
+                <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+                <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Daemonic possession" hidden="false" id="95dc-543a-d60b-8766" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a173-5b09-b4b9-6b8b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="860b-f99e-9d75-fae6"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Daemonic Possession" id="9ed7-866d-386c-a201" hidden="false" targetId="41d92af2-6429-c745-dbae-fef1ccbe7878" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Soul Eater" hidden="false" id="ddb2-2c09-4a71-c94e">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0264-8343-5068-182c"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="798f-3f6c-b5cf-759d"/>
+          </constraints>
+          <profiles>
+            <profile name="Soul Eater" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="7c40-27c2-dc13-8a7f">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A unit with this upgrade heals 1 hp when it kills any number of models in melee</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="It Will Not Die" id="6468-63e2-ef42-187a" hidden="false" type="rule" targetId="8de3-9e93-da02-b9dd"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="7bda-7c33-ecff-a43a" name="Chaos Artefact Weapons" hidden="false" collective="false" import="true">
@@ -26684,7 +26693,7 @@ Codex: Grey Knights</description>
     </profile>
     <profile id="501ad747-a878-718c-ebb9-ddf7f1742d4b" name="Lasher Tendrils" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item">
       <characteristics>
-        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each set of Lasher Tendrils reduces all models in base contacts&apos; Attack stat by 1 (to a minimum of 1). Multiple sets are Cumulative.</characteristic>
+        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each set of Lasher Tendrils reduces all models in base contacts&apos; Attack stat by 1 (to a minimum of 1). Multiple sets are Cumulative. In addition a model with Lasher Tendrils makes 3 extra attacks (4 on the charge) at Initiative step 0.</characteristic>
       </characteristics>
     </profile>
     <profile id="ef85f9f9-cbed-17f0-7cc8-31f45f48e2a9" name="Lucius the Eternal" page="0" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit">
@@ -26708,10 +26717,10 @@ Codex: Grey Knights</description>
     </profile>
     <profile id="df6b4692-b7ac-e2cf-7784-d03ae1562eac" name="Magma Cutters" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
       <characteristics>
-        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+        <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">6&quot;</characteristic>
         <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
         <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
-        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Armourbane</characteristic>
+        <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistol 1, Armourbane</characteristic>
       </characteristics>
     </profile>
     <profile id="8a223975-9d84-f863-9521-4012b81546c4" name="Manreaper" page="0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon">
