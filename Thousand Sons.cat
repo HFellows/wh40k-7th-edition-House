@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="0e09-9a33-3141-f62e" name="Thousand Sons" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="3" authorName="Gibbous" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="0e09-9a33-3141-f62e" name="Thousand Sons" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="4" authorName="Gibbous" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Auxiliary" id="f7db-ae2a-81c3-1667" hidden="false"/>
     <categoryEntry name="Command" id="01d8-8097-86d1-404a" hidden="false"/>
@@ -929,6 +929,77 @@
         <entryLink import="true" name="Searchlight" hidden="false" id="c0df-095f-8e06-eaf9" type="selectionEntry" targetId="f94f-dd37-58fc-0063"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Daemonic Rewards" id="be0e-1abe-e08e-0e2e" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="7911-6d18-4032-5c8d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="selections" scope="parent" shared="false" id="b4f9-1d0b-10c0-c15e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="min" value="0" field="points" scope="parent" shared="false" id="4315-9bf2-6192-a740" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+        <constraint type="max" value="-1" field="points" scope="parent" shared="false" id="ed95-b30e-82d7-ecb1" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Greater Rewards" id="7c9f-368a-411a-a5ac" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="D6 Greater Daemonic Reward" hidden="false" id="d14b-85a8-becb-878d" page="0" collective="false">
+              <costs>
+                <cost name="pts" typeId="points" value="20"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Lesser Rewards" id="8888-c51f-09ee-b88d" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="D6 Lesser Daemonic Reward" hidden="false" id="d83d-c8b5-8352-122a" page="0" collective="false">
+              <costs>
+                <cost name="pts" typeId="points" value="10"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Exalted Rewards" id="dd8f-f37c-0d9f-18c2" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="D6 Exalted Daemonic Reward" hidden="false" id="215c-8ca7-b2ae-89a8" page="0" collective="false">
+              <costs>
+                <cost name="pts" typeId="points" value="30"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Loci of Tzeentch" id="3074-725f-1248-4621" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="efa8-9f78-da92-3d1f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Exalted Locus of Creation" hidden="false" id="b0aa-b45f-6d86-3a02" collective="false" targetId="073b-7f37-ec96-9f28" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="25" field="points"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Greater Locus of Change" hidden="false" id="833f-31ab-3dea-01c9" collective="false" targetId="70c9-c925-df42-66eb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" value="20" field="points"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Lesser Locus of Transmogrification" hidden="false" id="e67e-33b2-e495-af47" collective="false" targetId="7364-6079-8165-5c1c" type="selectionEntry"/>
+        <entryLink import="true" name="Lesser Locus of Metamorphosis" hidden="false" id="60d4-0fd3-a62d-be74" collective="false" targetId="40fd-fc21-b894-41fe" type="selectionEntry"/>
+        <entryLink import="true" name="Exalted Locus of Creation" hidden="false" id="21c8-27fb-f4d1-4aff" collective="false" targetId="073b-7f37-ec96-9f28" type="selectionEntry"/>
+        <entryLink import="true" name="Greater Locus of Trickery" hidden="false" id="b20e-6234-e30f-47c3" collective="false" targetId="79a8-5266-1576-0d44" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hellforged Artefacts of Tzeentch" id="d1d3-57f2-e901-032f" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="08e4-6364-f2e7-ba98" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5640-b196-883d-3b6f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Soul Bane" hidden="false" id="ce12-f9f4-0235-c343" collective="false" targetId="71b8-235a-db88-eb66" type="selectionEntry"/>
+        <entryLink import="true" name="The Impossible Robe" hidden="false" id="0675-13fd-587b-5eec" collective="false" targetId="6191-f394-aa0f-cefe" type="selectionEntry"/>
+        <entryLink import="true" name="Paradox" hidden="false" id="93f7-d9f6-09c3-b5f6" collective="false" targetId="3f68-93c5-8475-fade" type="selectionEntry"/>
+        <entryLink import="true" name="The Endless Grimoire" hidden="false" id="af9a-9429-ba6a-69ec" collective="false" targetId="26c6-7460-43e1-1776" type="selectionEntry"/>
+        <entryLink import="true" name="The Everstave" hidden="false" id="6263-2260-6c00-85da" collective="false" targetId="9c8a-74a5-b39b-d3ef" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule name="Baleful Abberation" id="0427-f136-ca61-ea0a" hidden="false" page="0">
@@ -945,7 +1016,7 @@ Whenever a model with this rule kills a character, roll a D66 and consult the Ch
       <description>Each time the Helbrute suffers a Glance or Penetrating hit, add a crazed marker. At the start of the next movement phase, roll a D3 (and consult the chart in its profile in Codex: Chaos Space Marines) for each marker and then remove the markers.</description>
     </rule>
     <rule name="Daemon of Tzeentch" id="d63c-52ea-43cd-25e3" hidden="false">
-      <description>Has Daemon, Hatred (Daemon of Nurgle) and may re-roll failing saves of 1</description>
+      <description>Has Daemon, Fear, Hatred (Daemon of Nurgle) and may re-roll failing saves of 1</description>
     </rule>
     <rule name="Daemon Weapon" id="51ea-b8a6-c181-50c2" hidden="false">
       <description>At the start of the assault phase, roll a D6. On a 1, the bearer suffers 1 wound with no armour saves allowed, and is reduced to WS1 for that phase.
@@ -1039,6 +1110,12 @@ Codex: Grey Knights</description>
     <rule name="Warlord: Lord of Terror" id="7d8d-d14d-a460-1d22" hidden="false" page="0"/>
     <rule name="Warpflame" id="a192-48b0-d95e-b558" hidden="false">
       <description>At the end of each phase, any unit that suffered one or more unsaved Wounds during the phase from an attack with this special rule (or from an attack made by a model with this special rule), must take a Toughness test. If the test is failed, the unit immediately suffers D3 Wounds with no armour or cover saves allowed. If the test is passed, all models in the unit gain the Feel No Pain (6+) special rule for the rest of the game. Any models in the unit that already have the FNP special rule instead gain +1 to all FNP rolls for the rest of the game. Chaos is fickle!</description>
+    </rule>
+    <rule name="Split" id="b57b-5bd9-10ee-9f60" hidden="false">
+      <description>If a friendly unit of Pink Horrors suffers any casualties, the slain Horrors will split and create Blue Horrors at the end of that phase (after all other units have performed their actions and made their attacks). Two Blue Horrors are created for each slain Pink Horror - if there is already a friendly Blue HOrror unit within 6&quot; of the Pink Horrors, add the newly created Blue Horrors to that unit, otherwise set them up as a new unit within 6&quot; of the unit of Pink Horrors. If a rule causes a whole unit of Pink Horrors to be removed at once (excluding Daemonic Instability), you can immediately create a unit of Blue HOrrors, just before removing the last model from the Pink Horrors unit. The unit of Blue Horrors has two models for each model in the unit of Pink Horrors at the point at which it is removed, and must be set up with all models within 6&quot; of the last model from the Pink Horrors unit.</description>
+    </rule>
+    <rule name="Split Again" id="3ab0-73c8-bde0-afb1" hidden="false">
+      <description>if a friendly unit of Blue Horrors suffers any casualties, the slain Horrors will split and create Brimstone Horrors at the end of that phase (after all other units have performed their actions and made their attacks). One model is created for each slain Blue Horror - if there is already a friendly Brimstone Horror unit within 6&quot; of the Blue Horrors, add the newly created Brimstone Horrors to that unit, otherwise set them up as a new unit within 6&quot; of the unit of Blue Horrors. If a rule causes a whole unit of Blue Horrors to be removed at once (excluding Daemonic Instabilities), you can immediately create a unit of Brimstone Horrors just before removing the last model from the Blue Horrors unit. The unit of Brimstone Horrors has one model for each model in the unit of Blue Horrors at the point as which it was removed, and must be set up with all models within 6&quot; of the last model from the Blue Horrors unit.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -1505,7 +1582,7 @@ If a Chaos Contemptor suffers an explosion result, add +D3 to the explosion radi
         <entryLink import="true" name="Smoke Launchers" hidden="false" id="7ef3-da43-86aa-3dfa" type="selectionEntry" targetId="a5e9-df2e-5d06-f42d"/>
         <entryLink import="true" name="Searchlight" hidden="false" id="488f-f9c3-d37b-9a33" type="selectionEntry" targetId="f94f-dd37-58fc-0063"/>
         <entryLink import="true" name="Legacies of Ruin (Walkers)" hidden="false" id="0086-5da8-cf50-3841" type="selectionEntryGroup" targetId="9a93-6b46-d3cb-efab"/>
-        <entryLink import="true" name="[FW] Chaos Dreadclaw Drop Pod" hidden="false" id="85ae-0080-d5ce-9a0b" type="selectionEntry" targetId="986e-f358-9e0e-ac73">
+        <entryLink import="true" name="Chaos Dreadclaw Drop Pod" hidden="false" id="85ae-0080-d5ce-9a0b" type="selectionEntry" targetId="986e-f358-9e0e-ac73">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7c2b-73de-0ce1-4ab5"/>
           </constraints>
@@ -2773,7 +2850,7 @@ In Cities of Death, Engines count as havin the Wrecker Strategem for free.</desc
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="[FW] Chaos Dreadclaw Drop Pod" hidden="false" id="19d0-f3e5-13ae-530a" type="selectionEntry" targetId="986e-f358-9e0e-ac73"/>
+        <entryLink import="true" name="Chaos Dreadclaw Drop Pod" hidden="false" id="19d0-f3e5-13ae-530a" type="selectionEntry" targetId="986e-f358-9e0e-ac73"/>
         <entryLink import="true" name="Legacies of Ruin (Walkers)" hidden="false" id="7166-f766-123d-ba22" type="selectionEntryGroup" targetId="9a93-6b46-d3cb-efab"/>
         <entryLink import="true" name="Searchlight and Smoke Launcher" hidden="false" id="8918-f01c-1ea9-051b" type="selectionEntryGroup" targetId="a660-8b6f-1856-2d10"/>
         <entryLink import="true" name="Extra Armour" hidden="false" id="d61d-c9d0-54ef-8395" type="selectionEntry" targetId="8661-d394-118f-3b37"/>
@@ -3245,7 +3322,7 @@ When making armour penetration/To wound rolls against the chosen model, all roll
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="b975-090d-e351-eaae" collective="false" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" type="selectionEntry">
+        <entryLink import="true" name="Warlord" hidden="false" id="b975-090d-e351-eaae" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry">
           <constraints>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="8c52-0ecb-fd81-360a"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4693-e16b-2f14-a344"/>
@@ -4239,7 +4316,7 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1360-1ce6-c570-1427" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Warlord" hidden="false" id="a0d6-52c9-88a2-8e7f" collective="false" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="a0d6-52c9-88a2-8e7f" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
         <entryLink import="true" name="Chaos Artefacts" hidden="false" id="91d6-f03d-dce0-42be" collective="false" targetId="dc2a-a81c-7f34-b49b" type="selectionEntryGroup"/>
         <entryLink import="true" name="Veterans of the Long War" hidden="false" id="3c31-03f2-e59e-66aa" type="selectionEntry" targetId="1551-30cf-0468-267c">
           <modifiers>
@@ -4864,7 +4941,7 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fecd-8c61-c87b-547d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="[FW] Chaos Dreadclaw Drop Pod" hidden="false" id="6352-4733-2bca-7921" collective="false" targetId="986e-f358-9e0e-ac73" type="selectionEntry">
+        <entryLink import="true" name="Chaos Dreadclaw Drop Pod" hidden="false" id="6352-4733-2bca-7921" collective="false" targetId="986e-f358-9e0e-ac73" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2fe0-869e-0181-005a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -5817,7 +5894,7 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="91d1-a6e5-6d73-d300" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="[FW] Chaos Dreadclaw Drop Pod" hidden="false" id="6e57-de5b-bff9-f5e9" collective="false" targetId="986e-f358-9e0e-ac73" type="selectionEntry">
+        <entryLink import="true" name="Chaos Dreadclaw Drop Pod" hidden="false" id="6e57-de5b-bff9-f5e9" collective="false" targetId="986e-f358-9e0e-ac73" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b7d4-6807-f0fd-6780" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -6061,7 +6138,7 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
       </selectionEntryGroups>
       <entryLinks>
         <entryLink import="true" name="Chaos Rewards" hidden="false" id="c043-1ef2-754e-ec49" collective="false" targetId="d540-0ba8-38e2-5f75" type="selectionEntryGroup"/>
-        <entryLink import="true" name="Warlord" hidden="false" id="dc52-2b1a-9bfa-c12f" collective="false" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="dc52-2b1a-9bfa-c12f" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
         <entryLink import="true" name="Chaos Artefacts" hidden="false" id="48d2-8c73-1531-65b1" collective="false" targetId="dc2a-a81c-7f34-b49b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -6998,7 +7075,7 @@ Does not apply to weapons firing without LoS, Fearless units or units without as
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="[FW] Chaos Dreadclaw Drop Pod" hidden="false" id="5edb-b624-6c24-67ff" collective="false" targetId="986e-f358-9e0e-ac73" type="selectionEntry">
+        <entryLink import="true" name="Chaos Dreadclaw Drop Pod" hidden="false" id="5edb-b624-6c24-67ff" collective="false" targetId="986e-f358-9e0e-ac73" type="selectionEntry">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="e8a3-ad8c-e34f-b7dc" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
           </constraints>
@@ -8964,7 +9041,7 @@ Force is a blessing psychic power that targets the Psyker and his unit. All of t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="4099-f2b8-1397-da35" collective="false" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="4099-f2b8-1397-da35" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
         <entryLink import="true" name="Veterans of the Long War" hidden="false" id="a588-6d86-1eee-1f15" type="selectionEntry" targetId="1551-30cf-0468-267c">
           <modifiers>
             <modifier type="set" value="5" field="points"/>
@@ -9657,7 +9734,7 @@ Curse: Roll to hit as per normal againt one enemy vehicle within 18&quot;. If su
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink import="true" name="Warlord" hidden="false" id="d903-cef7-dd17-c1de" collective="false" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="d903-cef7-dd17-c1de" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
         <entryLink import="true" name="Chaos Artefacts" hidden="false" id="521a-1180-454c-426e" collective="false" targetId="dc2a-a81c-7f34-b49b" type="selectionEntryGroup"/>
         <entryLink import="true" name="Frag and Krak Grenades" hidden="false" id="1ea7-6f5d-e87b-e287" collective="false" targetId="2aec-4b86-b37e-9ff6" type="selectionEntry"/>
       </entryLinks>
@@ -10257,7 +10334,7 @@ Force is a blessing psychic power that targets the Psyker and his unit. All of t
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Warlord" hidden="false" id="1eb8-6d02-8528-b266" collective="false" targetId="9fdf9687-7daa-1ae2-8c3f-36e3ad3ed0dc" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="1eb8-6d02-8528-b266" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
         <entryLink import="true" name="Veterans of the Long War" hidden="false" id="2802-3d55-d307-1d63" type="selectionEntry" targetId="1551-30cf-0468-267c">
           <modifiers>
             <modifier type="set" value="5" field="points"/>
@@ -10300,6 +10377,1258 @@ Force is a blessing psychic power that targets the Psyker and his unit. All of t
           <description>Once per battle, instead of firing in the Shooting phase, an Exalted Sorcerer can call upon the deadly firepower of his Silver Tower in the form of a coruscating beam.</description>
         </rule>
       </rules>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="[FW] Giant Chaos Spawn" hidden="false" id="a716-d765-c4cb-6355" publicationId="83d27dcf--pubN73156" page="0" collective="false">
+      <profiles>
+        <profile name="Giant Chaos Spawn" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="8a7e-b6bd-53a3-2fbf" page="0">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Monstrous Creature</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">6</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">6</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">D6+2</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Random Attacks" id="8138-6b2f-0f05-ef26" hidden="false" page="0"/>
+        <rule name="Mutated Beyond Sanity" id="cde2-a4fc-ea84-6278" hidden="false" page="0"/>
+      </rules>
+      <infoLinks>
+        <infoLink name="Fear" id="c2f7-6dfe-cfb0-4453" hidden="false" targetId="280d-1a0c-5916-3012" type="rule"/>
+        <infoLink name="Fearless" id="4a90-4abe-424c-6413" hidden="false" targetId="8d37-2e47-4a04-58f7" type="rule"/>
+        <infoLink name="Rage" id="f581-8191-7cb4-9294" hidden="false" targetId="3ac5-a550-39f8-f28a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="e57b-6382-fb75-10a5" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="80"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Blue Horrors" hidden="false" id="e3d3-e83c-af4f-f954" collective="false">
+      <profiles>
+        <profile name="Blue Horrors" typeId="bc97-dea9-9e88-bb7d" typeName="Psyker" hidden="false" id="2d6d-7224-4975-7bcf">
+          <characteristics>
+            <characteristic name="Mastery Level" typeId="ca56-02c3-af4b-ea2a">1</characteristic>
+            <characteristic name="Disciplines" typeId="ea53-f5c7-08e4-980c">Change</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="2" field="ca56-02c3-af4b-ea2a">
+              <conditions>
+                <condition type="atLeast" value="11" field="selections" scope="e3d3-e83c-af4f-f954" childId="model" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Mage&apos;s Offspring" id="7b4b-e49b-1efe-dd1c" hidden="false">
+          <description>A unit of 11-20 Blue Horrors generates 2 Warp Charge points instead of 1.</description>
+        </rule>
+        <rule name="Split" id="257b-27fc-d963-6415" hidden="false">
+          <description>If a friendly unit of Pink Horrors suffers any casualties, the slain Horrors will split and create Blue Horrors at the end of that phase (after all other units have performed their actions and made their attacks). Two Blue Horrors are created for each slain Pink Horror - if there is already a friendly Blue HOrror unit within 6&quot; of the Pink Horrors, add the newly created Blue Horrors to that unit, otherwise set them up as a new unit within 6&quot; of the unit of Pink Horrors. If a rule causes a whole unit of Pink Horrors to be removed at once (excluding Daemonic Instability), you can immediately create a unit of Blue HOrrors, just before removing the last model from the Pink Horrors unit. The unit of Blue Horrors has two models for each model in the unit of Pink Horrors at the point at which it is removed, and must be set up with all models within 6&quot; of the last model from the Pink Horrors unit.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Brotherhood of Psykers/Sorcerers" id="9751-280a-927e-43d9" hidden="false" targetId="8e59-1172-280d-75e8" type="rule"/>
+        <infoLink name="Daemonic Instability" id="869b-d602-405a-130a" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Deep Strike" id="7e7f-510d-9caa-3c50" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Blue Horrors" hidden="false" id="86b2-7fcc-f2cc-8ff2" collective="false">
+          <constraints>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="41fc-9f77-ba6a-82ba" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="86f9-ad73-9c69-78e2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Blue Horrors" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="c73c-2efc-dfb8-1810">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">2</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">2</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Brimstone Horrors" hidden="false" id="066a-830d-d170-0f40" collective="false">
+      <infoLinks>
+        <infoLink name="Brotherhood of Psykers/Sorcerers" id="9c2d-f0dc-0719-f2a6" hidden="false" targetId="8e59-1172-280d-75e8" type="rule"/>
+        <infoLink name="Daemonic Instability" id="a78b-1a90-9b1e-c99c" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Deep Strike" id="f543-d8cc-99e4-5a7f" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Warpflame" id="cbba-883f-075f-8893" hidden="false" targetId="a192-48b0-d95e-b558" type="rule"/>
+        <infoLink name="Split Again" id="c40d-91e1-96b3-08c5" hidden="false" targetId="3ab0-73c8-bde0-afb1" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="6894-3b17-db8b-e938" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Brimstone Horrors" hidden="false" id="db98-9192-8f9a-3285" collective="false">
+          <constraints>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="1c5b-3155-2494-f89e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="600a-761d-2165-61c8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Brimstone Horrors" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="5654-9dfe-ba89-14f7">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">1</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">1</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="3"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Burning Chariot of Tzeentch" hidden="false" id="9975-602f-86c2-62e1" page="0" collective="false">
+      <profiles>
+        <profile name="Burning Chariot of Tzeentch" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="df7a-4f8e-af42-d761" page="0">
+          <characteristics>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+            <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">10</characteristic>
+            <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+            <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+            <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Chariot, Fast, Open-Topped, Skimmer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="4376-eec8-ca60-7ad5" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="7d5f-420f-d8fc-6928" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="5f9a-db48-5da4-a744" targetId="abf5fd55-9ac7-4263-8bc1-a9fb0a8fa6a6" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Blue Horror Crew" hidden="false" id="1cfc-b4cd-2187-f9ba" collective="false">
+          <infoLinks>
+            <infoLink name="Blue Horror Crew" id="564b-5bb9-76ad-53fa" hidden="false" targetId="1e8d-d328-e1ec-ab5d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Exalted Flamer" id="980a-6eee-d8d1-a63b" hidden="false" collective="false" import="true" defaultSelectionEntryId="45cc-b822-fc37-cdc3">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="efba-3a5e-c61c-3901" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="464d-47f1-6d45-c71f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Exalted Flamer of Tzeentch" hidden="false" id="e1d2-d661-5c90-bafa" page="0" collective="false">
+              <modifiers>
+                <modifier type="set" value="0" field="points">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7eeb-4507-a35b-c789" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Exalted Flamer" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="9b93-4a69-4d27-af5d" page="0">
+                  <characteristics>
+                    <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Jump Infantry (Character)</characteristic>
+                    <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+                    <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+                    <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                    <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                    <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+                    <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                    <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+                    <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                    <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-/5++</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Blue Fire of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="aa9f-bd5c-20bc-e9f7" page="0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3, Warpflame</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Pink Fire of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="da42-f28b-03b6-b808" page="0">
+                  <characteristics>
+                    <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Template</characteristic>
+                    <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+                    <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, Torrent, Warpflame</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Daemonic Instability" id="2281-135c-46f3-ba0d" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+                <infoLink name="Warpflame" id="dc55-a7b8-fca1-9c33" hidden="false" targetId="a192-48b0-d95e-b558" type="rule"/>
+                <infoLink name="Daemon" id="1a6b-dbdd-493d-ad18" hidden="false" targetId="3eda-669d-bd54-e3c0" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Daemonic Rewards" hidden="false" id="1d3b-fa8a-1c4c-1933" collective="false" targetId="be0e-1abe-e08e-0e2e" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="20" field="maxPoints"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="100"/>
+      </costs>
+      <rules>
+        <rule name="Aura of Change" id="e19b-d8df-ef1c-80e7" hidden="false" page="0">
+          <description>The Burning Chariot&apos;s Hammer of Wrath attacks have Warpflame</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Chaos Furies" hidden="false" id="e044-55cb-08c5-4936" page="0" collective="false">
+      <infoLinks>
+        <infoLink name="Deep Strike" id="e789-61b3-7342-462b" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemonic Instability" id="a7d2-9b98-6adb-6530" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Daemon" id="10a7-85aa-ac43-9f48" hidden="false" targetId="3eda-669d-bd54-e3c0" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="42ed-a3da-45be-6fdb" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Furies" hidden="false" id="625b-8e73-e85f-5553" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="false" id="9117-bf3e-b528-7bf0" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="false" id="0f75-2372-6ea4-bd2a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Furies of Chaos" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="c003-165d-ee57-8d1e" page="0">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Jump Infantry</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">2</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="6"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Daemonic Alignment" id="9bdc-7779-3ae4-9b29" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b7aa-e026-481b-9e00" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Daemon of Tzeentch" hidden="false" id="bb90-f702-f8f3-69c5" page="0" collective="false">
+              <modifiers>
+                <modifier type="increment" value="1" field="points">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="e044-55cb-08c5-4936" childId="625b-8e73-e85f-5553" shared="true" roundUp="false" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5d3c-4789-77b8-25d5"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fff6-d288-fab9-96d2"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Daemon of Tzeentch" id="1401-9213-d0c7-fb7c" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="5"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Exalted Locus of Creation" hidden="false" id="073b-7f37-ec96-9f28" page="0" collective="false">
+      <profiles>
+        <profile name="Exalted Locus of Creation" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="b094-f5e5-c172-960f">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a Pink Horror in this model&apos;s unit is slain, it splits into four Blue Horrors instead of two. Each time a Blue Horror in this model&apos;s unit is slain, it splits into two pairs of Brimstone Horrors instead of one.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="35"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Flamers of Tzeentch" hidden="false" id="d31b-90eb-9b51-f9ad" page="0" collective="false">
+      <profiles>
+        <profile name="Flames of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="2bef-7db1-8141-d7f6" page="0">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Template</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault1, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="853f-0ee3-6b2d-5fbb" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemonic Instability" id="e20a-68cb-da49-d92a" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Warpflame" id="5373-8ef7-c5db-1c1b" hidden="false" targetId="a192-48b0-d95e-b558" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="b235-9c97-2e88-f42d" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="eec7-0789-e1f4-474c" targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Flamers" hidden="false" id="b810-166c-b0bd-dac0" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="false" id="5557-acf8-9349-445a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="8365-d0db-8bba-8130" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Flamers of Tzeentch" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="d442-72fa-bdf3-2a16" page="0">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Jump, Infantry</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">2</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="23"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Upgrade one Flamer to Pyrocaster" hidden="false" id="2ca3-dc4f-d3bb-cf30" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2b29-e349-ca36-b403" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Pyrocaster" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="88b9-7b2c-0b97-eaeb" page="0">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Jump Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">2</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Daemonic Rewards" hidden="false" id="4552-57f2-652b-67df" collective="false" targetId="be0e-1abe-e08e-0e2e" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="20" field="maxPoints"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Flames of Tzeentch" hidden="false" id="afe2-07b9-5ebb-0de5" page="0" collective="false">
+      <profiles>
+        <profile name="Flames of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="36d7-3d9f-5768-17e9" page="0">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Template</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Assault1, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blue Fire of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="f4ab-c408-8ef1-31b4" page="0">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pink Fire of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9c4b-8f71-7537-a91f" page="0">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Template</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, Torrent, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Greater Locus of Change" hidden="false" id="70c9-c925-df42-66eb" page="0" collective="false">
+      <profiles>
+        <profile name="Greater Locus of Change" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="0800-1fd1-ab9d-f7c5">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the beginning of each turn, roll a D6; this model, and all models in its unit, substitute their S for the result this turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Herald of Tzeentch" hidden="false" id="6d9b-39dd-73be-e334" page="0" collective="false">
+      <profiles>
+        <profile name="Herald of Tzeentch" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="df91-451b-5dcf-3ad1" page="0">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry (Character)</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+          </characteristics>
+          <modifiers>
+            <modifier type="set" value="Jetbike (Character)" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="6d9b-39dd-73be-e334" childId="f6e9-91c8-1e97-dc7d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="5dff3e7c-e024-4030-a71d-03195ec06ea7">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="6d9b-39dd-73be-e334" childId="f6e9-91c8-1e97-dc7d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="increment" value="1" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="6d9b-39dd-73be-e334" childId="f6e9-91c8-1e97-dc7d" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="665d-690f-7e31-cf82" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemonic Instability" id="9038-3106-cf0e-8ae6" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Independent Character" id="09a2-d08b-1527-19ef" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Daemonic Steed" id="5ee4-19f3-5a5c-903e" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="false" id="50aa-e075-e5b5-744e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8c22-f2bd-42c4-77ea" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Disc of Tzeentch" hidden="false" id="f6e9-91c8-1e97-dc7d" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="4ded-1e63-6cd2-6739" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="unit" import="true" name="Burning Chariot of Tzeentch" hidden="false" id="805f-187f-572a-5304" page="0" collective="false">
+              <profiles>
+                <profile name="Burning Chariot of Tzeentch" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehicle" hidden="false" id="159e-235b-3249-b9f2" page="0">
+                  <characteristics>
+                    <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+                    <characteristic name="Front" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">10</characteristic>
+                    <characteristic name="Side" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+                    <characteristic name="Rear" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+                    <characteristic name="HP" typeId="ae95a1af-719f-4365-b951-33cd3ca9148a">3</characteristic>
+                    <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Chariot, Fast, Open-Topped, Skimmer</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Deep Strike" id="d312-1a8c-7f6a-54aa" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+                <infoLink name="Blue Horror Crew" id="d504-446e-a2f1-3dea" hidden="false" targetId="1e8d-d328-e1ec-ab5d" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+              </costs>
+              <rules>
+                <rule name="Aura of Change" id="d23d-8f74-8daa-66e1" hidden="false" page="0">
+                  <description>The Burning Chariot&apos;s Hammer of Wrath attacks have Warpflame</description>
+                </rule>
+              </rules>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Daemonic Psyker Level" id="5da4-866e-46ec-6121" hidden="false" collective="false" import="true" defaultSelectionEntryId="2b66-3f2a-6d5c-663f">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="afc8-b766-931b-c44c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fd87-2e35-03d4-a5d3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Psyker Level 1" hidden="false" id="57df-8cf3-9af4-5513" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="37d3-aecd-fb4f-b1b8" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Psyker Level 2" hidden="false" id="72da-3837-a1de-e49a" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a841-ce2d-9019-a500" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Psyker Level 3" hidden="false" id="dda5-b10c-d05d-cfbf" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="a596-f6f1-d51b-7b61" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="50"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Daemonic Rewards" hidden="false" id="e9bc-cc97-fac3-c8ad" collective="false" targetId="be0e-1abe-e08e-0e2e" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="30" field="maxPoints"/>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Loci of Tzeentch" hidden="false" id="89f6-c636-d66f-65d8" collective="false" targetId="3074-725f-1248-4621" type="selectionEntryGroup"/>
+        <entryLink import="true" name="Hellforged Artefacts of Tzeentch" hidden="false" id="96b4-3356-e1de-15ea" collective="false" targetId="d1d3-57f2-e901-032f" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="45"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Greater Locus of Trickery" hidden="false" id="79a8-5266-1576-0d44" page="0" collective="false">
+      <profiles>
+        <profile name="Greater Locus of Trickery" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="35a6-98ba-1808-0dcf">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the beginning of each turn, roll a D6; any To Hit rolls that target the model, or any models in his unit, that have the same score as the result this turn count as having rolled a 1 instead.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kairos Fateweaver" hidden="false" id="b52f-e08c-734e-5a73" page="0" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="2a8e-9eba-c16e-c2ba" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Kairos Fateweaver" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="0a22-7aca-6ba1-0824" page="0">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Flying Monstrous Creature (Character)</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">1</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">6</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">5</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Staff of Tomorrow" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="218d-79ba-e934-d5f4" page="0">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">The staff allows you to re-roll a single D6 of your choice once per turn; declare before you make the re-roll. If this is used to re-roll a single dice from 2D6, 3D6, etc, the other dice in that batch cannot be re-rolled.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Oracle of Eternity" id="ea6f-14ff-63e1-5585" hidden="false" page="0">
+          <description>Kairos has a 4+ invulnerable save.</description>
+        </rule>
+        <rule name="The Two Heads of Fate" id="2d68-de3c-57f0-0bbd" hidden="false" page="0">
+          <description>Each of Kairos Fateweaver&apos;s heads is a Psyker (Mastery Level 4). Both heads know all the powers from the Change discipline. In addition, the right head also randomly generates one power from each of the Pyromancy and Divination disciplines; the left head also randomly generates one power each from the Telepathy and Biomancy disciplines. At the start of each of his turns, declare which head Kairos Fateweaver will use that turn. Until the start of his next turn, he may only use the psychic powers known to that head. Note that as Kairos Fateweaver can only use one head at a time, he only generates the Warp Charge points for a single Mastery Level 4 Psyker, not two.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="ef05-ec70-c338-72de" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="17f3-a912-6ac2-7ce4" hidden="false" targetId="d63c-52ea-43cd-25e3" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="2d2f-7788-5525-279d" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Warlord Trait:" hidden="false" id="106d-c9f4-9a7f-b642" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="364d-9c8d-6466-f12a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="64cc-b7ff-a288-9259" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <rules>
+            <rule name="Lord of Unreality" id="d8b9-1089-9058-ccf8" hidden="false" page="0"/>
+          </rules>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="bb0f-a5bc-36f2-1683" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="300"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lesser Locus of Transmogrification" hidden="false" id="7364-6079-8165-5c1c" page="0" collective="false">
+      <profiles>
+        <profile name="Lesser Locus of Transmogrification" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="161b-51eb-be1e-a5f1">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Each time a Pink Horror in this model&apos;s unit is slain in close combat, the unit that inflicted the unsaved wound immediately suffers a S3 AP- hit. Each time a Blue Horror in this model&apos;s unit is slain in close combat, the unit that inflicted the unsaved wound immediately suffers a S2 AP- hit. Each time a Brimstone Horror in this model&apos;s unit suffers an unsaved wound in close combat, the unit that inflicted the unsaved wound immediately suffers a S1 AP- hit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="10"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lesser Locus of Metamorphosis" hidden="false" id="40fd-fc21-b894-41fe" page="0" collective="false">
+      <profiles>
+        <profile name="Lesser Locus of Metamorphosis" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="bd81-9368-ed40-a9f0">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">This model, and all models in its unit, have the It Will Not Die special rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="It Will Not Die" id="3559-9d6b-f2d7-8e20" hidden="false" targetId="8de3-9e93-da02-b9dd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lord of Change" hidden="false" id="b780-5df7-a6ef-08ee" page="0" collective="false">
+      <profiles>
+        <profile name="Lord of Change" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="8e22-29da-4c66-75f3" page="0">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Flying Monstrous Creature (Character)</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">6</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">6</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">6</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">5</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">5</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Daemon of Tzeentch" id="8419-03bb-c9a9-99c0" hidden="false" targetId="d63c-52ea-43cd-25e3" type="rule"/>
+        <infoLink name="Deep Strike" id="5e0b-c5ff-6d72-1848" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="9b61-7236-e137-71dc" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Psyker Levels" id="1854-51f0-258b-1b28" hidden="false" collective="false" import="true" defaultSelectionEntryId="4095-a215-787f-c59b">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="6db0-d383-c940-4b51" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="0e3c-6e56-fa55-023b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Psyker Level 3" hidden="false" id="e198-dc1c-dc2b-732c" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1bd6-a496-00cc-6789" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="25"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Psyker Level 2" hidden="false" id="79c9-5a57-df2a-7b81" page="0" collective="false">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b44a-70e9-faf1-c8ff" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Hellforged Artefacts of Tzeentch" id="f56a-258d-dc10-f924" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="8c51-0ad0-78f1-486c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Paradox" hidden="false" id="79fc-3a1b-386b-a335" collective="false" targetId="3f68-93c5-8475-fade" type="selectionEntry"/>
+            <entryLink import="true" name="The Impossible Robe" hidden="false" id="52ac-df2b-4cfe-b624" collective="false" targetId="6191-f394-aa0f-cefe" type="selectionEntry"/>
+            <entryLink import="true" name="The Everstave" hidden="false" id="7dcb-6683-49e7-0ba3" collective="false" targetId="9c8a-74a5-b39b-d3ef" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="32c6-6caf-4903-13a6" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
+        <entryLink import="true" name="Daemonic Rewards" hidden="false" id="2e0b-69be-0dc6-1ca0" collective="false" targetId="be0e-1abe-e08e-0e2e" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" value="50" field="maxPoints"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="230"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Pink Horrors of Tzeentch" hidden="false" id="5c1b-2cbb-34e1-cfc4" page="0" collective="false">
+      <rules>
+        <rule name="Split" id="95e7-3b66-476f-7451" hidden="false">
+          <description>If a friendly unit of Pink Horrors suffers any casualties, the slain Horrors will split and create Blue Horrors at the end of that phase (after all other units have performed their actions and made their attacks). Two Blue Horrors are created for each slain Pink Horror - if there is already a friendly Blue HOrror unit within 6&quot; of the Pink Horrors, add the newly created Blue Horrors to that unit, otherwise set them up as a new unit within 6&quot; of the unit of Pink Horrors. If a rule causes a whole unit of Pink Horrors to be removed at once (excluding Daemonic Instability), you can immediately create a unit of Blue HOrrors, just before removing the last model from the Pink Horrors unit. The unit of Blue Horrors has two models for each model in the unit of Pink Horrors at the point at which it is removed, and must be set up with all models within 6&quot; of the last model from the Pink Horrors unit.</description>
+        </rule>
+        <rule name="Blue Horrors" id="2ca6-3c45-d49e-d1ab" hidden="false" page="0">
+          <description>When a Pink Horror is slain in close combat, place a counter next to its unit. At the Initiative 1 step, an enemy unity that is (or was) locked in combat with the Pink Horror unit this phase takes a S2 AP- hit for each counter.</description>
+        </rule>
+        <rule name="Magic Made Manifest" id="0816-1d53-d7c4-a503" hidden="false" page="0">
+          <description>A unit of 11-15 generates 2 Warp Charge points; a unit of 16-20 generates 3 Warp Charge points.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="5782-3b70-389f-ba62" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemonic Instability" id="9791-dd12-85dc-f3dd" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Brotherhood of Psykers/Sorcerers" id="9e63-1464-deef-60a8" hidden="false" targetId="8e59-1172-280d-75e8" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="d550-0042-970c-9969" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="b39c-3b87-fa43-eaf1" targetId="5d76b6f5-20ae-4d70-8f59-ade72a2add3a" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Pink Horrors" hidden="false" id="0d5a-fcb9-3f51-329a" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="10" field="selections" scope="parent" shared="false" id="ac5c-7989-3d77-f4d2" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="false" id="594c-a58c-7025-389f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Pink Horrors of Tzeentch" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="99ed-c0e0-8f43-f258" page="0">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="9"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Upgrade one Pink Horror to Iridescent Horror" hidden="false" id="bde9-a240-033e-53d4" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="705b-c9e6-505b-e7f3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Iridescent Horror" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="2c8b-3793-67cf-ae24" page="0">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry (Character)</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Daemonic Rewards" hidden="false" id="5140-75f2-31ed-a1be" collective="false" targetId="be0e-1abe-e08e-0e2e" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" value="20" field="maxPoints"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Icon of Chaos" hidden="false" id="7407-52d4-3e94-d96a" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="caec-c004-d64f-213e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Upgrades" id="1e84-a3f7-376b-0aa3" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dab4-c201-f175-35c5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Arcane Icon" hidden="false" id="d55d-4a42-e494-dbb3" collective="false">
+                  <profiles>
+                    <profile name="Arcane Icon" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="45d3-f3b8-05df-63d4">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">An Arcane Icon is an Icon of Chaos. In addition, all models in a unit equipped with an Arcane Icon have the Adamantium Will special rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="10"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Icon of Fire" hidden="false" id="ef6d-1bce-4dcf-1996" collective="false">
+                  <profiles>
+                    <profile name="Icon of Fire" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="8894-e492-2202-b08c">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">An icon of fire is an Icon of Chaos. All close combat attacks made by Daemons of Tzeentch in a unit equipped with an icon of fire have the Soul Blaze special rule.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Soul Blaze" id="ed61-df15-b8a6-a0be" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Blasted Standard" hidden="false" id="6e4c-6299-84be-0dc9" page="0" collective="false">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="715d-c6a7-b674-cb9b" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Blasted Standard" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="e374-067b-876d-ce19" page="0">
+                      <characteristics>
+                        <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A Blasted Standard is an Icon of Chaos. Once per game, the unit can declare it is using a Blasted Standard. This is done immediately before the unit makes a Shooting attack (including Overwatch), or attempts to manifest a Witchfire power. If it does so, any unit hit by that attack suffers an additional 2D6 S4 AP- hits.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="15"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+          <rules>
+            <rule name="Icon of Chaos" id="d3ef-a465-2e38-26ff" hidden="false" page="0">
+              <description>When determining the assault result, add one to your assault results if there is one or more friendly units with an Icon of Chaos locked in that combat.
+
+If you place the first model of a deep striking friendly unit within 6&quot; of an Icon of Chaos, the following rules apply:
+
+If the deep striking unit and the unit with the Icon have the same daemonic alignment, do not scatter.
+
+If the deep striking unit and the unit with the Icon have different daemonic alignments but are all Daemons, scatter only D6&quot;.
+
+If there are non-Daemons in either unit, the Icon has no effect.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Instrument of Chaos" hidden="false" id="1104-61ec-4f30-34ff" page="0" collective="false">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="5bdd-84ec-b006-be8c" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Instrument of Chaos" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="5fa8-ef43-9724-82ea" page="0">
+              <characteristics>
+                <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If the Daemon bearing this Gift is involved in a fight which results in a draw, its side counts as having won by one wound.  If both side include an Instrument of Chaos, the result remians a draw.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="10"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Screamers of Tzeentch" hidden="false" id="cac4-35d8-8b9e-d865" page="0" collective="false">
+      <profiles>
+        <profile name="Lamprey&apos;s Bite" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="273c-5e9b-c7fb-ae39">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Armourbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="12b7-5047-1ecd-4f75" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemonic Instability" id="24f7-691b-1d7d-c487" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="f5a6-4751-dd98-ca94" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Fast Attack" hidden="false" id="049e-ad3d-a3c8-9f63" targetId="c274d0b0-5866-44bc-9810-91c136ae7438" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Screamers" hidden="false" id="c710-d21c-62d8-5f15" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="false" id="7747-1872-592b-db8e" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="false" id="77c1-de15-8358-7ea3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Screamers of Tzeentch" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="25c0-8bde-b3aa-739d" page="0">
+              <characteristics>
+                <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Jetbikes</characteristic>
+                <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+                <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+                <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+                <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+                <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
+      <rules>
+        <rule name="Slashing Attack" id="fe62-0ead-01d9-a856" hidden="false" page="0">
+          <description>If a unit of Screamers moves over one or more unengaged enemy units with its Turbo-boost movement, choose one of those units; it suffers D3 S4 AP- hits per Screamer that moved over it. Use the final position of the Screamers for the purposes of Wound allocation; vehicles are always hit on their side armour.</description>
+        </rule>
+        <rule name="Lamprey&apos;s Bite" id="6ae6-fe3b-60e2-6044" hidden="false" page="0">
+          <description>A Screamer can substitute all of its normal close combat attacks for a single special attack with the Lamprey&apos;s Bite profile.</description>
+        </rule>
+      </rules>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="The Blue Scribes" hidden="false" id="f0c9-bd50-8537-86a1" page="0" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="b6c5-3b6e-40c5-5a5d" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f15f-31b5-f3c3-5fd7" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="The Blue Scribes" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="eee6-add8-fe13-5744" page="0">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Jetbike (Character)</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Scrolls of Sorcery" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="fb47-d234-490c-5e81" publicationId="83d27dcf--pubN104574">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">At the start of each friendly Psychic Phase, choose a Psychic Discipline from the BRB and roll a D6. This turn, the Blue Scribes automatically manifest that power without the need for a psychic test (they cannot swap it for the Primaris Power). This power is treated as having been manifested by the minimum amount of Warp Charge points required to manifest the power, for the purposes of Deny the Witch rolls. Note that the Blue Scribes are not Psykers for the purposes of any special rules that target Psykers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Spell Syphon" id="323f-5273-9d3d-3b4f" hidden="false" page="0">
+          <description>Each time an enemy Psyker successfully manifests a psychic power, place a syphon token next to the Blue Scribes. At the start of each of your turns, roll a D6 for each syphon token next to the Blue Scribes; for each 6 rolled, one friendly psyker within 12&quot; of the Blue Scribes immediately gains a Warp Charge point. Then remove all syphon tokens from the board.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Daemonic Instability" id="0069-d2af-c9b0-7bbb" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Deep Strike" id="0835-c465-588f-dad7" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="7c10-09f3-b343-651f" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink name="HQ" hidden="false" id="1a38-9a9b-220e-eb1f" targetId="848a6ff2-0def-4c72-8433-ff7da70e6bc7" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Warlord" hidden="false" id="1b40-e134-ba96-1dfa" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="81"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Changeling" hidden="false" id="6386-687a-a045-09c3" page="0" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6b7c-ddf8-6764-35c3" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="cc71-bea7-440b-0a7b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="The Changeling" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="1e48-4d84-1234-e08c" page="0">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantry (Character)</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Formless Horror" id="d4a3-d3eb-461f-538c" hidden="false" page="0">
+          <description>At the start of each Fight sub-phase, the Changeling may choose a single non-vehicle enemy model in base contact and change any or all of his WS, S, T, I, and/or A characteristics to match those of the chosen foe, until the end of the current turn.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Deep Strike" id="fa71-a7e4-bb77-0a05" hidden="false" targetId="243a-b08c-3c8c-c363" type="rule"/>
+        <infoLink name="Daemonic Instability" id="3680-af96-5ba1-733b" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Independent Character" id="ec44-89ae-00c0-a220" hidden="false" targetId="ef3b-09c6-4024-cd37" type="rule"/>
+        <infoLink name="Daemon of Tzeentch" id="add7-725d-624f-46c3" hidden="false" type="rule" targetId="d63c-52ea-43cd-25e3"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Daemonic Psyker Level 1" hidden="false" id="d59a-be66-97fc-d160" page="0" collective="false">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="false" id="aef7-e2f9-11f6-0bd7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="2b60-746a-3595-9375" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Lesser Locus of Transmogrification" hidden="false" id="aea8-6e4f-9020-304e" collective="false" targetId="7364-6079-8165-5c1c" type="selectionEntry"/>
+        <entryLink import="true" name="Warlord" hidden="false" id="df51-7067-4d6e-481b" collective="false" targetId="e006-bfa4-c71c-2faf" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="75"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Endless Grimoire" hidden="false" id="26c6-7460-43e1-1776" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="ec28-1d88-d663-d16f" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bb95-8111-53b6-4ee5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="The Endless Grimoire" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="261c-8a7a-094e-06a7">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">If your Warlord generates all his powers from the Discipline of Change, he knows all the its powers.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="35"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Everstave" hidden="false" id="9c8a-74a5-b39b-d3ef" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="f558-7de5-dbb9-f0a7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6f06-23d3-c62b-bc13" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="The Everstave" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="7451-94b7-b2b9-85ba">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Soul Blaze, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Everstave Ranged" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="2c8c-d6bf-96f0-861c">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Template</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, Soul Blaze, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Warpflame" id="7678-2a94-c161-76e8" hidden="false" targetId="a192-48b0-d95e-b558" type="rule"/>
+        <infoLink name="Soul Blaze" id="f93c-d783-8049-3344" hidden="false" targetId="acb1-64c4-ef54-3a55" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="20"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="The Impossible Robe" hidden="false" id="6191-f394-aa0f-cefe" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="10e0-19ac-cd68-478a" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="9f81-2f48-1c25-9da5" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="The Impossible Robe" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Wargear Item" hidden="false" id="1023-af09-dbf1-79ee">
+          <characteristics>
+            <characteristic name="Description" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">3+ Invulnerable Save. Each time wearer suffers an unsaved wound, it must pass a Leadership test or be removed from play.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="model" import="true" name="Exalted Flamer of Tzeentch" hidden="false" id="358c-8943-e643-eef3" page="0" collective="false">
+      <modifiers>
+        <modifier type="set" value="0" field="points">
+          <conditions>
+            <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="7eeb-4507-a35b-c789" shared="true" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <profiles>
+        <profile name="Exalted Flamer" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unit" hidden="false" id="84ea-3bc6-119a-f5ca" page="0">
+          <characteristics>
+            <characteristic name="Unit Type" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Jump Infantry (Character)</characteristic>
+            <characteristic name="WS" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="BS" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="S" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="T" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="W" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="Ld" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+            <characteristic name="Save" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-/5++</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blue Fire of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="9a77-96a8-bc3c-5567" page="0">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18&quot;</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy D3, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Pink Fire of Tzeentch" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="a48c-b435-2b05-668b" page="0">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Template</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Heavy 1, Torrent, Warpflame</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Daemonic Instability" id="d165-783b-8a7b-afc1" hidden="false" targetId="ccc2-6ba5-fe86-2d59" type="rule"/>
+        <infoLink name="Warpflame" id="7806-29e1-1204-12eb" hidden="false" targetId="a192-48b0-d95e-b558" type="rule"/>
+        <infoLink name="Daemon" id="df02-a9d3-7eb4-da56" hidden="false" targetId="3eda-669d-bd54-e3c0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="50"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Soul Bane" hidden="false" id="71b8-235a-db88-eb66" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="6e4f-d2f3-93f9-3806" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad2c-0903-2ee0-6c1d" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Soul Bane" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="1487-966b-9493-3ad7">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">*</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Fleshbane, Incorporeal</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Incorporeal" id="cf97-c43f-5cc6-d70c" hidden="false">
+          <description>This weapon has an AP value equal to the target&apos;s Initiative value. Against targets with an I higher than 6, resolve Attacks from this weapon at AP-. Against vehicles, hits are resolved at AP1.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="15"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Paradox" hidden="false" id="3f68-93c5-8475-fade" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="64c9-c527-082f-48e5" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="bde3-3e02-e758-9b92" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <profiles>
+        <profile name="Paradox" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Weapon" hidden="false" id="5e68-6bef-d9be-d23d">
+          <characteristics>
+            <characteristic name="Range" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">-</characteristic>
+            <characteristic name="Strength" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">User</characteristic>
+            <characteristic name="AP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+            <characteristic name="Type" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Melee, Concussive, Warp Contradiction</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule name="Warp Contradiction" id="2780-2bdf-8cc5-597f" hidden="false">
+          <description>Once per turn, when taking Psychic test, the bearer can pick up and turn all dice he has rolled to their opposide side instead (ie 1, 3, and 5 become 6, 4, and 2).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink name="Concussive" id="d726-e4bc-05c7-81af" hidden="false" targetId="d0ea-e2a6-032d-8754" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="25"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Warlord" hidden="false" id="e006-bfa4-c71c-2faf" collective="false">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="1beb-7451-b6a9-1de7" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="b006-81b0-7cc5-e24b" percentValue="false" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedProfiles>
@@ -11120,6 +12449,11 @@ Force is a blessing psychic power that targets the Psyker and his unit. All of t
         <categoryLink targetId="638d74c6-bd97-4de5-b65a-6aaa24e9f4b2" id="b9ec-81cb-67a0-1848" primary="true" name="Elites"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Ex Sorcerer" hidden="false" id="54bf-01a6-c21b-eeb7" type="selectionEntry" targetId="d36f-ee55-d451-e695"/>
+    <entryLink import="true" name="Exalted Sorcerer" hidden="false" id="54bf-01a6-c21b-eeb7" type="selectionEntry" targetId="d36f-ee55-d451-e695"/>
   </entryLinks>
+  <rules>
+    <rule name="Blue Horror Crew" id="1e8d-d328-e1ec-ab5d" hidden="false" page="0">
+      <description>All enemy units within 6&quot; of one or more Burning Chariots that have Blue Horror Crew suffer a -1 penalty to their Leadership.</description>
+    </rule>
+  </rules>
 </catalogue>
