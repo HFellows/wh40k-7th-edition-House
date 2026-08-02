@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="28" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
+<catalogue library="true" id="6aad-252a-c22e-e66c" name="Imperial Guard Library" gameSystemId="9e00-0436-148e-24c2" gameSystemRevision="2044" revision="29" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" hidden="true">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Hellhound Squadron" hidden="false" id="03d7-be62-f48a-bcf1" publicationId="2be8d152--pubN72426" page="54" collective="false">
       <categoryLinks>
@@ -5457,6 +5457,9 @@
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="03db-ec12-71b1-1404"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Lasgun" hidden="false" id="530c-d3d7-cdec-3c5b">
                       <constraints>
@@ -6819,7 +6822,7 @@
                 <entryLink import="true" name="Close Combat Weapon" hidden="false" id="ae63-93a4-81c5-96c6" type="selectionEntry" targetId="0b415c15-81b4-5a3f-b0ae-1e460d13a958"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0"/>
+                <cost name="pts" typeId="points" value="3"/>
               </costs>
               <selectionEntries>
                 <selectionEntry type="upgrade" import="true" name="Lasrifle" hidden="false" id="add5-bf9c-68a9-e3c1">
@@ -7323,7 +7326,7 @@
                         <infoLink name="Shotgun" id="3c99-4c3b-77d1-5440" hidden="false" targetId="07cb-70d7-15c3-5117" type="profile"/>
                       </infoLinks>
                       <costs>
-                        <cost name="pts" typeId="points" value="0"/>
+                        <cost name="pts" typeId="points" value="2"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry type="model" import="true" name="Lasgun" hidden="false" id="c742-45b3-e607-5499" page="0" collective="false">
@@ -8631,7 +8634,7 @@
                 <entryLink import="true" name="Frag Grenades" hidden="false" id="d77b-c6c6-d74a-5734" collective="false" targetId="7c55-4b0e-ca04-d5a4" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="0"/>
+                <cost name="pts" typeId="points" value="2"/>
               </costs>
               <infoLinks>
                 <infoLink name="Shotgun" id="5d6f-fc25-be20-f2d2" hidden="false" type="profile" targetId="07cb-70d7-15c3-5117"/>
@@ -10648,7 +10651,7 @@
                     <infoLink name="Shotgun" id="ebb8-3e86-5441-8f6d" hidden="false" targetId="07cb-70d7-15c3-5117" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="pts" typeId="points" value="2"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -10744,7 +10747,7 @@
                     <infoLink name="Shotgun" id="d009-c93c-1214-6601" hidden="false" targetId="07cb-70d7-15c3-5117" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0"/>
+                    <cost name="pts" typeId="points" value="2"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -11141,7 +11144,7 @@
                     <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="fefe-1182-2500-6472-max" percentValue="false" includeChildSelections="false" includeChildForces="false"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink name="Grenadier Gauntlet (Frag)" id="fde4-d116-cb84-e1c0" hidden="false" targetId="9dc4-869c-55f1-414b" type="profile"/>
+                    <infoLink name="Grenadier Gauntlet" id="fde4-d116-cb84-e1c0" hidden="false" targetId="9dc4-869c-55f1-414b" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0"/>
@@ -12863,6 +12866,9 @@
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e3dc-c50c-42ea-6ec5"/>
                       </constraints>
+                      <costs>
+                        <cost name="pts" typeId="points" value="3"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Volkite Charger" hidden="false" id="6462-c3be-d850-d5ad">
                       <profiles>
@@ -13334,6 +13340,9 @@
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="3"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -13517,7 +13526,7 @@
                 <entryLink import="true" name="Krak Grenades" hidden="false" id="3bce-6f16-815c-7c04" collective="false" targetId="e56b-7ca0-ec48-34db" type="selectionEntry"/>
               </entryLinks>
               <costs>
-                <cost name="pts" typeId="points" value="12"/>
+                <cost name="pts" typeId="points" value="15"/>
               </costs>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Weapon: Hot-shot Lasgun" id="4b96-3239-766c-2c24" hidden="false" collective="false" import="true" defaultSelectionEntryId="d16e-7316-b5dc-c8eb">
@@ -14736,7 +14745,7 @@
                 </profile>
               </profiles>
               <modifiers>
-                <modifier type="set" value="5" field="points"/>
+                <modifier type="set" value="2" field="points"/>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
@@ -15155,6 +15164,9 @@
                   </characteristics>
                 </profile>
               </profiles>
+              <modifiers>
+                <modifier type="set" value="2" field="points"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Shotgun" hidden="false" id="d382-fc15-728f-c192" page="0" collective="false">
               <constraints>
@@ -15164,7 +15176,7 @@
                 <infoLink name="Shotgun" id="90b4-a55f-b4b8-e339" hidden="false" targetId="07cb-70d7-15c3-5117" type="profile"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="5"/>
+                <cost name="pts" typeId="points" value="2"/>
               </costs>
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Militia Lance" hidden="false" id="1940-0a49-b4c1-06a5">
@@ -15590,6 +15602,16 @@
           </conditions>
         </modifier>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hippogriff Squadron" hidden="false" id="aa0a-bbcf-31a8-cdba">
+      <entryLinks>
+        <entryLink import="true" name="Hippogriff" hidden="false" id="ae78-a5b0-1473-130e" type="selectionEntry" targetId="d43d-e7a6-e9ea-8018">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2377-b0a9-9da4-1526"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="f951-4016-fb78-87fc"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -16292,7 +16314,7 @@
             <infoLink name="Shotgun" id="fc7c-e3b6-ea66-42b9" hidden="false" targetId="07cb-70d7-15c3-5117" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
+            <cost name="pts" typeId="points" value="2"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -16565,7 +16587,7 @@
             <infoLink name="Shotgun" id="7d77-76ca-2106-ac9b" hidden="false" targetId="07cb-70d7-15c3-5117" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="0"/>
+            <cost name="pts" typeId="points" value="2"/>
           </costs>
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Laspistol" hidden="false" id="3d4f-28eb-a1ae-2cb4" sortIndex="1">
