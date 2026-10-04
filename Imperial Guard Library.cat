@@ -14846,7 +14846,7 @@ May not take Carapace Armour.</description>
                     <constraint id="c2ce-d4c4-8a91-1e86" field="selections" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <costs>
-                    <cost name="pts" typeId="points" value="40"/>
+                    <cost name="pts" typeId="points" value="70"/>
                   </costs>
                   <entryLinks>
                     <entryLink name="Sentinel Upgrades" id="e73e-1841-5569-4149" collective="false" hidden="false" import="true" targetId="f2aeb023-205d-bdb2-66d5-a7d33d1974e3" type="selectionEntryGroup"/>
@@ -18505,11 +18505,6 @@ May not take Carapace Armour.</description>
         <entryLink name="Relic Plating" id="9fbf4e9c-6f31-6109-8998-1cc0e4fa5876" collective="false" hidden="false" import="true" targetId="99fbfe38-169c-8815-2454-79915bd6d4c4" type="selectionEntry"/>
         <entryLink name="Camo Netting" id="52c6-d1f1-22ca-031d" hidden="false" import="true" targetId="712b4405-eeb1-f60b-338b-f984ada98e2f" type="selectionEntry"/>
         <entryLink name="Extra Armour" id="acd6-fb2f-b073-e1da" hidden="false" import="true" targetId="4d6ecd83-5e65-12f6-0608-6c737550861d" type="selectionEntry"/>
-        <entryLink name="Smoke Launchers" id="1190-992d-6adb-b68e" hidden="false" import="true" targetId="c5066441-7f6f-5497-5df6-4462463a5807" type="selectionEntry">
-          <costs>
-            <cost name="pts" typeId="points" value="5"/>
-          </costs>
-        </entryLink>
         <entryLink name="Searchlight" id="0c68-07b1-56da-234b" hidden="false" import="true" targetId="d26eb534-d6b2-ac11-a207-627c7497e876" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
